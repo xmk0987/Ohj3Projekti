@@ -1,0 +1,157 @@
+{
+    "metadata": {
+        "createdBy": "koikkal3@tuni.fi",
+        "lastModifiedBy": "rgsapo@tuni.fi",
+        "modificationOrdinal": 169166495,
+        "createdOn": "2020-12-11T13:04:16.075379",
+        "revision": 48,
+        "lastModifiedOn": "2022-01-14T12:17:52.848589"
+    },
+    "code": "TTEM",
+    "groupId": "tut-dp-g-1180",
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "credits": {
+            "min": 120,
+            "max": null
+        },
+        "rule": {
+            "allMandatory": false,
+            "description": null,
+            "rules": [
+                {
+                    "allMandatory": true,
+                    "description": null,
+                    "rules": [
+                        {
+                            "type": "ModuleRule",
+                            "moduleGroupId": "tut-sm-g-3662",
+                            "localId": "12de6af2-a4ab-4aa2-a4bf-739c5b3e84c2"
+                        },
+                        {
+                            "type": "ModuleRule",
+                            "moduleGroupId": "otm-73c44ab7-259c-4ba3-9247-27597af07443",
+                            "localId": "otm-2b006b7e-b26f-458d-8ce2-eab8abddba6d"
+                        },
+                        {
+                            "type": "ModuleRule",
+                            "moduleGroupId": "otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca",
+                            "localId": "otm-ae052325-1c20-43ca-a1a7-7d858d1b8f1d"
+                        }
+                    ],
+                    "require": null,
+                    "type": "CompositeRule",
+                    "localId": "65c1d322-cdee-426e-b032-2433f298c893"
+                }
+            ],
+            "require": {
+                "min": 0,
+                "max": null
+            },
+            "type": "CompositeRule",
+            "localId": "ea859c01-4b70-448a-b3c8-c1c7b929d6af"
+        },
+        "type": "CreditsRule",
+        "localId": "6c185f97-72f2-43af-a13f-c388601188df"
+    },
+    "type": "DegreeProgramme",
+    "degreeTitleUrns": [
+        "urn:code:degree-title:tutkintonimikekk_130"
+    ],
+    "moduleContentApprovalRequired": false,
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "contentDescription": null,
+    "additionalInfo": null,
+    "tweetText": null,
+    "learningOutcomes": {
+        "fi": "Tutkinnon suoritettuaan opiskelija hallitsee syventävien opintojensa alan monipuolisesti ja syvällisesti, ja hänellä on valmiudet toimia työelämässä syventävien opintojensa alan asiantuntijana ja kehittäjänä. Hän hallitsee tieteellisen tiedon ja menetelmien perusteet ja osaa soveltaa niitä ajankohtaisiin ja konkreettisiin tehtäviin.  <br /><br />Hänellä on työelämän, tieteellisen toiminnan ja yhteiskunnallisen keskustelun edellyttämät viestintä- ja yhteistyötaidot, sekä hyvät valmiudet tieteelliseen jatkokoulutukseen ja jatkuvaan ammatilliseen kehittymiseen."
+    },
+    "id": "otm-3990be25-c9fd-4dae-904c-547ac11e8302",
+    "studyFields": [
+        "urn:code:study-field:okm-7"
+    ],
+    "inclusionApplicationInstruction": null,
+    "degreeProgramTypeUrn": "urn:code:degree-program-type:masters-degree",
+    "approvalState": "urn:code:approval-state-type:approved",
+    "educationLocationUrns": [
+        "urn:code:municipality:837"
+    ],
+    "targetCredits": {
+        "min": 120,
+        "max": null
+    },
+    "educationClassificationUrns": [
+        "urn:code:education-classification:koulutus_751301"
+    ],
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ]
+    },
+    "tuitionFee": null,
+    "degreeLanguageUrns": [
+        "urn:code:official-language:fi"
+    ],
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-torikkam",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-salo6",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-verhop",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-tastulav",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-rgsapo",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-timoh",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Tietotekniikan DI-ohjelma",
+        "en": "Master's Programme in Information Technology"
+    },
+    "gradeScaleId": "sis-maisteri-maine",
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

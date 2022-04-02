@@ -1,0 +1,207 @@
+{
+    "learningMaterial": {
+        "fi": "<h5>Oppimateriaali</h5><ul><li>Tyyppi: Opintomoniste</li><li>Nimi: Tietorakenteet ja algoritmit</li><li>Tekijä: Terhi Kilamo</li><li>Tenttimateriaali: Kyllä</li><li>Kieli: Suomi</li><li>Lisätietoja: jaetaan kurssin Plussa-kotisivuilla</li></ul><h5>Oppimateriaali</h5><ul><li>Tyyppi: Kirja</li><li>Nimi: Introduction to Algorithms, Second Edition</li><li>Tekijä: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein</li><li>Tenttimateriaali: Ei</li><li>ISBN: 0-262-03293-7</li><li>Kieli: Englanti</li></ul>",
+        "en": "<h5>Material</h5><ul><li>Type: Lecture slides</li><li>Name: Data structures and algorithms</li><li>Exam material: Yes</li><li>Language: English</li></ul><h5>Material</h5><ul><li>Type: Book</li><li>Name: Introduction to Algorithms</li><li>Author: Cormen, Leiserson, Rivest, Stein</li><li>Exam material: No</li><li>ISBN: 9780262033848</li><li>Language: English</li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "bitti@tuni.fi",
+        "lastModifiedBy": "tanja@tuni.fi",
+        "modificationOrdinal": 172224379,
+        "createdOn": "2020-11-27T11:11:29.062553",
+        "revision": 60,
+        "lastModifiedOn": "2022-03-21T12:44:58.792205"
+    },
+    "code": "COMP.CS.300",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-36938",
+    "additional": {
+        "fi": "<b>Osasuoritusten pitää liittyä samaan toteutuskertaan.</b>",
+        "en": "<b>Partial completions of the course must be carried out during the same implementation round.</b>"
+    },
+    "searchTags": [
+        "Software Engineering",
+        "Ohjelmistotekniikka"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:intermediate-studies",
+    "content": null,
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Opintojakso on tarkoitettu opiskelijoille, joilla on vähintään arvosanaa 3 vastaavat tiedot kurssilta COMP.CS.110\n Ohjelmointi 2:\nRakenteet (tai joltain sen edeltäjältä). Opintojakson\n voi aloittaa, jos Ohjelmointi 2\n -kurssin arvosana\n on alempi kuin 3, mutta opiskelijan on tällöin oltava valmis \ntäydentämään omatoimisesti esitietonsa opintojaksolla odotetulle \ntasolle. Erityisesti COMP.CS.110-tason C&#43;&#43;-kielen osaamista edellytetään, koska harjoitustyö toteutetaan ko. kielellä.</p>",
+        "en": "<p>Basic programming knowledge.</p><p>Course is meant for students that have knowledge corresponding to the grade 3 or better from the course COMP.CS.110 Programming 2: Structures (or its earlier versions). However, you can start the course, if your grade from Programming 2 is less than 3, but in such case you are expected to complete your prerequisite knowledge independently to the level expected on the course. Especially COMP.CS.110-level C&#43;&#43; programming skills are required, because the course&#39;s programming assignment is done using that language.</p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-45510",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-45513",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-36925",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "uta-ykoodi-25922",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-43053",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-26845",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<p>TIE-20100 Tietorakenteet ja algoritmit</p>",
+        "en": "<p>TIE-20100 Tietorakenteet ja algoritmit</p>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Kurssin suoritettuaan opiskelija osaa nimetä yleisimmin käytetyt algoritmien suunnitteluperiaatteet. Opiskelija tunnistaa perustietorakenteet ja yleisimmät niiden käsittelyyn tarvittavat algoritmit. Opiskelija osaa selittää, mihin asymptoottisen suorituskyvyn analyysi perustuu sekä osaa arvioida yksinkertaisten ohjelmien ajan- ja muistinkäyttöä. Lisäksi opiskelija osaa selittää ohjelmointikielten kirjastojen käyttämisen edut ja rajoitteet ottaen huomioon myös kielten väliset erot. Opiskelija osaa soveltaa oppimaansa tietokoneohjelmien suunnittelussa ja toteuttamisessa.</p>",
+        "en": "<p>After completing the course, the student knows the commonly used \nalgorithm design techniques. The student can implement basic data \nstructures independently, and knows how to apply related algorithms to \nthem. The student is able to analyze the asymptotic complexity of simple\n programs and knows how to use library implementations to build more \ncomplex data structures. The student is able to apply his knowledge in designing and implementing computer programs.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-b887755c-4ee2-41a6-90eb-d51883f90b2d"
+    ],
+    "tweetText": {
+        "fi": "Kurssin suoritettuaan opiskelija tuntee yleisimpiä tietorakenteita ja algoritmeja, osaa analysoida niiden tehokkuutta ja käyttää niitä ohjelmissaan.",
+        "en": "After completing the course the students knows common data structures and algorithms, can analyze their performance, and use them in their programs."
+    },
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-dd0c337e-b2f0-45d0-9a28-d3bbe287ff64",
+    "studyFields": [
+        "urn:code:study-field:okm-7"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-b887755c-4ee2-41a6-90eb-d51883f90b2d"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2023,
+                        "end": 2024
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1",
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Kurssin arvosana muodostuu osa-arvosanojen painotettuna keskiarvona. Osa-arvosanoja ovat Teoria (esim. luentoesseet, luentoläsnäolo ja -aktiivisuus, videokatselut), Harjoittelu (esim. kotitehtävät, viikkoharjoitusläsnäolot, verkkotehtävät) ja Soveltaminen (esim. harjoitustyöt) ja tentti. Hyväksyttyyn kokonaissuoritukseen vaaditaan jokaisen pakollisen osasuorituksen hyväksytty suoritus.",
+                "en": "The course grade is formed as a weighted average of sub-grades. Sub-grades are Theory ( for example, lecture essays, lecture attendance and activity, video watching), Practise (for example, homework, weekly exercise attendance, web assignments), and Applying knowledge (for example, programming assignments) and exam. A minimum sub-grade have to be earned from each part. (In addition to this, students have to pass the exam.)"
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "tut-cm-l-78435",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta",
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta"
+        ],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1280",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tiea",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1140"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:b_elexam"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-bitti",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-salo6",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-csheri",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Tietorakenteet ja algoritmit 1",
+        "en": "Data Structures and Algorithms 1"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021"
+    ]
+}

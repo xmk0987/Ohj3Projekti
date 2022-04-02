@@ -1,0 +1,181 @@
+{
+    "learningMaterial": {
+        "fi": "<p>Opintojakso perustuu luentoihin ja jaettavaan materiaaliin. Oheislukemistona voi käyttää esimerkiksi  teoksia</p> \n<p>Casella, G., Berger, R. L., Statistical inference</p> \n<p>Hogg, R. V., Tanis, E. A., Probability and statistical inference</p> \n<p>Laininen, P., Todennäköisyys ja sen tilastollinen soveltaminen</p> \n<p>Ross, S., A first course in probability</p> \n<p>Tuominen, P., Todennäköisyyslaskenta I</p>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "as99553@tuni.fi",
+        "modificationOrdinal": 163045247,
+        "createdOn": "2020-12-02T15:56:37.147775",
+        "revision": 25,
+        "lastModifiedOn": "2021-09-28T07:34:16.299077"
+    },
+    "code": "DATA.STAT.420",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "uta-ykoodi-33646",
+    "additional": null,
+    "searchTags": [],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:intermediate-studies",
+    "content": {
+        "fi": "<p>Tärkeimmät yksiulotteiset diskreetit ja jatkuvat jakaumat, Bernoullin prosessi, Poissonin prosessi, keskeinen rajaväittämä, muuttujien vaihto, momenttifunktio, kaksi- ja moniulotteiset jakaumat, moniulotteinen normaalijakauma, normaalijakauman muunnokset, otossuureiden jakaumat.</p>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Suositellut esitiedot tai vastaavat tiedot.</p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47512",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<p>Tällä opintojaksolla voi korvata MAT-02510 Tilastomatematiikan jatkurssi-opintojakson.</p>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija hallitsee tavallisimpien yksiulotteisten diskreettien ja jatkuvien todennäköisyysjakaumien perusominaisuudet ja osaa hyödyntää niitä todennäköisyyslaskentaan. Opiskelija osaa tehdä satunnaismuuttujan muunnoksia ja soveltaa momenttifunktiota jakaumien ominaisuuksien tarkasteluun. Opiskelija tuntee keskeisen rajaväittämän. Opiskelija ymmärtää moniulotteisen, erityisesti kaksiulotteisen, satunnaismuuttujan jakauman luonnehtimiseen liittyvän käsitteistön. Opiskelija tuntee muutaman keskeisen moniulotteisen jakauman ja hallitsee moniulotteisen normaalijakauman perusominaisuudet. Opiskelija hallitsee tärkeimmät normaalijakaumasta muunnoksina saatavat jakaumat.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-8737cf49-b5cb-4836-97fd-5e17f7020f00",
+        "otm-89ed75d8-cda7-4658-9379-b70e86aedb7a"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-31be29f8-7c34-405a-a5fd-9646fbc4fa47",
+    "studyFields": [
+        "urn:code:study-field:okm-6"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "uta-ykoodi-47933",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35923",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-8737cf49-b5cb-4836-97fd-5e17f7020f00",
+                "otm-89ed75d8-cda7-4658-9379-b70e86aedb7a"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosana 1: Opiskelija ymmärtää yksi- ja kaksiulotteisten todennäköisyysjakaumien teorian pääosin ja osaa jossain määrin soveltaa oppimaansa.  Arvosana 3: Opiskelija hallitsee yksi- ja moniulotteisten todennäköisyysjakaumien teorian pääosin hyvin ja osaa soveltaa oppimaansa uusiin tilanteisiin. Arvosana 5: Opiskelija hallitsee yksi- ja moniulotteisten todennäköisyysjakaumien teorian erittäin hyvin, osaa itsenäisesti todistaa todennäköisyysjakaumateoriaan liittyviä lauseita ja osaa soveltaa oppimaansa uusiin tilanteisiin."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "choice0",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": "MTTTA2",
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta"
+        ],
+        "urn:code:custom:tuni-university-root-id:strategic-themes": [],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [
+            "urn:code:custom:tuni-university-root-id:degree-programmes:mtta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:c_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:elective-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:joo-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-a385877",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-ji54872",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-tojape",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-as99553",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Matemaattisen tilastotieteen perusteet",
+        "en": "Fundamentals of Mathematical Statistics"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "possibleAttainmentLanguages": [
+        "urn:code:official-language:fi"
+    ],
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "mkeipa@tuni.fi",
+        "modificationOrdinal": 167226858,
+        "createdOn": "2021-01-25T09:49:14.914012",
+        "revision": 55,
+        "lastModifiedOn": "2021-12-08T14:29:49.174604"
+    },
+    "code": "COMP-M04",
+    "studyRightSelectionType": "urn:code:study-right-selection-type:none",
+    "groupId": "tut-sm-g-3707",
+    "searchTags": [],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": true,
+        "description": null,
+        "rules": [
+            {
+                "type": "ModuleRule",
+                "moduleGroupId": "otm-6b575bfa-e488-4ee0-a8d9-877608ce64e9",
+                "localId": "46523c74-d73f-4b45-8584-b3437cd9a119"
+            },
+            {
+                "type": "ModuleRule",
+                "moduleGroupId": "otm-11eeddac-ac46-4b72-973d-928b8cdc922c",
+                "localId": "21ae324e-9899-4bc9-b7cb-f4220d079985"
+            },
+            {
+                "type": "ModuleRule",
+                "moduleGroupId": "otm-91c6f8f4-5662-46a0-9adc-cb84aac38293",
+                "localId": "otm-115b76bd-2b9d-42d1-a2c6-417307da6c6f"
+            }
+        ],
+        "require": null,
+        "type": "CompositeRule",
+        "localId": "abe21822-6a73-4316-884f-57beb3cdbcd2"
+    },
+    "studyLevel": "urn:code:study-level:other-studies",
+    "type": "StudyModule",
+    "moduleContentApprovalRequired": true,
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": null,
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "substitutions": null,
+    "contentDescription": {
+        "fi": "DI-tutkinnon\naloittavat täydentävät pohjatutkintonsa henkilökohtaisesti laadittavan\nsuunnitelman mukaisesti. <br /><p>Täydentävät opintojaksot sijoitetaan tutkinnon vapaasti valittaviin opintoihin.</p><p>Jos pohjatutkinnossa fysiikan opintojen määrä on alle 10 op, tulee fysiikan opintoja suorittaa yhteensä 10 op.<br /></p><p>Vain suoraan maisterivaiheessa aloittaville.</p><br />"
+    },
+    "outcomes": {
+        "fi": "<ul><li>Laajentaa opiskelijan matemaattista osaamista syventymiskohteessa tarvittavalta alueelta.</li><li>Laajentaa opiskelijan tietämystä häntä kiinnostavista tekniikan ja tieteen aloista tai syventää tietämystä omien aineopintokokonaisuuksien tai syventävien opintokokonaisuuksien alalta.</li></ul>"
+    },
+    "additionalInfo": null,
+    "tweetText": {
+        "fi": "Tietotekniikan täydentävät opinnot"
+    },
+    "graded": true,
+    "id": "otm-f0f2f2fd-6e2f-4975-a4b3-2c46532d34a1",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "targetCredits": {
+        "min": 20,
+        "max": null
+    },
+    "abbreviation": null,
+    "minorStudyRightApplicationInstructions": null,
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ]
+    },
+    "minorStudyRightAcceptanceType": null,
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-verhop",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-torikkam",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-timoh",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Tietotekniikan täydentävät opinnot maisterivaiheessa aloittaneille"
+    },
+    "gradeScaleId": "sis-hyl-hyv",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

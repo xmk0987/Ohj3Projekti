@@ -1,0 +1,46 @@
+{
+    "metadata": {
+        "createdBy": "torikkam@tuni.fi",
+        "lastModifiedBy": "mkeipa@tuni.fi",
+        "modificationOrdinal": 167226857,
+        "createdOn": "2021-06-10T12:04:42.705457",
+        "revision": 10,
+        "lastModifiedOn": "2021-12-08T14:29:49.171851"
+    },
+    "code": null,
+    "groupId": "otm-91c6f8f4-5662-46a0-9adc-cb84aac38293",
+    "name": {
+        "fi": "Täydentävät opinnot"
+    },
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": false,
+        "description": null,
+        "rules": [
+            {
+                "courseUnitGroupId": "tut-cu-g-48229",
+                "type": "CourseUnitRule",
+                "localId": "otm-4c38eec2-97d1-404a-9176-32774cd2aeb7"
+            },
+            {
+                "courseUnitGroupId": "tut-cu-g-48230",
+                "type": "CourseUnitRule",
+                "localId": "otm-ad010568-6903-4c40-b5af-07220fc6aba9"
+            }
+        ],
+        "require": {
+            "min": 0,
+            "max": null
+        },
+        "type": "CompositeRule",
+        "localId": "otm-bfc55050-8892-4230-bb2d-6e3a3bce8d9f"
+    },
+    "id": "otm-91c6f8f4-5662-46a0-9adc-cb84aac38293",
+    "type": "GroupingModule",
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "moduleContentApprovalRequired": false,
+    "curriculumPeriodIds": []
+}

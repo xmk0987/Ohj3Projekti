@@ -1,0 +1,289 @@
+{
+    "learningMaterial": {
+        "fi": "<p>Oppimateriaali<br /></p><ul><li>Tyyppi: moniste</li><li>Nimi: Operaatiotutkimus</li><li>Tekijä: Frank  Cameron</li><li>Tenttimateriaali: kyllä</li><li>Kieli: Suomi</li><li>Lisätieto: opintojakso perustuu tähän monisteeseen</li></ul><p><br /></p><p>Oppimateriaali</p><ul><li>Tyyppi: luentovideot</li><li>Tekijä: Frank  Cameron</li><li>Tenttimateriaali: ei</li><li>Kieli: Suomi</li><li>Lisätietoja: perustuu pitkälti monisteeseen</li></ul><p><br /></p><p>Oppimateriaali</p><ul><li>Tyyppi: luentokalvot</li><li>Tekijä: Frank  Cameron</li><li>Tenttimateriaali: kyllä<br /></li><li>Kieli: Suomi</li><li>Lisätietoja: luentovideoissa käytetyt kalvot</li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "tanja@tuni.fi",
+        "modificationOrdinal": 171530050,
+        "createdOn": "2020-12-02T15:53:22.632303",
+        "revision": 54,
+        "lastModifiedOn": "2022-03-02T10:13:47.025338"
+    },
+    "code": "MATH.APP.260",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-47515",
+    "additional": null,
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics",
+        "Optimointi",
+        "Optimisation"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<ul><li>Optimointiin liittyvät peruskäsitteet <br /></li><li>Lineaarisen optimointiongelman formulointi <br /></li><li>Herkkyysanalyysi</li><li>Keskeisiä lineaarisia optimointiongelmia </li><li>Epälineaarisia kohdefunktioita, jotka voidaan linearisoida <br /></li><li>Monitavoiteoptimointi</li><li>Diskreettejä optimointimalleja </li><li>Verkkomallit <br /></li><li>Diskreetti dynaaminen optimointi <br /></li></ul>",
+        "en": "<h5><br /></h5>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": null,
+    "categoryTags": [],
+    "literature": [
+        {
+            "name": "Optimization in Operations Research; tekijä Ronald L. Rardin.",
+            "type": "LiteratureName",
+            "localId": "41a5af8b-882d-4979-ac52-b76d3ff6919c"
+        }
+    ],
+    "compulsoryFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-48159",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-47636",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-48158",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-48159",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35899",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-43050",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35917",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-31288",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": null,
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Operaatiotutkimuksessa tulee usein vastaan tilanteita, joista voidaan muodostaa lineaarinen optimointimalli. <br /></p><p>Opintojakson suoritettuaan opiskelija:</p><ul><li>osaa muodostaa lineaarisen optimointimallin, jossa on muuttujat, rajoitteet ja kohdefunktio</li><li>osaa esittää lineaarisen optimointimallin GMPL-koodilla</li><li>osaa käyttää joukkoja, kun lineaarinen optimointimalli muodostetaan <br /></li><li>osaa laskea kahden jatkuvan muuttujan lineaarisen optimointiongelman ratkaisun graafisesti</li><li>osaa muodostaa lineaarisen optimointimallin, kun kohdefunktio on luonteeltaan max-min -tyyppinen tai min-max -tyyppinen tai kohdefunktiossa esiintyy itseisarvoja</li><li>osaa muodostaa loogisista ehdoista rajoitteet käyttäen hyväksi binäärimuuttujia</li><li>osaa päättelemään, onko lineaarinen optimointimalli rajoitettu vai ei ja onko se hyvin määritelty vai ei</li><li>osaa tulkita  herkkyysanalyysin tulokset</li><li>osaa tunnista, mikä on monitavoitetehtävä ja mikä on Pareto-ratkaisu</li><li>tunnistaa seuraavat kokonaislukutehtävät: reppuongelma (knapsack problem), kohdistustehtävä (assignment problem), palvelupisteiden sijaintiongelma (facility location problem), yhden koneen aikataulun laadintaongelma (single-processor scheduling problem), lyhyimmän polun tehtävä ja kaupparatsutehtävä (travelling salesman problem)</li><li>osaa käyttää verkkomallia</li><li>osaa tulkita dynaamisen optimoinnin tulokset yksinkertaisesta lineaarisesta optimointimallista  </li></ul>"
+    },
+    "assessmentItemOrder": [
+        "otm-276a64d4-fb4a-40c7-ad74-24154a62b4ff",
+        "otm-c8836a40-c8a2-47b1-89c0-32563ebf7522",
+        "otm-824d469d-35e5-464c-88e5-673d794f5132"
+    ],
+    "tweetText": {
+        "fi": "Opintojaksossa opiskelija oppii, miten lineaarinen optimointimalli muodostetaan ja miten sellainen ratkaistaan tietokoneella."
+    },
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-2966b2c5-7c94-491f-8c9d-ed918ce13869",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-276a64d4-fb4a-40c7-ad74-24154a62b4ff",
+                "otm-824d469d-35e5-464c-88e5-673d794f5132"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2",
+                        "tuni-university-root-id/2006/0/1"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "ARVOSANA 1: Opiskelija osaa muodostaa annetusta sanallisesta kuvauksesta yksinkertaisen lineaarisen optimointimallin, jossa on vain jatkuvia muuttujia (ns LP-malli).  Annetusta kahden muuttujan LP-mallista opiskelija osaa tehdä seuraavat: (i) muodostaa rajoitteet, (ii) piirtää rajoitteet, (iii) laskea optimiratkaisun, (iv) muodostaa uuden rajoitteen, joka täyttää tietyt ehdot, (v) päättellä, onko LP-malli hyvin määritelty vai ei.  Annetusta pienehköstä LP-mallista opiskelija osaa muodostaa käypiä ja ei-käypiä ratkaisuja.  Opiskelija osaa tehdä annetusta lineaarisesta optimointimallista suuntaa antavaa herkkyysanalyysia.  Opiskelija osaa lukea GMPL-koodia, jolla on esitetty yksinkertainen LP-malli.                   ARVOSANA 3: Annetusta sanallisesta kuvauksesta opiskelija osaa muodostaa opettajan avulla suurehkon lineaarisen optimointimallin, jossa hän käyttää tehokkaasti indeksejä ja joukkoja. Opiskelija osaa kirjoittaa GMPL-koodia tällaisesta mallista. Opiskelija osaa käyttää ohjelman tuottaman herkkyysanalyysin tuloksia.  Opiskelija tunnistaa kurssin aikana käsitellyt optimointimallit (sekoitusmalli, aikataulun suunnittelun malli, kohdistustehtävän malli, jne.)  ja osaa tehdä muutoksia niihin.  Opiskelija osaa muodostaa käypiä ja ei-käypiä ratkaisuja näille malleille.  Opiskelija osaa tarkistaa, vastaako binäärimuuttujilla esitetty rajoite annettua loogista lausetta. Opiskelija osaa linearisoida kurssin aikana esitetyt linearisoituvat kohdefunktiot.            ARVOSANA 5: Annetusta sanallisesta kuvauksesta opiskelija osaa muodostaa itsenäisesti suurehkon lineaarisen optimointimallin, jossa hän käyttää tehokkaasti indeksejä ja joukkoja.  Opiskelija osaa soveltaa kurssin aikana esitettyjä linearisoituvia kohdefunktioita. Opiskelija osaa itsenäisesti muodostaa annetusta loogisesta lauseesta vastaavan rajoitteen binäärimuuttujien avulla.  Opiskelija osaa soveltaa monimutkaisia rajoitteita, kuten alireittien estämisrajoitteet. Opiskelija tunnistaa lineaarisen kahden kohdefunktion monitavoiteoptimointimallin Pareto-joukon.  Opiskelija osaa ratkaista yksinkertaisen optimointiongelman dynaamisella optimoinnilla."
+            },
+            "description": {
+                "fi": "Tarkat ohjeet suorittamisesta annetaan toteutuksen Moodle-sivuilla."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "tut-cm-l-81675",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-824d469d-35e5-464c-88e5-673d794f5132",
+                "otm-276a64d4-fb4a-40c7-ad74-24154a62b4ff",
+                "otm-c8836a40-c8a2-47b1-89c0-32563ebf7522"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1",
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "ARVOSANA 1: Opiskelija osaa muodostaa annetusta sanallisesta kuvauksesta yksinkertaisen lineaarisen optimointimallin, jossa on vain jatkuvia muuttujia (ns LP-malli).  Annetusta kahden muuttujan LP-mallista opiskelija osaa tehdä seuraavat: (i) muodostaa rajoitteet, (ii) piirtää rajoitteet, (iii) laskea optimiratkaisun, (iv) muodostaa uuden rajoitteen, joka täyttää tietyt ehdot, (v) päättellä, onko LP-malli hyvin määritelty vai ei.  Annetusta pienehköstä LP-mallista opiskelija osaa muodostaa käypiä ja ei-käypiä ratkaisuja.  Opiskelija osaa tehdä annetusta lineaarisesta optimointimallista suuntaa antavaa herkkyysanalyysia.  Opiskelija osaa lukea GMPL-koodia, jolla on esitetty yksinkertainen LP-malli.                   ARVOSANA 3: Annetusta sanallisesta kuvauksesta opiskelija osaa muodostaa opettajan avulla suurehkon lineaarisen optimointimallin, jossa hän käyttää tehokkaasti indeksejä ja joukkoja. Opiskelija osaa kirjoittaa GMPL-koodia tällaisesta mallista. Opiskelija osaa käyttää ohjelman tuottaman herkkyysanalyysin tuloksia.  Opiskelija tunnistaa kurssin aikana käsitellyt optimointimallit (sekoitusmalli, aikataulun suunnittelun malli, kohdistustehtävän malli, jne.)  ja osaa tehdä muutoksia niihin.  Opiskelija osaa muodostaa käypiä ja ei-käypiä ratkaisuja näille malleille.  Opiskelija osaa tarkistaa, vastaako binäärimuuttujilla esitetty rajoite annettua loogista lausetta. Opiskelija osaa linearisoida kurssin aikana esitetyt linearisoituvat kohdefunktiot.            ARVOSANA 5: Annetusta sanallisesta kuvauksesta opiskelija osaa muodostaa itsenäisesti suurehkon lineaarisen optimointimallin, jossa hän käyttää tehokkaasti indeksejä ja joukkoja.  Opiskelija osaa soveltaa kurssin aikana esitettyjä linearisoituvia kohdefunktioita. Opiskelija osaa itsenäisesti muodostaa annetusta loogisesta lauseesta vastaavan rajoitteen binäärimuuttujien avulla.  Opiskelija osaa soveltaa monimutkaisia rajoitteita, kuten alireittien estämisrajoitteet. Opiskelija tunnistaa lineaarisen kahden kohdefunktion monitavoiteoptimointimallin Pareto-joukon.  Opiskelija osaa ratkaista yksinkertaisen optimointiongelman dynaamisella optimoinnilla."
+            },
+            "description": {
+                "fi": "Suoritustapa käytössä ainoastaan lukuvuonna 2021-2022 syyslukukaudella (EI LUKUVUOSINA 2022-2024). Tarkat ohjeet suorittamisesta annetaan toteutuksen Moodle-sivuilla."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "b139b94b-9ef3-4784-b8fe-d041083f8386",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:pori",
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta",
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta"
+        ],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:b_elexam"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-frank",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "(ensisijainen vastuuopettaja)"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kanniain",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Operaatiotutkimus",
+        "en": "Operations Research"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

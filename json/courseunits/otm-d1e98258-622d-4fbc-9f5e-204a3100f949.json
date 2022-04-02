@@ -1,0 +1,228 @@
+{
+    "learningMaterial": {
+        "fi": "<ul><li>Tyyppi: Kirja</li><li>Nimi: University Physics with Modern Physics</li><li>Tekijä: Young&amp;Freedman</li><li>Tenttimateriaali: Kyllä</li><li>Kieli: Englanti</li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "kolari3@tuni.fi",
+        "modificationOrdinal": 169170284,
+        "createdOn": "2020-12-02T12:34:12.139525",
+        "revision": 51,
+        "lastModifiedOn": "2022-01-14T14:31:39.786436"
+    },
+    "code": "FYS.102",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-48230",
+    "additional": null,
+    "searchTags": [
+        "Fysiikka",
+        "Physics"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<ul><li>Mekaaniset värähtelyt</li><li>Mekaaniset aallot</li><li>Fluidien mekaniikka</li><li>Lämpötila ja lämpö</li><li>Aineen termiset ominaisuudet</li><li>Termodynamiikan 1. ja 2. pääsääntö</li><li>Kaksi valinnaista oppilaslaboratoriotyötä mekaniikan ja termodynamiikan sisällöistä. </li></ul><ul><li>Mittaustulosten analysointi, raportin kirjoitustaito, laskennallinen virheanalyysi </li></ul><ul><li>Office-työkalujen käyttö </li></ul>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": null,
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000006",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": null,
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "Opintojakson suoritettuaan opiskelija osaa hahmotella mekaanisiin värähtelyihin ja aaltoihin, fluidien mekaniikkaan ja lämpöoppiin liittyvän probleeman visuaalisesti, hallitsee asiaan liittyvät fysiikan määritelmät, periaatteet ja luonnonlait ja osaa soveltaa niitä ja perustella niiden soveltuvuuden kyseiseen ongelmaan. Opiskelija löytää kokeiden ja luennoilla esitettyjen teorioiden väliset yhteydet.  Opiskelija osaa johtaa määritelmistä ja periaatteista tilannetta kuvaavat yhtälöt, ratkaista ne ja arvioida tulosta. Opiskelija pystyy käyttämään yliopistotasoista matemaattista analyysiä tehtävän ratkaisussa. Opiskelija osaa antaa perusteltuja selvityksiä luonnonilmiöistä ja tekniikan sovellutuksista myös laskematta.Opintojakson suoritettuaan opiskelija osaa analysoida ja esittää graafisesti mittaustuloksia, arvioida kokeellisesti määritettyjen tulosten luotettavuutta ja selittää ne kirjallisesti. Opiskelija osaa laatia kokeellisesta työskentelystään kirjallisen raportin. Opiskelija osaa arvioida omaa osaamistaan ja täydentää sitä tarpeen mukaan."
+    },
+    "assessmentItemOrder": [
+        "otm-83d6feeb-405d-4440-b5a2-8da2892e280f",
+        "otm-7f2b3278-56b2-4f1d-b563-a6573914002b"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-d1e98258-622d-4fbc-9f5e-204a3100f949",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-48229",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": {
+        "fi": "<p>Älä tee hyväksilukuhakemusta tähän vanhoista insinöörifysiikoista.</p>"
+    },
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-83d6feeb-405d-4440-b5a2-8da2892e280f",
+                "otm-7f2b3278-56b2-4f1d-b563-a6573914002b"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Hyväksytysti suoritetut laskuharjoitukset, tentti ja kurssiin kuuluvat laboratorioharjoitukset."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "tut-cm-l-81187",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:e_massa",
+            "urn:code:custom:tuni-university-root-id:tentit:g_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kaukasoi",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-panka",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-laakso49",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-partanel",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-paavi",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-niemie",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Yliopistofysiikka 2",
+        "en": "University Physics 2"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

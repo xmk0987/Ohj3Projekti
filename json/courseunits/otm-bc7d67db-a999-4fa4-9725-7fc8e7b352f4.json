@@ -1,0 +1,390 @@
+{
+    "learningMaterial": {
+        "fi": "<h5>Oppimateriaali</h5><ul><li>Tyyppi: -</li><li>Nimi: Linear algebra, A modern introduction (2nd ed.)</li><li>Tekijä: Poole, David</li><li>Tenttimateriaali: Kyllä<br /></li><li>Kieli: Englanti</li></ul><br />",
+        "en": "<h5>Material</h5><ul><li>Type: -</li><li>Name: Linear algebra, A modern introduction (2nd ed.)</li><li>Author: Poole, David</li><li>Exam material: Yes<br /></li><li>Language: English</li></ul><h5>Material</h5><ul><li>Type: -</li><li>Name: Calculus 6e, Early Transcendentals, Matrix Version</li><li>Author: Edwards &amp; Penney</li><li>Exam material: No</li><li>Language: English</li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "tanja@tuni.fi",
+        "modificationOrdinal": 169949047,
+        "createdOn": "2020-12-03T14:52:03.646059",
+        "revision": 69,
+        "lastModifiedOn": "2022-01-28T11:08:27.249671"
+    },
+    "code": "MATH.MA.140",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-35898",
+    "additional": null,
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<h5>Ydinaines</h5><br /><p>Lineaariset yhtälöryhmät ja näiden ratkaisu Gaussin eliminoinnilla, <br />euklidisen avaruuden vektorijoukon lineaarinen riippumattomuus, <br />euklidisen avaruuden aliavaruus, kanta <br /> ja dimensio, <br />suorat ja tasot, <br />matriisit, neliömatriisin determinantti, ominaisarvot ja diagonalisointi, <br />vektorien pistetulo, ristitulo ja vektorikolmitulo.​<br /> <br /> Täydentävä tietämys<br /> </p>Matlabin käyttö ja matriisilaskennan soveltaminen<br />",
+        "en": "<h5>Core content</h5><p>Systems of linear equations: solving using Gaussian elimination.\n\t\t\t\t\t\t\t\t\t\t<br />Linear independence of Euclidian space, subspaces, basis, rank, and dimension of Euclidian space.</p><p>Lines and planes. <br /></p><p>Matrices: matrix algebra, matrix product, the transpose, the inverse, \nthe determinant, Eigenvalues and eigenvectors. The cross product, the dot product and the vector triple product of vectors. \n\t\t\t\t\t\t\t\t\t\t</p><p><br /> </p><br />\n\t\t\t\t\t\t\t\t\t\tComplementary knowledge \n\t\t\t\t\t\t\t\t\t<br /><p>Basic competence in using matlab to solve mathematical problems<br /></p>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>EDELTÄVÄT OPINNOT TAI EDELTÄVÄ OSAAMINEN</p><p>Lukiomatematiikka</p><p>  SUOSITELTAVAT VALINNAISET OPINNOT  </p><p>Ennen opintojakson suorittamista on suositeltavaa suorittaa jokin seuraavista opintojaksoista: Matematiikan peruskäsitteet tai Insinöörimatematiikan perusteet tai Yhden muuttujan funktiot opintojakso.</p>",
+        "en": "<p>PREVIOUS STUDIES OR PREVIOUS KNOWLEDGE<br />Senior High School Math<br />RECOMMENDED OPTIONAL STUDIES<br />Before completing this course, it is recommended that you complete one of the following courses: Basic concepts of Mathematics or Fundamentals of Engineering Mathematics or Calculus, Part 1.</p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-48158",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35902",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35892",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35894",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35920",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-41953",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "uta-ykoodi-25105",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-01220 Insinöörimatematiikka B 2<br />MAT-01210 Insinöörimatematiikka A 2<br />MAT-01260 Matematiikka 2<br />MAT-01200 Insinöörimatematiikka X 2<br /></li><li>Opintojakso/-jaksot (aiempi tai samanaikainen)<br />MAT-01230 Insinöörimatematiikka C 2<br /></li><li>Tyyppi: Vastaavat toisiaan</li></ul><h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-01230 Insinöörimatematiikka C 2<br /></li><li>Opintojakso/-jaksot (aiempi tai samanaikainen)<br />MAT-10422 Insinöörimatematiikka B 2u<br />MAT-10420 Insinöörimatematiikka X 2u<br />MAT-10421 Insinöörimatematiikka A 2u<br />MAT-10423 Insinöörimatematiikka C 2u<br />MAT-10424 Insinöörimatematiikka D 2u<br /></li><li>Tyyppi: Vastaavat toisiaan</li></ul>",
+        "en": "<h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-01220 Insinöörimatematiikka B 2<br />MAT-01210 Insinöörimatematiikka A 2<br />MAT-01260 Matematiikka 2<br />MAT-01200 Insinöörimatematiikka X 2<br /></li><li>Courses (previous or current)<br />MAT-01230 Insinöörimatematiikka C 2<br /></li><li>Type: Duplex A&#61;B</li></ul><h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-01230 Insinöörimatematiikka C 2<br /></li><li>Courses (previous or current)<br />MAT-10422 Insinöörimatematiikka B 2u<br />MAT-10420 Insinöörimatematiikka X 2u<br />MAT-10421 Insinöörimatematiikka A 2u<br />MAT-10423 Insinöörimatematiikka C 2u<br />MAT-10424 Insinöörimatematiikka D 2u<br /></li><li>Type: Duplex A&#61;B</li></ul>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opintojakson suoritettuaan opiskelija osaa ratkaista lineaarisen yhtälöryhmän Gaussin menetelmällä. Hän pystyy esittämään sen vektori- ja matriisimuodossa sekä<br /> analysoimaan sen ratkaisujoukkoa. Hän tuntee euklidisen avaruuden aliavaruuden, kannan ja dimension käsitteet. Erityisesti hän pystyy selvittämään, ovatko annetut vektorit​<br /> lineaarisesti riippumattomia. Opiskelija hallitsee matriisien peruslaskutoimitukset, osaa laskea neliömatriisin determinantin ja käänteismatriisin. Hän pystyy​<br /> myös määrittämään sen ominaisarvot. Opiskelija osaa katsoa monia geometrisia kysymyksiä vektoreiden näkökulmasta, esittää niitä vektorialgebran kielellä ja ratkoa ​<br /> tehtäviä lineaarialgebran työkaluilla. Hän kykenee todistamaan matriisien ja vektoreiden perusominaisuuksia täsmällisesti vaihe vaiheelta ​perustelemalla jokaisen päättelyn kohdan. <br /> Hän pystyy hyödyntämään lineaarialgebraa käytännön ongelmien mallintamiseen. Hän osaa ratkaista laskutehtäviä paitsi ​ käsin myös symbolisella ohjelmistolla.</p>",
+        "en": "<p>In this course the student learns the basic theory and methods of linear\n  algebra and matrix analysis. The student learns how to prove theorems \n and solve problems using mathematical methods and to present solutions \n orally and in written form.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-9127ff3b-675c-4e83-b240-45b905996150",
+        "otm-de9edf03-7d19-4744-bfeb-576176ec076c",
+        "otm-b06d04b8-6929-4432-9887-0daad0fdb967",
+        "otm-9fde22f5-d12f-42d6-a482-3b29add609c6",
+        "otm-1a275eff-9248-43ae-9991-de37f3a7c6c3",
+        "otm-fdd0dc7b-d78f-4862-83ca-0599d2939809"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-bc7d67db-a999-4fa4-9725-7fc8e7b352f4",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-9127ff3b-675c-4e83-b240-45b905996150"
+            ],
+            "prerequisites": null,
+            "repeats": [],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "5. Opiskelija pystyy ratkaisemaan vaativia matriisi- ja vektorilaskennan tehtäviä ja laatimaan todistuksia. Opiskelija ymmärtää opintojaksolla käsitellyt aihealueet kokonaisuutena. Opiskelija pystyy käymään mielekkäitä keskusteluja opintojakson aihealueista.  3. Opiskelija pystyy ratkaisemaan matriisi- ja vektorilaskennan tehtäviä ja laatimaan helpohkoja todistuksia. Lisäksi opiskelija pystyy yhdistämään opintojaksolla käsiteltyjä aihealueita toisiinsa. Opiskelija pystyy selittämään ajatuksiaan opintojakson aihealueista.  1. Opiskelija pystyy ratkaisemaan helppoja matriisi- ja vektorilaskennan tehtäviä ja ymmärtää helpohkoja todistuksia. Lisäksi opiskelija ymmärtää keskeisimmät opintojaksolla käsitellyt aihealueet. Opiskelija pystyy autettuna keskustelemaan opintojakson aihealueista."
+            },
+            "description": {
+                "fi": "Luentosuoritustapa on tarkoitettu kaikille opiskelijoille. Huomaa, että eräiden tutkinto-ohjelmien insinööriopiskelijoille tämä ei ole ensisijainen suoritustapa (katso käänteisen opetuksen suoritustavan ohje)."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "312075dd-55bc-45fe-9008-4c52dce8c332",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-de9edf03-7d19-4744-bfeb-576176ec076c",
+                "otm-fdd0dc7b-d78f-4862-83ca-0599d2939809"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Grade 5: The student can solve difficult problems in linear algebra and construct proofs. The student sees how the topics of the course are linked together. The student is able to carry on meaningful discussions on the topics of the course.  Grade 3: The student can solve linear algebra problems and construct simple proofs. The student is able to link together different topics of the course. The students can explain their thinking concerning the topics of the course.  Grade 1: The student can solve easy linear algebra problems and understand simple proofs. The student understands the core topics of the course. With support, the students is able to discuss the topics of the course.",
+                "en": "Grade 5: The student can solve difficult problems in linear algebra and construct proofs. The student sees how the topics of the course are linked together. The student is able to carry on meaningful discussions on the topics of the course.  Grade 3: The student can solve linear algebra problems and construct simple proofs. The student is able to link together different topics of the course. The students can explain their thinking concerning the topics of the course.  Grade 1: The student can solve easy linear algebra problems and understand simple proofs. The student understands the core topics of the course. With support, the students is able to discuss the topics of the course."
+            },
+            "description": {
+                "fi": "This completion method is for English language implementations.",
+                "en": "This completion method is for English language implementations."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "7708cab4-5bcf-4304-9c21-d69c306069b8",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-b06d04b8-6929-4432-9887-0daad0fdb967",
+                "otm-fdd0dc7b-d78f-4862-83ca-0599d2939809"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "5. Opiskelija pystyy ratkaisemaan vaativia matriisi- ja vektorilaskennan tehtäviä ja laatimaan todistuksia. Opiskelija ymmärtää opintojaksolla käsitellyt aihealueet kokonaisuutena. Opiskelija pystyy käymään mielekkäitä keskusteluja opintojakson aihealueista.  3. Opiskelija pystyy ratkaisemaan matriisi- ja vektorilaskennan tehtäviä ja laatimaan helpohkoja todistuksia. Lisäksi opiskelija pystyy yhdistämään opintojaksolla käsiteltyjä aihealueita toisiinsa. Opiskelija pystyy selittämään ajatuksiaan opintojakson aihealueista.  1. Opiskelija pystyy ratkaisemaan helppoja matriisi- ja vektorilaskennan tehtäviä ja ymmärtää helpohkoja todistuksia. Lisäksi opiskelija ymmärtää keskeisimmät opintojaksolla käsitellyt aihealueet. Opiskelija pystyy autettuna keskustelemaan opintojakson aihealueista."
+            },
+            "description": {
+                "fi": "Periodi 1: Teknisluonnontieteellisen tutkinto-ohjelman opiskelijat; Periodi 2:  Automaatio-, kone-, materiaali-, rakennus sekä ympäristö- ja energiatekniikan tutkinto-ohjelmien opiskelijoille."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "76569379-b6ed-47e2-ba94-09371d25c44c",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-9fde22f5-d12f-42d6-a482-3b29add609c6",
+                "otm-fdd0dc7b-d78f-4862-83ca-0599d2939809"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "5. Opiskelija pystyy ratkaisemaan vaativia matriisi- ja vektorilaskennan tehtäviä ja laatimaan todistuksia. Opiskelija ymmärtää opintojaksolla käsitellyt aihealueet kokonaisuutena. Opiskelija pystyy käymään mielekkäitä keskusteluja opintojakson aihealueista.  3. Opiskelija pystyy ratkaisemaan matriisi- ja vektorilaskennan tehtäviä ja laatimaan helpohkoja todistuksia. Lisäksi opiskelija pystyy yhdistämään opintojaksolla käsiteltyjä aihealueita toisiinsa. Opiskelija pystyy selittämään ajatuksiaan opintojakson aihealueista.  1. Opiskelija pystyy ratkaisemaan helppoja matriisi- ja vektorilaskennan tehtäviä ja ymmärtää helpohkoja todistuksia. Lisäksi opiskelija ymmärtää keskeisimmät opintojaksolla käsitellyt aihealueet. Opiskelija pystyy autettuna keskustelemaan opintojakson aihealueista."
+            },
+            "description": {
+                "fi": "Luentosuoritustapa on tarkoitettu kaikille opiskelijoille. Huomaa, että eräiden tutkinto-ohjelmien insinööriopiskelijoille tämä ei ole ensisijainen suoritustapa (katso käänteisen opetuksen suoritustavan ohje)."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "bf53afe9-f860-48d5-88dd-368ea4b6bea9",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-fdd0dc7b-d78f-4862-83ca-0599d2939809",
+                "otm-1a275eff-9248-43ae-9991-de37f3a7c6c3"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1",
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/1",
+                        "tuni-university-root-id/2006/1/0"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/0"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "5. Opiskelija pystyy ratkaisemaan vaativia matriisi- ja vektorilaskennan tehtäviä ja laatimaan todistuksia. Opiskelija ymmärtää opintojaksolla käsitellyt aihealueet kokonaisuutena. Opiskelija pystyy käymään mielekkäitä keskusteluja opintojakson aihealueista.  3. Opiskelija pystyy ratkaisemaan matriisi- ja vektorilaskennan tehtäviä ja laatimaan helpohkoja todistuksia. Lisäksi opiskelija pystyy yhdistämään opintojaksolla käsiteltyjä aihealueita toisiinsa. Opiskelija pystyy selittämään ajatuksiaan opintojakson aihealueista.  1. Opiskelija pystyy ratkaisemaan helppoja matriisi- ja vektorilaskennan tehtäviä ja ymmärtää helpohkoja todistuksia. Lisäksi opiskelija ymmärtää keskeisimmät opintojaksolla käsitellyt aihealueet. Opiskelija pystyy autettuna keskustelemaan opintojakson aihealueista."
+            },
+            "description": {
+                "fi": "Verkkosuoritustavan opetus tapahtuu pääosin etäopetuksena. Opetuksen tukitoimia järjestetään kuitenkin osittain myös lähiopetuksena."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "619a51cd-4d12-486f-97b6-351298b19557",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta",
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta",
+            "urn:code:custom:tuni-university-root-id:offering-location:pori",
+            "urn:code:custom:tuni-university-root-id:offering-location:tamk"
+        ],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:b_elexam"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:upper-secondary-school-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kaarakka",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-aliloytt",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kangas25",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-as99553",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-muellerp",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Vektorit ja matriisit",
+        "en": "Vectors and Matrices"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

@@ -1,0 +1,250 @@
+{
+    "learningMaterial": {
+        "fi": "<ul><li>Tyyppi: Opintomoniste</li><li>Tekijä: Merja Laaksonen</li><li>Tenttimateriaali: Ei</li><li>Kieli: Suomi</li><li>Lisätietoja: Monisteen saa toteutuskerran alkaessa Moodlesta.</li></ul>",
+        "en": "<h5>Material</h5><ul><li>Type: Summary of lectures</li><li>Author: Merja Laaksonen and Petteri Laakkonen<br /></li><li>Exam material: No</li><li>Language: English<br /></li><li>Info: The material is available in the course homepage in Moodle.</li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:fi",
+        "urn:code:language:en"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "kolari3@tuni.fi",
+        "modificationOrdinal": 169272795,
+        "createdOn": "2020-12-02T15:53:22.299549",
+        "revision": 50,
+        "lastModifiedOn": "2022-01-17T09:12:48.658146"
+    },
+    "code": "MATH.APP.240",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-47604",
+    "additional": {
+        "fi": "<b>Osasuoritusten pitää liittyä samaan toteutuskertaan.</b><br />",
+        "en": "<p>The course will be lectured in English every second year.</p>"
+    },
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<ul><li>Fourier-sarja: jaksolliset funktiot, sarjan kertoimet, erikoistapauksina parilliset ja parittomat funktiot, Gibbsin ilmiö.</li><li>Kompleksinen Fourier-sarja, Parsevalin lause, sarja funktion taajuushajotelmana.</li><li>Äärellisellä välillä määritellyn funktion täydentäminen jaksolliseksi</li><li>Diskreetti Fourier-muunnos ja sen ominaisuudet.</li><li>Fourier&#39;n muunnos jaksottomalle funktiolle: määritelmä ja perusominaisuudet, muunnos taajuushajotelmana.</li><li>Nopean Fourier-muunnoksen merkitys.</li><li>Konvoluutio,  Parsevalin lause, Diracin delta-funktio työkaluna.</li></ul>",
+        "en": "<h5>Core content</h5><ul><li>Real  Fourier series for periodic function and determining its coefficients,  even and odd functions as special cases, Gibbs phenomenon. </li><li>Complex Fourier series, Parseval&#39;s theroem, series as frequency decomposition.</li><li>Discrete Fourier transform and its properties.</li><li>Fourier transform of non-periodic functions: definition and basic properties, Fourier transform as frequency decomposition. </li></ul><h5>Complementary knowledge</h5><ul><li>Dirichlet conditions for fourier series convergence, expanding a function defined on a bounded interval to a periodic function.</li><li>Significance of the fast Fourier transform</li><li>Dirac delta function, Convolution,  Parseval&#39;s theorem</li></ul>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Ensimmäisen vuoden peruskursseista erityisesti mainitut tai niitä vastaavat tiedot. Suoritusmerkintää ei \ntarvitse olla, mutta asiat on osattava. Jos opiskelija ei hallitse \nkompleksilukuja, trigonometriaa eikä integrointia, niin kurssi vaatii \ntodella paljon töitä.</p>",
+        "en": "<h5>Prerequisite</h5><ul><li>Code: MAT-01166</li><li>Name: Mathematics 1</li><li>ECTS credits: 5</li><li>Mandatory: Mandatory</li></ul><br /><h5>Prerequisite</h5><ul><li>Code: MAT-01366</li><li>Name: Mathematics 3</li><li>ECTS credits: 5</li><li>Mandatory: Mandatory</li></ul><p>or courses of Engineering Mathematics / Mathematics in Finnish. The courses are not compulsory, but corresponding knowledge (basics of real differential and integral calculus, and  complex numbers) is required.<br /></p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35891",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35911",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35897",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35899",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-42012",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47509",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35914",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-02451 Fourier&#39;n menetelmät<br /></li><li>Opintojakso/-jaksot (aiempi tai samanaikainen)<br />MAT-02450 Fourier&#39;n menetelmät<br /></li><li>Tyyppi: Uusi vastaa vanhaa</li></ul>",
+        "en": "<h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-02457 Fourier Methods<br /></li><li>Courses (previous or current)<br />MAT-02456 Fourier Methods<br /></li><li>Type: One way A-&gt;B</li></ul>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "Opiskelija kykenee muodostamaan jaksolliselle funktiolle Fourier-sarjan, sekä reaalisen että kompleksisen version, ja hallitsee näiden muuntelun toisikseen.<p><br /></p><p>Opiskelija tunnistaa Gibbsin ilmiön tietyissä helpohkoissa esimerkkitapauksissa. </p><p>Opiskelija ymmärtää diskreetin muunnoksen ja sen ominaisuudet. </p><p>Opiskelija pystyy laskemaan jaksottomalle funktiolle Fourier-muunnoksen helpohkoissa esimerkkitapauksissa käyttäen Fourier-muunnoksen määritelmää ja perusominaisuuksia. <br /></p><p>Opiskelija tuntee Diracin delta-funktion ja osaa käyttää sitä.</p><p>Opiskelija ymmärtää taajuushajotelman ja osaa teoriaan perustuen suodattaa pois ei-toivotut taajudet.</p>",
+        "en": "<p>After completing the course, a student knows the definition and basic  properties of Fourier series and Fourier transform. The student can  represent a periodic function as a Fourier series  (with real or complex  coefficients) and can form new ones from known series. In addition, the  student can calculate the Fourier transform of non-periodic functions  for some simple example cases by using the definition and the basic  properties. The student knows what is Gibbs phenomenon and can predict  when it occurs in some example cases. The student knows the Dirac delta  function and how to use it. </p><p>A student that masters the course  contents have prerequisite for understanding the practical value of the  above concepts. The Fourier series of a periodic function or the Fourier  transform of a non-periodic function decomposes the function into its  frequency components. In practice however, the function of interest may  not be available, but one only can calculate some samples of it. Then  one should be able estimate the frequency decomposition by using the  samples. This is done by using the discrete Fourier transform. The  discovery of fast  Fourier transform in 1960&#39;s was groundbreaking for  signal processing and is cited as one of the most important algoritms in  mathematics. The importance of the frequency decomposition stems from  the ability to filter unwanted frequencies.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-c5d400da-ce6d-4e79-98c6-f52204ddd67f",
+        "otm-624a4de0-4055-4cd7-b41b-33d0cc47678b",
+        "otm-791bc4c4-faaf-423a-b769-4e45271b52bd",
+        "otm-8077d90c-1635-4263-b960-54863aafcc35"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-ec562ecd-50e3-4abb-9e50-88102bfcc2de",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-c5d400da-ce6d-4e79-98c6-f52204ddd67f",
+                "otm-624a4de0-4055-4cd7-b41b-33d0cc47678b"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosanan 1 saa, kun osaa perusasioita riittävästi. Arvosanan 3 saa, kun hallitsee useimmat aihealueet. Arvosanan 5 saamiseksi on hallittava kaikki aihealueet ja osattava soveltaa oppimaansa myös uudessa tilanteessa."
+            },
+            "description": {
+                "fi": "Toteutus on suomenkielinen kaikille koulutusuohjelmille tarkoitettu.",
+                "en": "This is only in Finnish."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "6840ddbd-0e15-4a86-a002-f8cb01848a23",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-791bc4c4-faaf-423a-b769-4e45271b52bd",
+                "otm-8077d90c-1635-4263-b960-54863aafcc35"
+            ],
+            "prerequisites": null,
+            "repeats": [],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": null,
+            "description": {
+                "fi": "International students. Implementation in English is not available in 2021-2022.",
+                "en": "This is only in english"
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "4f092892-c925-4674-be39-8d7b565fd7a2",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:e_massa",
+            "urn:code:custom:tuni-university-root-id:tentit:f_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-laaksone",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "Suomenkielisen toteutuksen vastavaa",
+                "en": "Teacher responsible for the Finnish implementation"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-laakkon2",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "Englanninkielisen toteutuksen vastuuopettaja",
+                "en": "Teacher responsible for the English implementation"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Fourier'n menetelmät",
+        "en": "Fourier Methods"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

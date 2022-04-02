@@ -1,0 +1,203 @@
+{
+    "possibleAttainmentLanguages": [
+        "urn:code:official-language:fi"
+    ],
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "mkeipa@tuni.fi",
+        "modificationOrdinal": 169912592,
+        "createdOn": "2020-12-22T16:48:02.265293",
+        "revision": 130,
+        "lastModifiedOn": "2022-01-27T16:25:35.092575"
+    },
+    "code": "COMP-M02",
+    "studyRightSelectionType": "urn:code:study-right-selection-type:none",
+    "groupId": "tut-sm-g-3662",
+    "searchTags": [],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": true,
+        "description": null,
+        "rules": [
+            {
+                "allMandatory": true,
+                "description": null,
+                "rules": [
+                    {
+                        "courseUnitGroupId": "otm-7bbbad0a-097c-4ecd-bdfe-b419bb5a887b",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-34046071-6ed3-47ca-8227-0500234cc128"
+                    }
+                ],
+                "require": null,
+                "type": "CompositeRule",
+                "localId": "otm-4e74c1f0-2971-49b3-a970-f5385d66675a"
+            },
+            {
+                "allMandatory": false,
+                "description": null,
+                "rules": [
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47510",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-3f0bf31e-fe84-405d-a1c6-b0a9494be1c7"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47515",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-9e50c9b5-2238-4b5b-bf95-24594c11c035"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47604",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-fe3ff2e0-ec40-4013-8a45-c02b4c1e950a"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47603",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-ac39a711-7787-46f6-a21e-56f19263259e"
+                    },
+                    {
+                        "courseUnitGroupId": "uta-ykoodi-38909",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-2218ef73-9ad5-4ced-982d-aee74345a3b7"
+                    },
+                    {
+                        "courseUnitGroupId": "uta-ykoodi-33646",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-b7638a77-3fd8-4ede-b29b-984738c67c4d"
+                    },
+                    {
+                        "courseUnitGroupId": "otm-1e8f1023-1977-4f98-9386-110ef623327b",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-a24d000f-5a8f-45b8-9a03-12ba1cd28d7f"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-48943",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-27e545c1-db74-4793-a498-9d02c5403a1a"
+                    }
+                ],
+                "require": {
+                    "min": 1,
+                    "max": 1
+                },
+                "type": "CompositeRule",
+                "localId": "otm-61bd1aec-79d3-4cb7-8ba0-9b442cfa4624"
+            },
+            {
+                "allMandatory": false,
+                "description": null,
+                "rules": [
+                    {
+                        "courseUnitGroupId": "tut-cu-g-48219",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-00411619-b47b-4151-8f14-cbb1a6153e97"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-48228",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-0587f42b-8c01-4513-9019-3ac3ea4ba089"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-48221",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-53e1d83e-559a-4c8f-9b8e-181d54dc122b"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-48225",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-c1f6e95c-6b80-4804-abc8-a0e21ae65f40"
+                    }
+                ],
+                "require": {
+                    "min": 1,
+                    "max": 1
+                },
+                "type": "CompositeRule",
+                "localId": "otm-65d037f3-cb5e-4129-9be0-93f9f518e9e6"
+            }
+        ],
+        "require": null,
+        "type": "CompositeRule",
+        "localId": "3b42cfe0-b41e-4d7c-b4a0-9fd7f7948066"
+    },
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "type": "StudyModule",
+    "moduleContentApprovalRequired": false,
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": null,
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "substitutions": null,
+    "contentDescription": null,
+    "outcomes": {
+        "fi": "<p>Opintokonaisuuden suoritettuaan opiskelija: </p><ul><li>Hallitsee syventymiskohteensa edellyttämät matemaattiset perustaidot. </li><li>Osaa määritellä joitakin teollisuustalouden keskeisiä käsitteitä ja muodostaa yleiskuvan yritysten prosesseista. </li><li>Tuntee yleisimmät menetelmät ja hyvät tieteelliset käytännöt opinnäytetyön tekemiseen. </li></ul>"
+    },
+    "additionalInfo": null,
+    "tweetText": null,
+    "graded": true,
+    "id": "otm-4535973c-4aa6-4f3f-b560-38e3cbc3baaf",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "targetCredits": {
+        "min": 15,
+        "max": null
+    },
+    "abbreviation": null,
+    "minorStudyRightApplicationInstructions": null,
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ]
+    },
+    "minorStudyRightAcceptanceType": null,
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-verhop",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-tastulav",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-torikkam",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Tietotekniikan yhteiset opinnot",
+        "en": "Joint Studies in Information Technology"
+    },
+    "gradeScaleId": "sis-hyl-hyv",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

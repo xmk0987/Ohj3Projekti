@@ -1,0 +1,62 @@
+{
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "rgsapo@tuni.fi",
+        "modificationOrdinal": 169166493,
+        "createdOn": "2021-01-23T13:50:33.111451",
+        "revision": 16,
+        "lastModifiedOn": "2022-01-14T12:17:52.843161"
+    },
+    "code": null,
+    "groupId": "otm-dfcd98b1-4f28-4095-874f-178413c11869",
+    "name": {
+        "fi": "Vapaasti valittavat opintokokonaisuudet",
+        "en": "Free Choice Study Modules"
+    },
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": true,
+        "description": {
+            "fi": "<p>Valitse vähintään yksi kappale, minimikooltaan 20op laajuinen sivuaine</p>"
+        },
+        "rules": [
+            {
+                "credits": {
+                    "min": 20,
+                    "max": null
+                },
+                "rule": {
+                    "allMandatory": false,
+                    "description": null,
+                    "rules": [
+                        {
+                            "type": "AnyModuleRule",
+                            "localId": "otm-bf0e7a97-ce69-42d6-b42b-d3aa0ba8a959"
+                        }
+                    ],
+                    "require": {
+                        "min": 0,
+                        "max": null
+                    },
+                    "type": "CompositeRule",
+                    "localId": "otm-ab6eaf62-ee4e-490f-9931-1d8e4927e862"
+                },
+                "type": "CreditsRule",
+                "localId": "otm-756ebae5-8128-4fe5-a87b-935236f09059"
+            }
+        ],
+        "require": null,
+        "type": "CompositeRule",
+        "localId": "otm-a997c200-d55f-48bf-861d-58f88b112951"
+    },
+    "id": "otm-dfcd98b1-4f28-4095-874f-178413c11869",
+    "type": "GroupingModule",
+    "documentState": "ACTIVE",
+    "contentFilter": {
+        "studyRightSelectionType": "urn:code:study-right-selection-type:minor-study-right"
+    },
+    "moduleContentApprovalRequired": false,
+    "curriculumPeriodIds": []
+}

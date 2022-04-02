@@ -1,0 +1,241 @@
+{
+    "learningMaterial": null,
+    "possibleAttainmentLanguages": [
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "kolari3@tuni.fi",
+        "modificationOrdinal": 169272769,
+        "createdOn": "2020-12-02T15:53:22.341498",
+        "revision": 34,
+        "lastModifiedOn": "2022-01-17T09:11:02.376193"
+    },
+    "code": "MATH.APP.230",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-47603",
+    "additional": {
+        "fi": "<b>Osasuoritusten pitää liittyä samaan toteutuskertaan.</b><br />",
+        "en": "<b>Partial completions of the course must be carried out during the same implementation round.</b><br />"
+    },
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<h5>Ydinsisältö</h5><ul><li>Gradientti, divergenssi ja roottori ja niihin liittyvät laskusäännöt.</li><li>Viiva ja sen parametrisointi, derivaatta ja sileys, suunnistus ja vastakäyrä ,viivan  pituus, reaaliarvoisen funktion viivaintegraali ja vektorikentän viivaintegraali. Greenin lause ja Gaussin lause tasossa.</li><li>Konservatiivinen vektorikenttä, potentiaalifunktio ja sen etsiminen, peruslause ja riippumattomuus tiestä.</li><li>Pinta ja sen parametrisointi, pinnan pinta-ala, reaaliarvoisen funktion pintaintegraali, pinnan suunnistus ja reunakäyrä, vektorikentän vuo ja Gaussin lause. Stokesin lause</li></ul><h5><br /></h5>",
+        "en": "<h5>Core content</h5><ul><li>Gradient, divergence and curl, and identities containing these operators.</li><li>Curve and its parametrization, derivative and smoothness, orientation of curves, curve length, line integral of a real-valued function and of a vector field. Green&#39;s theorem and two-dimensional divergence theorem.</li><li>Conservative vector field, potential function and how to find it, gradient theorem and path independence.</li><li>Surface and its parametrization, surface area, surface integral of a real-valued function, orientation and border curve of a surface, flux of a vector field and divergence theorem.</li></ul><h5>Complementary knowledge</h5><ul><li>Mass and center of mass of a curve. </li><li>Mass and center of mass of a surface, Stokes&#39; theorem.</li><li>Using a computer program as a tool in solving the exercise problems.</li></ul>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Peruskurssien opintojaksoista ei vaadita suoritusmerkintää, mutta asiat pitää hallita. Usean muuttujan funktioista tarvitaan erityisesti kaksin- ja kolminkertaisia integraaleja.</p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35897",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35899",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "uta-ykoodi-47930",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35899",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35901",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35903",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35913",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-02401 Vektorianalyysi<br /></li><li>Opintojakso/-jaksot (aiempi tai samanaikainen)<br />MAT-02400 Vektorianalyysi<br /></li><li>Tyyppi: Uusi vastaa vanhaa</li></ul>",
+        "en": "<h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-02401 Vektorianalyysi<br /></li><li>Courses (previous or current)<br />MAT-02400 Vektorianalyysi<br /></li><li>Type: One way A-&gt;B</li></ul>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija osaa laskea gradientin, divergenssin ja roottorin sekä ns. nablaussäänntöjä.</p><p>Opiskelija osaa parametrisoida viivoja, laskea reaaliarvoisten ja vektoriarvoisten funktioiden viivaintegraaleja.,</p><p>Opiskleija osaa etsiä  konservatiivisen vektorikentän potentiaalifunktion ja käyttää sitä viivaintegraalin laskemiseen. </p><p>Opiskelija osaa parametrisoida pintoja käyttäen mm. sylinteri- ja pallokoordinaatteja, laskea pinnan normaalivektorin, reaaliarvoisten ja vektoriarvoisten funktioiden pintaintegraaleja, kentän vuon ja käyttää hyväksi Greenin ja Gaussin lauseita. </p><p>Opiskelija tuntee Stokesin lauseen ja sen merkityksen.</p>",
+        "en": "<p>On this course the students learn to calculate the gradient, divergence and curl, and to apply identities containing these operators, especially for spherically symmetric vector fields. The students learn to parametrize curves, calculate line integrals of real- and vector-valued functions, find the potential function of a conservative vector field and use it in calculating the line integral. The students learn to parametrize surfaces using for example cylindrical and spherical coordinates, to find a normal vector to a surface, calculate surface integrals of real- and vector-valued functions, and use the Green theorem and divergence theorem.<br /></p>"
+    },
+    "assessmentItemOrder": [
+        "otm-582ad914-ef00-45e4-a314-38fa7f92d603",
+        "otm-2e9d1001-1b35-4303-ae50-19820a3e3381"
+    ],
+    "tweetText": {
+        "fi": "Vektorikenttään liittyvää laskentaa"
+    },
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-5bb38ecf-584e-40b4-8150-1a42dc8d7473",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-47510",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-582ad914-ef00-45e4-a314-38fa7f92d603",
+                "otm-2e9d1001-1b35-4303-ae50-19820a3e3381"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosanaan yksi (1) yltääkseen opiskelijan tulee tietää viivojen ja pintojen parametrisointiin sekä reaali- ja vektoriarvoisten funktioiden viiva- ja pintaintegraaleihin liittyvät peruskäsitteet. Opiskelija tunnistaa edellä mainittuihin osa-alueisiin liittyvät peruslaskutekniikat ja osaa itsenäisesti laskea esimerkkitehtävien kaltaisia laskutehtäviä. Arvosanaan kolme (3) yltääkseen opiskelijan on osattava soveltaa itsenäisesti opintojakson laskutekniikoita ja suoriuduttava  perustehtävistä sekä hieman haastavammista tehtävistä. Arvosanaan viisi (5) yltääkseen opiskelijan on suoriuduttava kiitettävästi opintojakson tehtävistä ja uusista aihepiiriin kuuluvista tehtävistä.",
+                "en": "In order to pass the study module with grade one (1) the students are expected to identify the main topics and concepts of the module, ie. the parametrizations of curves and surfaces, and the line integrals and surface integrals of real-valued functions and vector fields. They should recognize the calculation techniques of the module and be able to complete easy calculations that are similar to course examples by themselves, and other basic calculations with guidence. For grade three (3) the students are expected to be able to interpret the main topics and concepts of the module, ie. the parametrizations of curves and surfaces, and the line integrals and surface integrals of real-valued functions and vector fields. They should be able to use the calculation techniques by themselves, combine techniques to complete basic calculations and, with help of the course material, solve more advanced problems. For grade five (5) the students are expected to draw connections between the topics and concepts to produce additional information. They are expected to handle the basic calculations with ease and provide verifications to some of the main arguments when it comes to the parametrizations of curves and surfaces, and the line integrals and surface integrals of real-valued functions and vector fields."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "tut-cm-l-81539",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:e_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-laaksone",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "Opintojaksosta vastaava",
+                "en": "primary contact person"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-hirvon23",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Vektorianalyysi",
+        "en": "Vector Calculus"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

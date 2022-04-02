@@ -1,0 +1,258 @@
+{
+    "learningMaterial": {
+        "fi": "<p>Oppimateriaali<br /></p><ul><li>Tyyppi: moniste</li><li>Nimi: Graafialgoritmit<br /></li><li>Tekijä: Frank  Cameron, Henri Hansen<br /></li><li>Tenttimateriaali: kyllä</li><li>Kieli: Suomi</li><li>Lisätieto: opintojakso perustuu tähän monisteeseen</li></ul><p>Oppimateriaali</p><ul><li>Tyyppi: luentovideot</li><li>Tekijä: Frank  Cameron, Henri Hansen<br /></li><li>Tenttimateriaali: ei</li><li>Kieli: Suomi</li><li>Lisätietoja: perustuu pitkälti monisteeseen</li></ul><p>Oppimateriaali</p><ul><li>Tyyppi: luentokalvot</li><li>Tekijä: Frank  Cameron, Henri Hansen<br /></li><li>Tenttimateriaali: kyllä<br /></li><li>Kieli: Suomi</li><li>Lisätietoja: luentovideoissa käytetyt kalvot</li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "kk96127@tuni.fi",
+        "modificationOrdinal": 171059786,
+        "createdOn": "2020-12-04T13:37:54.338599",
+        "revision": 69,
+        "lastModifiedOn": "2022-02-24T10:47:54.746696"
+    },
+    "code": "MATH.APP.270",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-48943",
+    "additional": {
+        "fi": "<b>Osasuoritusten pitää liittyä samaan toteutuskertaan.</b><br />",
+        "en": "<b>Partial completions of the course must be carried out during the same implementation round.</b><br />"
+    },
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics",
+        "Graafialgoritmit",
+        "Algorithms for graphs"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:intermediate-studies",
+    "content": {
+        "fi": "<ul><li><p>Graafiteorian perusteet (polut, komponentit, leikkaukset, näihin liittyvät algoritmit)  </p></li><li><p>Puun käsite (juuri, vanhemmat, lehdet, virittävä puu)  </p></li></ul><ul><li><p>Binäärirelaatiot (sulkeumat, järjestysrelaatiot ja näihin liittyvät algoritmit) </p></li><li><p>Algoritmien oikeellisuuden osoittaminen (invariantti ja induktio) </p></li><li><p>Ongelmien mallintaminen (lyhimmät painotetut polut, virtausongelmat, luokitteluongelmat)  </p></li><li><p>Graafien ja puiden ohjelmalliset esitystavat (kytkentämatriisi, kytkentälista)  </p></li></ul><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+        "en": "<ul><li>Basics of graph theory (paths, components, cuts) </li><li>Trees (root, parets, leaves, spanning trees) <br /></li><li>Binary relations ( closures, order relations and related algorithms)</li><li>Proving algorithm correctness (loop invariants and induction)</li><li>Problem modeling with graphs (shortest path, flow problems, etc) <br /></li><li>Graph and tree presentations (adjacency matrix, adjacency lists, etc)<br /></li></ul>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Jos olet maisterivaiheen opiskelija, niin ei oleta, että olisit suorittanut opintojaksoa MATH.MA.210 Diskreetti matematiikka.</p><p>Suositeltu esitieto: COMP.CS.100 Ohjelmointi 1: Johdatus ohjelmointiin (tai vastaava osaaaminen)<br /></p>"
+    },
+    "categoryTags": [],
+    "literature": [
+        {
+            "name": "Algorithmic Graph Theory and Sage; Tekijät:  David Joyner, Minh Van Nguyen, David Phillips",
+            "type": "LiteratureName",
+            "localId": "3acba501-19b8-4587-a5ca-be4f79b29ddd"
+        },
+        {
+            "type": "LiteratureReference",
+            "localId": "20ea7043-e4f6-4bf9-9a20-fa9c2cd761e3",
+            "url": "https://code.google.com/archive/p/graphbook/"
+        }
+    ],
+    "compulsoryFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-48156",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<p>Opintojakson aikaisempi koodi ja nimi oli MAT-02660 Algoritmimatematiikka 2.<br /></p>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija  pystyy toteamaan relaatioiden ominaisuuksia ja hyödyntämään näitä  graafien avulla esitetyn yksinkertaisen tiedon analysoimiseen.   Esimerkiksi, opiskelija kykenee määrittelemään erilaisia relaatioita graafikäsitteiden avulla. </p><p>Opiskelija pystyy tunnistamaan annetun graafin komponentit, polut, leikkauksen, virittävän puun jne.    Opiskelija\nosaa käyttää algoritmeja, jotka löytävät komponentit, polut, jne</p><p>Opiskelija osaa tunnistaa ja mallintaa tavanomaisimpia ongelmia graafiongelmina ja ymmärtää näiden ongelmien ratkaisemiseen soveltuvien algoritmien toimintaperiaatteet. Esimerkiksi lyhimmän polun löytäminen tai minimaalinen virittävä puu.  </p><p>Opiskelija ymmärtää perusteet algoritmien oikeaksi osoittamisesta, esimerkiksi silmukkainvarianttien ja induktion avulla.   </p>",
+        "en": "<p>The student is able to verify properties of relations and utilize these properties in analysis of information represented as graphs. For example, the student is able to define different relations using graph theory concepts.<br /></p>For a given graph the student can identify the components, paths, cuts, spanning trees etc. The student can use algorithms for identifying components, paths, etc.<br /><br /><p>The student is able to recognize some common problems as graph problems and understands the basics of the algorithms that solve these problems. For example, shortest paths or minimal spanning tree. <br /><br />The student understands how to prove the correctness of an algorithm via induction and loop invariants.<br /></p><p><br /></p>"
+    },
+    "assessmentItemOrder": [
+        "otm-a0c08fe6-91b5-408b-9470-6a23a80e0c2d",
+        "otm-ff40d6b5-0824-4b9b-a7da-21663c636644",
+        "otm-04467bf3-e88f-4ef2-a2e7-bf26b2acec1a"
+    ],
+    "tweetText": {
+        "fi": "Opiskelija oppii käyttämään ja muokamaan jotain graafien algoritmeja.",
+        "en": "The student will learn how to use and modify some graph algorithms."
+    },
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-36a14850-e522-4246-8244-87f5f07f0ab9",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "otm-1e8f1023-1977-4f98-9386-110ef623327b",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-45620",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-04467bf3-e88f-4ef2-a2e7-bf26b2acec1a",
+                "otm-a0c08fe6-91b5-408b-9470-6a23a80e0c2d"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "ARVOSANA 1:      Opiskelija tunnistaa olennaisimmat peruskäsitteet kuten polut, kulut, komponentit ja puut, ja tunnistaa näiden erot esimerkeistä. Opiskelija osaa ratkaista yksinkertaiset ongelmat esimerkkien perusteella ja valita sopivan algoritmin useimpien esitettyjen ongelmien ratkaisemiseen.   Opiskelija osaa lukea pseudokoodia ja yksinkertaisissa tapauksissa tuottaa ohjelmakoodia.        ARVOSANA 3:      Opiskelija tietää miten eri käsitteet eroavat toisistaan teoreettisella ja sovellusten tasolla. Opiskelija tietää useimmat määritelmät, ja osaa nimetä ja tunnistaa sovelluksia, joissa määritelmiä käytetään. Opiskelija tuntee algoritmien oikeellisuuden osoittamisen tekniikat ja tietää miten ne soveltuvat useimpien esitettyjen algoritmien oikeelliseksi osoittamiseen.  Opiskelija osaa tehdä variaatioita annetuista algoritmeista, ja tehdä tarvittavia muutoksia pseudokoodiin ja valita sopivan graafin esitystavan.         ARVOSANA 5:      Opiskelija osaa soveltaa opintojaksolla esitettyjä graafikäsitteitä laajasti. Opiskelija kykenee soveltamaan osaamistaan yleisemmin kuin yksittäisten esimerkkien tasolla. Opiskelija osaa osoittaa oikeaksi paitsi opintojaksolla esitettyjä algoritmeja, myös soveltaa näitä tekniikoita uusissa tilanteissa. Opiskelija osaa tehdä vaativia muutoksia tunnettuihin algoritmeihin ja soveltaa niitä laajasti ja tuottaa niistä pseudokoodia.",
+                "en": "GRADE 1:  The Student recognizes fundamental graph concepts such as paths, components, and trees and can distinguish these from concrete examples.  The student is able to solve simple problems based on examples and able to choose the appropriate algorithms for most tasks.  The student can read pseudocode and in simple cases produce progam code.   GRADE 3: The student knows the differences between different graph concepts both in theory and applications. The student knows most definitions and can name and recognize applications of these definitions.  The student knows the basic techniques for proving an algorithm's correctness.  The student can make minor variations to given algorithms and choose a suitable graph representation for each task.  GRADE 5: The student can apply the course theory extensively. The student is able to apply the course material at a level that is more general than individual examples. The student can prove algorithm correctness for algorithms included in the course and also apply the correctness techniques in novel situations. The student is able to make significant modifications to existing algorithms, to produce the corresponding pseudocode and apply the resulting algorithms."
+            },
+            "description": {
+                "fi": "Tarkaat ohjeet suorittamisesta annetaan toteutuksen Moodle-sivuilla.",
+                "en": "Specific instructions will be given via Moodle."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "9b99d1dc-58d8-4ff1-9900-37e43e4a0137",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-ff40d6b5-0824-4b9b-a7da-21663c636644",
+                "otm-04467bf3-e88f-4ef2-a2e7-bf26b2acec1a",
+                "otm-a0c08fe6-91b5-408b-9470-6a23a80e0c2d"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0",
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "ARVOSANA 1: Opiskelija tunnistaa olennaisimmat peruskäsitteet kuten polut, kulut, komponentit ja puut, ja tunnistaa näiden erot esimerkeistä. Opiskelija osaa ratkaista yksinkertaiset ongelmat esimerkkien perusteella ja valita sopivan algoritmin useimpien esitettyjen ongelmien ratkaisemiseen. Opiskelija osaa lukea pseudokoodia ja yksinkertaisissa tapauksissa tuottaa ohjelmakoodia. ARVOSANA 3: Opiskelija tietää miten eri käsitteet eroavat toisistaan teoreettisella ja sovellusten tasolla. Opiskelija tietää useimmat määritelmät, ja osaa nimetä ja tunnistaa sovelluksia, joissa määritelmiä käytetään. Opiskelija tuntee algoritmien oikeellisuuden osoittamisen tekniikat ja tietää miten ne soveltuvat useimpien esitettyjen algoritmien oikeelliseksi osoittamiseen. Opiskelija osaa tehdä variaatioita annetuista algoritmeista, ja tehdä tarvittavia muutoksia pseudokoodiin ja valita sopivan graafin esitystavan. ARVOSANA 5: Opiskelija osaa soveltaa opintojaksolla esitettyjä graafikäsitteitä laajasti. Opiskelija kykenee soveltamaan osaamistaan yleisemmin kuin yksittäisten esimerkkien tasolla. Opiskelija osaa osoittaa oikeaksi paitsi opintojaksolla esitettyjä algoritmeja, myös soveltaa näitä tekniikoita uusissa tilanteissa. Opiskelija osaa tehdä vaativia muutoksia tunnettuihin algoritmeihin ja soveltaa niitä laajasti ja tuottaa niistä pseudokoodia",
+                "en": "GRADE 1:  The Student recognizes fundamental graph concepts such as paths, components, and trees and can distinguish these from concrete examples.  The student is able to solve simple problems based on examples and able to choose the appropriate algorithms for most tasks.  The student can read pseudocode and in simple cases produce progam code.   GRADE 3: The student knows the differences between different graph concepts both in theory and applications. The student knows most definitions and can name and recognize applications of these definitions.  The student knows the basic techniques for proving an algorithm's correctness.  The student can make minor variations to given algorithms and choose a suitable graph representation for each task.  GRADE 5: The student can apply the course theory extensively. The student is able to apply the course material at a level that is more general than individual examples. The student can prove algorithm correctness for algorithms included in the course and also apply the correctness techniques in novel situations. The student is able to make significant modifications to existing algorithms, to produce the corresponding pseudocode and apply the resulting algorithms."
+            },
+            "description": {
+                "fi": "Tarkat ohjeet suorittamisesta annetaan toteutuksen Moodle-sivuilla",
+                "en": "Specific instructions will be given via Moodle."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "d8775bec-7a03-4bc2-9961-dd79578bddab",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta",
+            "urn:code:custom:tuni-university-root-id:offering-location:pori"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:f_massa",
+            "urn:code:custom:tuni-university-root-id:tentit:l_pori"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-hansen",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-frank",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Graafialgoritmit",
+        "en": "Algorithms for Graphs"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

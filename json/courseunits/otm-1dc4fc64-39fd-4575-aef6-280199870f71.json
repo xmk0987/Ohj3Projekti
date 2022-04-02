@@ -1,0 +1,350 @@
+{
+    "learningMaterial": {
+        "fi": "<h5>Oppimateriaali</h5><ul><li>Tyyppi: Opintomoniste</li><li>Nimi: Kauhanen &amp; Orelma: Differentiaali- ja integraalilaskenta<br /></li><li>Kieli: Suomi</li></ul><h5>Oppimateriaali</h5><ul><li>Tyyppi: Kirja</li><li>Nimi: Calculus 6e, Early Transcendentals, Matrix Version</li><li>Tekijä: Edwards &amp; Penney</li><li>Kieli: Englanti</li></ul>",
+        "en": "<h5>Material</h5><ul><li>Type: Book</li><li>Name: Calculus 6e, Early Transcendentals, Matrix Version</li><li>Author: Edwards &amp; Penney</li><li>Language: English</li><li>Info: Chapters 5, 7, 8 and 10<br /></li></ul>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "tanja@tuni.fi",
+        "modificationOrdinal": 170922533,
+        "createdOn": "2020-12-02T15:53:22.521997",
+        "revision": 87,
+        "lastModifiedOn": "2022-02-21T09:50:31.207781"
+    },
+    "code": "MATH.APP.160",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-35899",
+    "additional": {
+        "fi": "<b>Osasuoritusten pitää liittyä samaan toteutuskertaan.</b>",
+        "en": "<b>Partial completions of the course must be carried out during the same implementation round.</b>"
+    },
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<p>Ydinsisältö </p><ul><li><p>Integraalifunktio ja perusintegroimistekniikat </p></li><li><p>Määrätty integraali ja epäoleellinen integraali </p></li><li><p>1. kertaluvun ja 2. kertaluvun lineaariset differentiaaliyhtälöt </p></li><li><p>1. kertaluvun separoituva differentiaaliyhtälö </p></li></ul><ul><li><p>Lukujonon raja-arvo, kasvavat ja vähenevät lukujonot </p></li><li><p>Sarjat (geometrinen, positiiviterminen, vuorotteleva ja Taylorin sarja) ja niiden suppeneminen </p></li><li><p>Matlabin käyttö opintojakson laskutehtävien ratkomisen tukena </p></li><li><p>Matemaattinen keskustelu </p></li></ul><p>Täydentävä tietämys </p><ul><li><p>Integraalin sovelluksia (esim. pyörähdyskappaleen vaipan ala ja tilavuus sekä käyrän pituus </p></li><li><p>Käytännön ongelmien mallintaminen differentiaaliyhtälöiksi (esim. populaation eksponentiaalinen kasvu) </p></li><li><p>Oman matemaattisen osaamisen arviointi </p></li></ul><p>Erityistietämys </p><ul><li><p>Riemannin summien laskeminen </p></li></ul><ul><li><p>Funktion polynomiapproksimaatio </p></li><li><p>Raja-arvojen ja integraalien laskeminen sarjoja käyttäen </p></li></ul>",
+        "en": "<h5>Core content</h5><ul><li>Antiderivative and basic integration techniques. Proper and improper integrals.</li><li>Ordinary linear differential equations of first and second order. Separable first order differential equations.</li><li>Limit of a sequence, increasing and decreasing sequences.</li><li>Series (geometric, with positive terms, alternating, Taylor series) and their convergence.</li></ul><h5>Complementary knowledge</h5><ul><li>Applications of integration in, e.g., determining areas and volumes of geometrical shapes, and computing the length of a curve.</li><li>Higher  order differential equations. Modeling specific real world problems,  such as growth of populations, with differential equations.</li><li>Approximating a function with a polynomial.</li><li>Using Matlab as a tool in solving the exercise problems.</li></ul><h5>Specialist knowledge</h5><ul><li>Numerical integration, trapezoid rule and Simpson&#39;s formula. Computing the Riemann sums.</li><li>Existence and uniqueness results, matrix notation for linear systems.</li><li>Testing  convergence. Computing limits and integrals using series. Estimating  the error in polynomial approximations of functions.</li></ul>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "en": "<h5>Prerequisite</h5><ul><li>Code: MAT-01130</li><li>Name: Fundamentals of Engineering Mathematics<br /></li><li>ECTS credits: 5</li><li>Mandatory: Mandatory<br /></li></ul><h5>Prerequisite</h5><ul><li>Code: MAT-01230</li><li>Name: Vectors and matrices</li><li>ECTS credits: 5</li><li>Mandatory: Mandatory</li></ul>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35911",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35895",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35921",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35903",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-48159",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-01360 Matematiikka 3<br />MAT-01300 Insinöörimatematiikka X 3<br />MAT-01320 Insinöörimatematiikka B 3<br /></li><li>Opintojakso/-jaksot (aiempi tai samanaikainen)<br />MAT-01330 Insinöörimatematiikka C 3<br /></li><li>Tyyppi: Vastaavat toisiaan</li></ul><h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-01330 Insinöörimatematiikka C 3<br /></li><li>Opintojakso/-jaksot (aiempi tai samanaikainen)<br />MAT-10434 Insinöörimatematiikka D 3u<br />MAT-01310 Insinöörimatematiikka A 3<br />MAT-10433 Insinöörimatematiikka C 3u<br />MAT-10430 Insinöörimatematiikka X 3u<br />MAT-10432 Insinöörimatematiikka B 3u<br />MAT-01320 Insinöörimatematiikka B 3<br />MAT-10431 Insinöörimatematiikka A 3u<br /></li><li>Tyyppi: Vastaavat toisiaan</li></ul>",
+        "en": "<h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-01360 Matematiikka 3<br />MAT-01300 Insinöörimatematiikka X 3<br />MAT-01320 Insinöörimatematiikka B 3<br /></li><li>Courses (previous or current)<br />MAT-01330 Insinöörimatematiikka C 3<br /></li><li>Type: Duplex A&#61;B</li></ul><h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-01330 Insinöörimatematiikka C 3<br /></li><li>Courses (previous or current)<br />MAT-10434 Insinöörimatematiikka D 3u<br />MAT-01310 Insinöörimatematiikka A 3<br />MAT-10433 Insinöörimatematiikka C 3u<br />MAT-10430 Insinöörimatematiikka X 3u<br />MAT-10432 Insinöörimatematiikka B 3u<br />MAT-01320 Insinöörimatematiikka B 3<br />MAT-10431 Insinöörimatematiikka A 3u<br /></li><li>Type: Duplex A&#61;B</li></ul>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opintojakson suoritettuaan opiskelija osaa integroitaessa hyödyntää osittaisintegrointia, sijoituksia ja osamurtokehitelmää sekä tutkia epäoleellisen integraalin suppenemista. Integrointi sujuu sekä käsin laskien että MATLAB:ia hyödyntäen. Opiskelija osaa sekä käsin että MATLAB-ohjelmistolla ratkaista 1. kertaluvun separoituvia ja lineaarisia differentiaaliyhtälöitä, muodostaa 2. kertaluvun homogeenisen lineaarisen yhtälön lineaarisesti riippumattomista ratkaisuista yleisen ratkaisun, ratkaista vakiokertoimisen 2. kertaluvun homogeenisen yhtälön ja hakea määräämättömien kertoimien menetelmällä yksittäisratkaisun epähomogeeniselle yhtälölle. Opiskelija osaa tutkia lukujonon raja-arvon olemassaoloa, laskea geometrisen suppenevan sarjan summan, tutkia positiivitermisen sarjan suppenemista integraalitestillä, vertailuperiaatteella ja suhdetestillä, selvittää potenssisarjan suppenemisvälin, muodostaa funktion Taylorin polynomeja ja yksinkertaisissa tapauksissa Taylorin sarjan. Opiskelija pystyy rakentavasti keskustelemaan matemaattisista aiheista ja tehtävistä muiden kanssa. Opiskelija osaa arvioida omaa matemaattista osaamistaan. </p>",
+        "en": "<p>On this course the students learn basic techniques such as integration \nby parts and changing of integration variables in integration of simple \nfunctions. The students learn to compute antiderivatives of rational \nfunctions and to analyze and compute improper integrals. The students \nalso learn to solve simple separable differential equations, compute \ngeneral solutions of homogeneous second order differential equations \nwith constant coefficients, and to compute the particular solution of a \nnonhomogeneous differential equation using the method of undetermined coefficients After the course the students are capable of analyzing the \nlimit of a sequence, computing the sum of a geometric series, and \ntesting the convergence of a series with positive terms. The students \nalso learn how to determine the interval of convergence of a power \nseries, form Taylor polynomials of functions, and simple Taylor series. \nThe students learn present their solutions orally as well as in written \nform.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-79be1762-21fa-4a6c-a0ff-601362af7913",
+        "otm-f751b580-a10d-43af-8e00-19f09ce80225",
+        "otm-7004873c-996b-4ff0-a24b-ad37b0845f74",
+        "otm-8891408b-0ca3-4d4e-9852-7f3fa0c1567f"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-1dc4fc64-39fd-4575-aef6-280199870f71",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35897",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "uta-ykoodi-47930",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-45326",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-79be1762-21fa-4a6c-a0ff-601362af7913",
+                "otm-8891408b-0ca3-4d4e-9852-7f3fa0c1567f"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arviointiperusteet (samat jokaiselle suoritustavalle):   Arvosanaan yksi (1) yltääkseen opiskelijan tulee tietää integrointiin, differentiaaliyhtälöihin ja sarjoihin liittyvät peruskäsitteet. Opiskelija tunnistaa edellä mainittuihin osa-alueisiin liittyvät laskutekniikat ja osaa itsenäisesti laskea esimerkkitehtävien kaltaisia laskutehtäviä ja suoriutua ohjauksen avulla perustehtävistä. Arvosanaan kolme (3) yltääkseen opiskelijan on ymmärrettävä integrointiin, differentiaaliyhtälöihin ja sarjoihin liittyvät peruskäsitteet ja hänen on osattava soveltaa itsenäisesti opintojakson laskutekniikoita ja suoriuduttava niitä yhdistelemällä esimerkkitehtävien kaltaisista perustehtävistä sekä materiaalia hyödyntäen myös hieman haastavammista tehtävistä. Opiskelijan tulee pystyä keskustelemaan matemaattisista aiheista. Arvosanaan viisi (5) yltääkseen opiskelijan on edellä esitellyn lisäksi pystyttävä itsenäisesti yhdistelemään aihealueita ja käsitteistön avulla päättelemään hänelle itselleen uutta tietoa. Opiskelijan on suoriuduttava kiitettävästi opintojakson perustehtävistä ja pystyttävä perustelemaan integraaleihin, differentiaaliyhtälöihin ja sarjoihin liittyvä perusaines.",
+                "en": "In order to pass the study module with grade one (1) the students are expected to identify the main topics and concepts of the module. They should recognize the calculation techniques of the module and be able to complete easy calculations that are similar to course examples by themselves, and other basic calculations with guidence. For grade three (3) the students are expected to be able to interpret the main topics and concepts of the module. They should be able to use the calculation techniques by themselves, combine techniques to complete basic calculations and, with help of the course material, solve more advanced problems. For grade five (5) the students are expected to draw connections between the topics and concepts to produce additional information. They are expected to handle the basic calculations with ease and provide verifications to some of the main arguments of the subject matter."
+            },
+            "description": {
+                "fi": "Osallistuminen opetukseen, harjoitustehtävät ja tentti.",
+                "en": "Exercises and final exam"
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "tut-cm-l-80346",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-f751b580-a10d-43af-8e00-19f09ce80225"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosanaan yksi (1) yltääkseen opiskelija tulee tietää opintojakson aihealueet ja peruskäsitteet.  Opiskelija tulee tietää ja tunnistaa opintojakson laskutekniikat ja osaa itsenäisesti laskea esimerkkitehtävien kaltaisia laskutehtäviä ja suoriutua ohjauksen avulla perustehtävistä. Arvosanaan kolme (3) yltääkseen opiskelijan on ymmärrettävä opintojakson aihealueet ja käsitteet ja hänen on osattava soveltaa itsenäisesti opintojakson laskutekniikoita ja suoriuduttava niitä yhdistelemällä esimerkkitehtävien kaltaisista perustehtävistä sekä materiaalia hyödyntäen myös hieman haastavammista tehtävistä. Arvosanaan viisi (5) yltääkseen opiskelijan on edellä esitellyn lisäksi pystyttävä itsenäisesti yhdistelemään aihealueita ja käsitteistön avulla päättelemään hänelle itselleen uutta tietoa. Opiskelijan on suoriuduttava kiitettävästi opintojakson perustehtävistä ja pystyttävä perustelemaan opintojakson perusaines.",
+                "en": "In order to pass the study module with grade one (1) the students are expected to identify the main topics and concepts of the module. They should recognize the calculation techniques of the module and be able to complete easy calculations that are similar to course examples by themselves, and other basic calculations with guidence. For grade three (3) the students are expected to be able to interpret the main topics and concepts of the module. They should be able to use the calculation techniques by themselves, combine techniques to complete basic calculations and, with help of the course material, solve more advanced problems. For grade five (5) the students are expected to draw connections between the topics and concepts to produce additional information. They are expected to handle the basic calculations with ease and provide verifications to some of the main arguments of the subject matter."
+            },
+            "description": {
+                "fi": "Osallistuminen opetukseen, harjoitustehtävät, itse- ja vertaisarviointi, ajankäyttösuunnitelma, välinäytöt ja tentti. Tarkemmat ohjeet kurssin Moodle-sivulla.",
+                "en": "Self-learning, exercises, self and peer assessment, personal timetable plan, participation in prime time sessions, exam. Additional information on the Moodle page."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "119e1930-3c76-4ce8-b7e6-6c1b88d64ce5",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-7004873c-996b-4ff0-a24b-ad37b0845f74",
+                "otm-8891408b-0ca3-4d4e-9852-7f3fa0c1567f"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1",
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0",
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosanaan yksi (1) yltääkseen opiskelija tulee tietää opintojakson aihealueet ja peruskäsitteet.  Opiskelija tulee tietää ja tunnistaa opintojakson laskutekniikat ja osaa itsenäisesti laskea esimerkkitehtävien kaltaisia laskutehtäviä ja suoriutua ohjauksen avulla perustehtävistä. Arvosanaan kolme (3) yltääkseen opiskelijan on ymmärrettävä opintojakson aihealueet ja käsitteet ja hänen on osattava soveltaa itsenäisesti opintojakson laskutekniikoita ja suoriuduttava niitä yhdistelemällä esimerkkitehtävien kaltaisista perustehtävistä sekä materiaalia hyödyntäen myös hieman haastavammista tehtävistä. Arvosanaan viisi (5) yltääkseen opiskelijan on edellä esitellyn lisäksi pystyttävä itsenäisesti yhdistelemään aihealueita ja käsitteistön avulla päättelemään hänelle itselleen uutta tietoa. Opiskelijan on suoriuduttava kiitettävästi opintojakson perustehtävistä ja pystyttävä perustelemaan opintojakson perusaines.",
+                "en": "In order to pass the study module with grade one (1) the students are expected to identify the main topics and concepts of the module. They should recognize the calculation techniques of the module and be able to complete easy calculations that are similar to course examples by themselves, and other basic calculations with guidence. For grade three (3) the students are expected to be able to interpret the main topics and concepts of the module. They should be able to use the calculation techniques by themselves, combine techniques to complete basic calculations and, with help of the course material, solve more advanced problems. For grade five (5) the students are expected to draw connections between the topics and concepts to produce additional information. They are expected to handle the basic calculations with ease and provide verifications to some of the main arguments of the subject matter."
+            },
+            "description": {
+                "fi": "Verkkototeutus. Tarkemmat ohjeet kurssin Moodle-sivulla.",
+                "en": "Web implementation. Additional information on the Moodle page."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "e416a69c-b9e7-4478-9b2b-0f91bf7d9c25",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:f_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:elective-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-aliloytt",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-hirvon23",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kangas25",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-vattulai",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kaarakka",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Differentiaali- ja integraalilaskenta",
+        "en": "Differential and Integral Calculus"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

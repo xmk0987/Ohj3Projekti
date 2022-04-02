@@ -1,0 +1,91 @@
+{
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "mkeipa@tuni.fi",
+        "modificationOrdinal": 167226856,
+        "createdOn": "2021-01-25T09:49:14.905618",
+        "revision": 23,
+        "lastModifiedOn": "2021-12-08T14:29:49.168760"
+    },
+    "code": null,
+    "groupId": "otm-11eeddac-ac46-4b72-973d-928b8cdc922c",
+    "name": {
+        "fi": "Pakolliset vaihtoehtoiset opintojaksot",
+        "en": "Optional Compulsory Courses"
+    },
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": true,
+        "description": null,
+        "rules": [
+            {
+                "allMandatory": false,
+                "description": null,
+                "rules": [
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47510",
+                        "type": "CourseUnitRule",
+                        "localId": "70a14d6e-19b9-4c9c-8d2b-98f717ac085c"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47515",
+                        "type": "CourseUnitRule",
+                        "localId": "8a897ee5-7038-4f42-b411-dc8425213034"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47603",
+                        "type": "CourseUnitRule",
+                        "localId": "1cc15351-d5ea-4407-a68c-7892b2d080a7"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-47604",
+                        "type": "CourseUnitRule",
+                        "localId": "33a0e9d4-58a2-4ea0-a175-d7030001bc1a"
+                    },
+                    {
+                        "courseUnitGroupId": "tut-cu-g-48943",
+                        "type": "CourseUnitRule",
+                        "localId": "d7c21efc-1703-4f3f-b6db-dae4ea377383"
+                    },
+                    {
+                        "courseUnitGroupId": "uta-ykoodi-38909",
+                        "type": "CourseUnitRule",
+                        "localId": "54515165-9573-4de3-a433-70d6837f172d"
+                    },
+                    {
+                        "courseUnitGroupId": "uta-ykoodi-33646",
+                        "type": "CourseUnitRule",
+                        "localId": "20996913-4ddd-402a-9e24-0dfe0539be77"
+                    },
+                    {
+                        "courseUnitGroupId": "otm-1e8f1023-1977-4f98-9386-110ef623327b",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-69d6335a-6472-4c1f-be8a-29c72062e88f"
+                    },
+                    {
+                        "courseUnitGroupId": "uta-ykoodi-47933",
+                        "type": "CourseUnitRule",
+                        "localId": "otm-00851352-5f27-4fc4-923e-7c94d87eb60e"
+                    }
+                ],
+                "require": {
+                    "min": 1,
+                    "max": null
+                },
+                "type": "CompositeRule",
+                "localId": "f58a8512-e41e-4ba6-aa9a-f60a2ffe1e53"
+            }
+        ],
+        "require": null,
+        "type": "CompositeRule",
+        "localId": "a2197c93-f9e3-461b-85db-6641cd30ebfd"
+    },
+    "id": "otm-11eeddac-ac46-4b72-973d-928b8cdc922c",
+    "type": "GroupingModule",
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "moduleContentApprovalRequired": false,
+    "curriculumPeriodIds": []
+}

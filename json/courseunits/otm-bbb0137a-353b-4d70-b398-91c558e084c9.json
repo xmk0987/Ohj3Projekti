@@ -1,0 +1,298 @@
+{
+    "learningMaterial": null,
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "kolari3@tuni.fi",
+        "modificationOrdinal": 169272755,
+        "createdOn": "2020-12-02T15:53:22.570054",
+        "revision": 39,
+        "lastModifiedOn": "2022-01-17T09:10:05.437306"
+    },
+    "code": "MATH.APP.220",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "tut-cu-g-47510",
+    "additional": {
+        "fi": "<p>Osasuoritusten pitää liittyä samaan toteutuskertaan.</p>",
+        "en": "<b>Partial completions of the course must be carried out during the same implementation round.</b><br />"
+    },
+    "searchTags": [
+        "Matematiikka",
+        "Mathematics"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<ul><li>Kahden muuttujan reaaliarvoisen funktion kuvaaja ja tasa-arvokäyrät. </li><li>Usean muuttujan reaaliarvoiset funktiot: raja-arvo ja jatkuvuus, osittaisderivaatat, korkeammat osittaisderivaatat, suunnattu derivaatta ja gradientti. </li><li>Derivaattamatriisi ja ketjusääntö.<br /></li><li>Lokaalit ja globaalit ääriarvot.<br /></li><li>Taso- ja avaruusintegraalit. Laskeminen projisoituvissa joukoissa, laskeminen napa-, sylinteri- ja pallokoordinaatteja käyttäen.</li></ul>",
+        "en": "<h5>Core content</h5><ul><li>Real valued functions of several variables:\n Graphs and contour plots of functions of two variables. Limits and \ncontinuity, first and higher order partial derivatives, directed \nderivative and gradient.</li><li>Vector-valued functions of several variables: Derivative matrix and the chain rule.</li><li>Extreme values of a function: Local and global maxima and minima.</li><li>Integrals\n of functions of two and three variables: Computing in vertically and \nhorizontally simple domains, computing using polar, cylinder and \nspherical coordinates.</li></ul><h5>Complementary knowledge</h5><ul><li> Linear approximation and differentiability </li><li>Hessian matrix, Taylor&#39;s formula</li><li>Constrained extremal values and Lagrange&#39;s method.</li><li>Center of mass, improper integrals.</li><li>Using Matlab as a tool in solving the exercise problems.</li></ul><h5>Specialist knowledge</h5><ul><li>A ball, open and closed sets<br /></li><li>General change of variables, mean value theorem and average of a function</li></ul>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Peruskurssien asiat oletetaan osatuiksi, mutta niistä ei tarvitse olla suoritusmerkintää. Esitiedoiksi käyvät listattujen kurssien lisäksi myös aikaisemmat, nimillä Insinöörimatematiikka 1, 2 ja 3 opetetut kurssit.<br /></p>",
+        "en": "<p>The compulsory prerequisite knowledge is differential and integral calculus of one variable real functions, and the fundamentals of matrix algebra (Mathematics 1-3 or similar courses). <br /></p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35897",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35899",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "uta-ykoodi-47930",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35899",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35901",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35903",
+                    "type": "CourseUnit"
+                },
+                {
+                    "courseUnitGroupId": "tut-cu-g-35898",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-41954",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35900",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35912",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35904",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35922",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<h5>Vastaavuus</h5><ul><li>Opintojakso/-jaksot (nykyinen)<br />MAT-02100 Usean muuttujan funktiot</li><li>Tyyppi: Uusi vastaa vanhaa</li></ul>",
+        "en": "<h5>Correspondence</h5><ul><li>Courses (present)<br />MAT-02100 Usean muuttujan funktiot<br /></li><li>Courses (previous or current)<br />MAT-01460 Matematiikka 4<br /></li><li>Type: One way A-&gt;B</li></ul>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija osaa tutkia ja havannollistaa kahden muuttujan reaaliarvoisen funktion käyttäytymistä kuvaajan ja tasa-arvokäyrien avulla.</p><p>Opiskelija ymmärtää usean muuttujan funktion raja-arvon.</p><p>Opiskelija osaa laskea ensimmäisen ja korkeamman kertaluvun osittaisderivaatat, gradientin ja suunnatun derivaatan sekä hakea lokaaleja ja globaaleja ääriarvoja. </p><p>Opiskelija osaa muodostaa vektoriarvoisen funktion derivaattamatriisin ja käyttää ketjusääntöä. </p><p>Opiskelija osaa laskea taso- ja avaruusintegraaleja projisoituvissa joukoissa ja käyttää integroinnissa napa-, sylinteri- ja pallokoordinaatteja. </p><p>Opiskelija osaa esittää ratkaisunsa sekä suullisesti että kirjallisesti.</p>",
+        "en": "<p>On this course the students learn to study and visualize the behaviour \nof a real valued function of two variables using its graphs and contour \nplots, compute limits of multivariable functions, compute first \nand higher order partial derivatives, gradients and directed \nderivatives, and to find local and global maxima of functions. The \nstudents learn to form the derivative matrix of a vector-valued function\n and to use the chain rule of differentiation. The students learn how to \ncompute integrals of real-value functions of two and three variables \nusing cartesian, polar, cylinder and spherical coordinates. The students\n learn how to justify their claims using mathematical methods and to \npresent their solutions orally as well as in written form.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-c201ea35-86a7-4004-9e4a-7cfcfbb69ded",
+        "otm-fc7d6b22-c7b4-4026-a48a-f19020d232e9",
+        "otm-59681fff-717b-4677-93c2-54d46c9d7ef0",
+        "otm-d606caf6-1a63-49b4-bcf4-50b9433eea80"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-bbb0137a-353b-4d70-b398-91c558e084c9",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-fc7d6b22-c7b4-4026-a48a-f19020d232e9",
+                "otm-c201ea35-86a7-4004-9e4a-7cfcfbb69ded"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/1"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosanaan yksi (1) yltääkseen opiskelijan tulee tietää usean muuttujan funktioiden kuvaajiin, raja-arvoihin, osittaisderivaattoihin ja ääriarvoihin sekä taso- ja avaruusintegraaleihin liittyvät peruskäsitteet. Opiskelija tunnistaa edellä mainittuihin osa-alueisiin liittyvät peruslaskutekniikat ja osaa itsenäisesti laskea esimerkkitehtävien kaltaisia laskutehtäviä ja suoriutua ohjauksen avulla perustehtävistä. Arvosanaan kolme (3) yltääkseen opiskelijan on ymmärrettävä usean muuttujan funktioiden kuvaajiin, raja-arvoihin, osittaisderivaattoihin ja ääriarvoihin sekä taso- ja avaruusintegraaleihin liittyvät peruskäsitteet ja hänen on osattava soveltaa itsenäisesti opintojakson laskutekniikoita ja suoriuduttava niitä yhdistelemällä esimerkkitehtävien kaltaisista perustehtävistä sekä materiaalia hyödyntäen myös hieman haastavammista tehtävistä. Opiskelijan tulee pystyä keskustelemaan matemaattisista aiheista. Arvosanaan viisi (5) yltääkseen opiskelijan on edellä esitellyn lisäksi pystyttävä itsenäisesti yhdistelemään aihealueita ja käsitteistön avulla päättelemään hänelle itselleen uutta tietoa. Opiskelijan on suoriuduttava kiitettävästi opintojakson perustehtävistä ja pystyttävä perustelemaan usean muuttujan funktioiden kuvaajiin, raja-arvoihin, osittaisderivaattoihin ja ääriarvoihin sekä taso- ja avaruusintegraaleihin liittyvä perusaines.",
+                "en": "In order to pass the study module with grade one (1) the students are expected to identify the main topics and concepts of the module, ie. the graphs, limits, partial derivatives and extrema of multivariable functions, and double and triple integrals. They should recognize the calculation techniques of the module and be able to complete easy calculations that are similar to course examples by themselves, and other basic calculations with guidence. For grade three (3) the students are expected to be able to interpret the main topics and concepts of the module, ie. the graphs, limits, partial derivatives and extrema of multivariable functions, and double and triple integrals. They should be able to use the calculation techniques by themselves, combine techniques to complete basic calculations and, with help of the course material, solve more advanced problems. For grade five (5) the students are expected to draw connections between the topics and concepts to produce additional information. They are expected to handle the basic calculations with ease and provide verifications to some of the main arguments when it comes to the graphs, limits, partial derivatives and extrema of multivariable functions, or double and triple integrals."
+            },
+            "description": {
+                "fi": "Opetus on suomenkielinen.",
+                "en": "This is only in Finnish"
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "tut-cm-l-81538",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-59681fff-717b-4677-93c2-54d46c9d7ef0",
+                "otm-d606caf6-1a63-49b4-bcf4-50b9433eea80"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosanaan yksi (1) yltääkseen opiskelijan tulee tietää usean muuttujan funktioiden kuvaajiin, raja-arvoihin, osittaisderivaattoihin ja ääriarvoihin sekä taso- ja avaruusintegraaleihin liittyvät peruskäsitteet. Opiskelija tunnistaa edellä mainittuihin osa-alueisiin liittyvät peruslaskutekniikat ja osaa itsenäisesti laskea esimerkkitehtävien kaltaisia laskutehtäviä ja suoriutua ohjauksen avulla perustehtävistä. Arvosanaan kolme (3) yltääkseen opiskelijan on ymmärrettävä usean muuttujan funktioiden kuvaajiin, raja-arvoihin, osittaisderivaattoihin ja ääriarvoihin sekä taso- ja avaruusintegraaleihin liittyvät peruskäsitteet ja hänen on osattava soveltaa itsenäisesti opintojakson laskutekniikoita ja suoriuduttava niitä yhdistelemällä esimerkkitehtävien kaltaisista perustehtävistä sekä materiaalia hyödyntäen myös hieman haastavammista tehtävistä. Opiskelijan tulee pystyä keskustelemaan matemaattisista aiheista. Arvosanaan viisi (5) yltääkseen opiskelijan on edellä esitellyn lisäksi pystyttävä itsenäisesti yhdistelemään aihealueita ja käsitteistön avulla päättelemään hänelle itselleen uutta tietoa. Opiskelijan on suoriuduttava kiitettävästi opintojakson perustehtävistä ja pystyttävä perustelemaan usean muuttujan funktioiden kuvaajiin, raja-arvoihin, osittaisderivaattoihin ja ääriarvoihin sekä taso- ja avaruusintegraaleihin liittyvä perusaines.",
+                "en": "In order to pass the study module with grade one (1) the students are expected to identify the main topics and concepts of the module, ie. the graphs, limits, partial derivatives and extrema of multivariable functions, and double and triple integrals. They should recognize the calculation techniques of the module and be able to complete easy calculations that are similar to course examples by themselves, and other basic calculations with guidence. For grade three (3) the students are expected to be able to interpret the main topics and concepts of the module, ie. the graphs, limits, partial derivatives and extrema of multivariable functions, and double and triple integrals. They should be able to use the calculation techniques by themselves, combine techniques to complete basic calculations and, with help of the course material, solve more advanced problems. For grade five (5) the students are expected to draw connections between the topics and concepts to produce additional information. They are expected to handle the basic calculations with ease and provide verifications to some of the main arguments when it comes to the graphs, limits, partial derivatives and extrema of multivariable functions, or double and triple integrals."
+            },
+            "description": {
+                "fi": "Toteutus on englanninkielellä",
+                "en": "This is in english."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "833296be-7695-4e10-9a27-8e4c95a400d8",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": "UMF",
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:d_massa",
+            "urn:code:custom:tuni-university-root-id:tentit:f_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-laaksone",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "suomenkielisestä toteutuksesta vastaava",
+                "en": "Contact person for the Finnish language implementation"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-hirvon23",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "opintojakson englanninkielisen toteutuksen yhteyshenkilö",
+                "en": "Contact person for the English language implementation"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Usean muuttujan funktiot",
+        "en": "Multivariable Calculus"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

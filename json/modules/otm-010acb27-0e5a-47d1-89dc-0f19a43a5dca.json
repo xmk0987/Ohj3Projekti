@@ -1,0 +1,129 @@
+{
+    "possibleAttainmentLanguages": [
+        "urn:code:official-language:fi",
+        "urn:code:official-language:en"
+    ],
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "torikkam@tuni.fi",
+        "modificationOrdinal": 155400807,
+        "createdOn": "2021-01-20T16:44:20.368002",
+        "revision": 27,
+        "lastModifiedOn": "2021-06-10T11:48:42.537223"
+    },
+    "code": "COMP-M03",
+    "studyRightSelectionType": "urn:code:study-right-selection-type:none",
+    "groupId": "otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca",
+    "searchTags": [],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "credits": {
+            "min": 0,
+            "max": null
+        },
+        "rule": {
+            "allMandatory": false,
+            "description": {
+                "fi": "<p>Täydennä opinnot 120 op laajuuteen</p>"
+            },
+            "rules": [
+                {
+                    "type": "AnyCourseUnitRule",
+                    "localId": "otm-a857f544-0ef9-47f1-9f3f-d0b4b6d4d682"
+                },
+                {
+                    "type": "ModuleRule",
+                    "moduleGroupId": "tut-sm-g-3707",
+                    "localId": "otm-2ceb86f8-2003-4636-bf35-441f70c02f48"
+                }
+            ],
+            "require": {
+                "min": 0,
+                "max": null
+            },
+            "type": "CompositeRule",
+            "localId": "otm-acbf64be-f41e-44dd-8b72-d78bf9b25754"
+        },
+        "type": "CreditsRule",
+        "localId": "otm-0f7b90e1-2f15-4055-99f3-0a5c7f4d1a74"
+    },
+    "studyLevel": "urn:code:study-level:other-studies",
+    "type": "StudyModule",
+    "moduleContentApprovalRequired": false,
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": null,
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "substitutions": null,
+    "contentDescription": {
+        "fi": "<p>Tietotekniikan DI-tutkinnon vapaasti valittavat opintojaksot. Opintojaksoilla täydennetään tutkinto vähintään 120op laajuiseksi.</p>"
+    },
+    "outcomes": null,
+    "additionalInfo": null,
+    "tweetText": null,
+    "graded": true,
+    "id": "otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca",
+    "studyFields": [
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "targetCredits": {
+        "min": 0,
+        "max": null
+    },
+    "abbreviation": null,
+    "minorStudyRightApplicationInstructions": null,
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1180"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": []
+    },
+    "minorStudyRightAcceptanceType": null,
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-torikkam",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-verhop",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "otm-d9b3be84-4879-4666-b0c1-653c3ea03011",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Vapaasti valittavat opintojaksot",
+        "en": "Free Choice Course Units"
+    },
+    "gradeScaleId": "sis-hyl-hyv",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

@@ -1,0 +1,270 @@
+{
+    "learningMaterial": null,
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "lehtelah@tuni.fi",
+        "lastModifiedBy": "kolari3@tuni.fi",
+        "modificationOrdinal": 169272701,
+        "createdOn": "2020-12-02T15:53:22.458800",
+        "revision": 48,
+        "lastModifiedOn": "2022-01-17T09:09:00.510862"
+    },
+    "code": "MATH.APP.210",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "uta-ykoodi-47933",
+    "additional": null,
+    "searchTags": [
+        "Tilastotiede"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<p>Todennäköisyyden käsite, todennäköisyyslaskennan laskusääntöjä, ehdollisen todennäköisyyden ja riippumattomuuden käsitteet, kokonaistodennäköisyyden ja Bayesin kaavat. Satunnaismuuttujan käsite, todennäköisyysjakauma ja kertymäfunktio, satunnaismuuttujan sijainti- ja vaihtelumittoja, diskreettejä ja jatkuvia jakaumia, Keskeinen raja-arvolause. Todennäköisyysotanta, piste-estimointi, väliestimointi, merkitsevyystestaus. </p>",
+        "en": "<p>Rules and axioms of probability theory, <br />the probability distribution of a discrete and continuous random variable,<br />density and cumulative distribution function,<br />expected value, variance, and standard deviation,<br />uniform distributions, Bernoulli, binomial, and Poisson distributions, <br />normal distribution, t-, F- and chi^2 distributions,<br />joint probability distribution, covariance, correlation,<br />random sample, sample statistic, and distribution of the statistic,<br />point and confidence interval estimation,<br />principles of hypotheses testing,<br />estimation and testing under Bernoulli and normal distributions.</p>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Pakolliset esitiedot: Lukion matematiikka tai vastaava osaaminen.</p><p><br /></p><p>Suositellut esitiedot  (jokin alla olevista tai vastaava osaaminen):</p><p>MATH.APP.111 Analyysin peruskurssi </p><p>TAI </p><p>MATH.APP.160    Differentiaali- ja integraalilaskenta </p><p>TAI </p><p>DATA.STAT.110    Tilastotieteen johdantokurssi </p>",
+        "en": "<p>Compulsory prerequisites: High school mathematics or equivalent.</p><p>Recommended prerequisites (any of the below or equivalent):<br />Fundamentals of Engineering Mathematics,<br />Differential and Integral Calculus,<br />OR<br />Basic concepts of Mathematics,<br />Introduction to Analysis or Analysis for Teachers,<br />OR<br />Bachelor of Engineering - University of Applied Sciences,<br />Fundamentals of Differential and Integral Calculus,<br />OR<br />Introduction to Statistics.</p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35905",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47598",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47597",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-48942",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47599",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47596",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-42086",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47600",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "uta-ykoodi-33645",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<p>Tämä opintojakso korvaa aikaisemman opintojakson MAT-02500 Todennäköisyyslaskenta, MAT-015x0 Insinöörimatematiikka 5, MAT-01560 Matematiikka 5 </p><p>TAI opintojakson MTTTP5 Tilastollisen päättelyn perusteet TAI MTTTP4 Todennäköisyyslaskenta (keskustakampuksen aiempi jakso).<br /></p><p><br /></p><p><br /></p>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija ymmärtää, mitä todennäköisyydellä tarkoitetaan ja osaa laskea todennäköisyyksiä. Opiskelija ymmärtää satunnaismuuttujan ja sen toteuman eron sekä todennäköisyysjakauman ja kertymäfunktion käsitteet ja erot jatkuvassa ja diskreetissä tilanteessa. Opiskelija hallitsee tärkeimmät todennäköisyysjakaumat ja keskeisen raja-arvolauseen. Opiskelija ymmärtää, mitä tarkoitetaan todennäköisyysotannalla, piste-estimoinnilla, väliestimoinnilla ja merkitsevyystestauksella. Opiskelija  kokee opiskellun teorian empiirisesti relevantiksi. Opiskelija osaa  soveltaa kurssilla tarkasteltuja menetelmiä tilastollisella  ohjelmistolla. </p>",
+        "en": "<p>In this course, the student learns the basic rules of calculating the probabilities and the basics of combinatorics. He or she understands the concept of a random variable and knows the properties of expectation and variance. The student is familiar with the most often used discrete and continuous probability distributions and is able to perform probability calculations under these distributions. The student understands the concept of joint probability distribution and knows the properties of covariance and correlation. The student obtains an understanding how random sampling is used in statistical inference, and why the concept of sample statistic and the distribution of the statistic are important in inference. The student learns the basic principles of estimation and hypothesis testing theory and is able to calculate confidence interval estimates and to perform statistical hypotheses testing especially in situations of one and two groups. The student understands the limitations of the testing theory and is able to calculate different effect size measures. </p>"
+    },
+    "assessmentItemOrder": [
+        "otm-8a37c4f8-8e47-4644-813b-26a1669bc127",
+        "otm-072ac271-8888-4c76-a799-2ab8682a5a77"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-9dea0dfa-9475-4f20-8212-9e8c4df718cf",
+    "studyFields": [
+        "urn:code:study-field:okm-6"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-8a37c4f8-8e47-4644-813b-26a1669bc127",
+                "otm-072ac271-8888-4c76-a799-2ab8682a5a77"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                },
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosana 1: Opiskelija ymmärtää teorian pääosin ja osaa jossain määrin soveltaa oppimaansa. Arvosana 3: Opiskelija hallitsee teorian hyvin, tunnistaa sopivan jakauman tai menettelyn eri tilanteisiin, osaa tulkita tilasto-ohjelmiston tuloksia ja osaa soveltaa oppimaansa. Arvosana 5: Opiskelija hallitsee teorian erittäin hyvin, tunnistaa sopivan jakauman tai menettelyn eri tilanteisiin, tulkitsee tilasto-ohjelmiston tuloksia sujuvasti ja osaa soveltaa oppimaansa visaisissakin tilanteissa."
+            },
+            "description": {
+                "fi": "Osallistuminen opetukseen, harjoitustehtävät ja tentti.",
+                "en": "Participation in teaching, exercices and exam."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "choice0",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta",
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta"
+        ],
+        "urn:code:custom:tuni-university-root-id:strategic-themes": [],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:b_elexam"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:elective-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:joo-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:international-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:upper-secondary-school-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-a385877",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lupepe",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-vattulai",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-as99553",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-aliloytt",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Johdatus todennäköisyyslaskentaan ja tilastolliseen päättelyyn",
+        "en": "Introduction to Probability and Statistical Inference"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

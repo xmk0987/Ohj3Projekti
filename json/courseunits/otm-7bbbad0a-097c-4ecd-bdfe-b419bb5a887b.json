@@ -1,0 +1,176 @@
+{
+    "learningMaterial": null,
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "csheri@tuni.fi",
+        "lastModifiedBy": "salo6@tuni.fi",
+        "modificationOrdinal": 170448577,
+        "createdOn": "2020-12-08T11:22:53.179012",
+        "revision": 67,
+        "lastModifiedOn": "2022-02-09T08:49:26.702114"
+    },
+    "code": "ITC.CEE.800",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "otm-7bbbad0a-097c-4ecd-bdfe-b419bb5a887b",
+    "additional": null,
+    "searchTags": [],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:other-studies",
+    "content": {
+        "fi": "<p>Opintojaksossa on neljä erillistä osaa:<br />1. Tutkimusmenetelmät (3 op), online-kurssi, jossa opiskelellaan perusteita tutkimuksen teosta<br />2. Hyvä tieteellinen käytäntö (1 op), online-kurssi<br />3. Tiedonhankintataidot, kirjaston järjestämä osuus, (0 op), jonka osaamistavoitteet: Opiskelija osaa nimetä oman alansa keskeiset tiedonlähteet ja hakea niistä systemaattisesti tietoa omasta aiheestaan. ​ Opiskelija osaa arvioida kriittisesti löytämäänsä tietoa ja käyttää sitä eettisesti opinnäytetyöskentelyssä.<br />4. Esityksen pito ja seuraaminen (1 op), jossa oppilas esittelee omaa opinnäytetyötään ja seuraa muiden esityksiä<br /></p><p>Kolme ensimmäistä osaa ja muiden esitysten seuraaminen suositellaan suoritettavaksi ennen opinnäytetyön aloittamista.<br /></p>",
+        "en": "<p>The course has four separate parts:</p><p>- basics of research methods, online course</p><p>- research ethics, online course <br /></p><p>- information searching skills, offered by the library: The student will be able to name specific information sources in their field and systematically search for information. The student can evaluate information critically and use it ethically as a part of a thesis.</p><p>- thesis seminar, where the student presents his / her own thesis and follows the presentations of others.</p><p>\n\nIt is recommended to complete the first three parts and to follow the other presentations before starting the thesis.</p>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": null,
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": null,
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija<br />- tuntee yleisimmät opinnäytetöissä tarvittavat menetelmät<br />- tuntee hyvän tieteellisen käytännön<br />- osaa etsiä tietoa eri lähteistä<br />- osaa esittää oman työnsä tulokset.<br /></p><p><br /></p>",
+        "en": "The student<br />- knows the most common methods needed in theses<p>- is familiar with good scientific practice<br />- can search for information from different sources<br />- is able to present the results of his / her own work.</p>"
+    },
+    "assessmentItemOrder": [
+        "otm-a8a91772-72a4-4f72-b798-95d0ae466c4d",
+        "otm-f92829e0-f424-47cb-bf11-eabf34ea4d18",
+        "otm-138b6965-9365-4e26-a455-fe796c6a882a",
+        "otm-cadff57c-3cd6-456b-987f-f29ce5fe9bb2"
+    ],
+    "tweetText": {
+        "fi": "tutkimusmenetelmät, hyvä tieteellinen käytäntö, opinnäytteen esittely",
+        "en": "research methods, good scientific practice, thesis presentation"
+    },
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-7bbbad0a-097c-4ecd-bdfe-b419bb5a887b",
+    "studyFields": [
+        "urn:code:study-field:okm-7"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-a8a91772-72a4-4f72-b798-95d0ae466c4d",
+                "otm-f92829e0-f424-47cb-bf11-eabf34ea4d18",
+                "otm-138b6965-9365-4e26-a455-fe796c6a882a",
+                "otm-cadff57c-3cd6-456b-987f-f29ce5fe9bb2"
+            ],
+            "prerequisites": null,
+            "repeats": [],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": null,
+            "description": {
+                "fi": "Eri osa-alueet suositellaan suoritettavan eri aikoina. Esityksen pito ja seuraaminen, kun opinnäyteprosessi on loppupuolella, muut kun opinnäytetyö on suunnitteilla.",
+                "en": "It is recommended that different areas be completed at different times. Holding a presentation and monitoring of the thesis is the end of the process, the others when the thesis is planned."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "e3c2a8e4-a53c-4ebe-a5ed-e9d924b21f36",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta",
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta"
+        ],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1180",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1165",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:timy",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1242",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1262",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:csm"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:a_noexam"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students-of-the-programme-only"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-cstati",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-hmj",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": {
+                "fi": "OPS-työ"
+            }
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-csheri",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-esso",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-salo6",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-nurmi",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-repo",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Teesien työkalut",
+        "en": "Tools for theses"
+    },
+    "gradeScaleId": "sis-hyl-hyv",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

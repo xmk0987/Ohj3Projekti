@@ -1,0 +1,214 @@
+{
+    "learningMaterial": {
+        "fi": "<p>Vahvistetaan opintojakson kotisivulla.</p>"
+    },
+    "possibleAttainmentLanguages": [
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "as99553@tuni.fi",
+        "lastModifiedBy": "as99553@tuni.fi",
+        "modificationOrdinal": 163045239,
+        "createdOn": "2021-02-22T16:15:46.581614",
+        "revision": 21,
+        "lastModifiedOn": "2021-09-28T07:32:43.227254"
+    },
+    "code": "DATA.STAT.120",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "uta-ykoodi-38909",
+    "additional": null,
+    "searchTags": [
+        "Matematiikka, Mathematics",
+        "Tilastotiede"
+    ],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:intermediate-studies",
+    "content": {
+        "fi": "<p>Lineaarinen regressioanalyysi, yksi- ja kaksisuuntainen varianssianalyysi, logistinen regressioanalyysi, mallien vertailu, eri tilastolliset menetelmät, mallinnus tilastollisen ohjelmiston avulla. </p>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Suositellut esitiedot tai vastaavat tiedot.</p>"
+    },
+    "categoryTags": [],
+    "literature": [],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47512",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-35915",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": {
+        "fi": "<p>Tällä opintojaksolla voi korvata MAT-02510 Tilastomatematiikan jatkurssi-opintojakson.</p>"
+    },
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Opiskelija ymmärtää lineaarisen regressiomallin, yksi- ja kaksisuuntaisen varianssianalyysin sekä logistisen regressiomallin käsitteet. Opiskelija osaa tulkita ja soveltaa niitä sekä muita kurssilla esiteltyjä tilastollisia menetelmiä. Opiskelija kokee opiskellun teorian empiirisesti relevantiksi. Opiskelija osaa soveltaa kurssilla tarkasteltuja malleja ja menetelmiä tilastollisella ohjelmistolla. </p>"
+    },
+    "assessmentItemOrder": [
+        "otm-b1420a97-5dc2-4219-a4a6-12eb07853ebe",
+        "otm-2c3bff7d-72c9-41d2-9cb9-2b807363c59e"
+    ],
+    "tweetText": null,
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-ba68eb2e-7db2-4044-be84-4b47d573d1f1",
+    "studyFields": [
+        "urn:code:study-field:okm-6"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "uta-ykoodi-38905",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "uta-ykoodi-47933",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-b1420a97-5dc2-4219-a4a6-12eb07853ebe",
+                "otm-2c3bff7d-72c9-41d2-9cb9-2b807363c59e"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/0"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosana 1: Opiskelija ymmärtää teorian pääosin ja osaa jossain määrin soveltaa oppimaansa.  Arvosana 3: Opiskelija hallitsee teorian hyvin, tunnistaa sopivan menetelmän eri tilanteisiin, osaa tulkita tilas-to-ohjelmiston tuloksia ja osaa soveltaa oppimaansa. Arvosana 5: Opiskelija hallitsee teorian erittäin hyvin, tunnistaa sopivan menetelmän eri tilanteisiin, tulkitsee tilasto-ohjelmiston tuloksia sujuvasti ja osaa soveltaa oppimaansa visaisissakin tilanteissa."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "choice0",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-2c3bff7d-72c9-41d2-9cb9-2b807363c59e"
+            ],
+            "prerequisites": null,
+            "repeats": [],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosana 1: Opiskelija ymmärtää teorian pääosin ja osaa jossain määrin soveltaa oppimaansa.  Arvosana 3: Opiskelija hallitsee teorian hyvin, tunnistaa sopivan menetelmän eri tilanteisiin, osaa tulkita tilas-to-ohjelmiston tuloksia ja osaa soveltaa oppimaansa. Arvosana 5: Opiskelija hallitsee teorian erittäin hyvin, tunnistaa sopivan menetelmän eri tilanteisiin, tulkitsee tilasto-ohjelmiston tuloksia sujuvasti ja osaa soveltaa oppimaansa visaisissakin tilanteissa."
+            },
+            "description": {
+                "fi": "Pyydä luennoitsijalta pääsyä kurssin Moodle-alueelle."
+            },
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "choice1",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": "MTTTA1",
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta"
+        ],
+        "urn:code:custom:tuni-university-root-id:strategic-themes": [],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [
+            "urn:code:custom:tuni-university-root-id:degree-programmes:mtta"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:k_massa",
+            "urn:code:custom:tuni-university-root-id:tentit:f_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:elective-studies",
+            "urn:code:custom:tuni-university-root-id:offering-information:joo-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:tampere3-cross-institutional-studies"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-a385877",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lupepe",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kangas25",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-as99553",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Tilastollisten menetelmien perusteet",
+        "en": "Introduction to Statistical Methods"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

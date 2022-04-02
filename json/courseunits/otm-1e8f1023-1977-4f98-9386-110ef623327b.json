@@ -1,0 +1,277 @@
+{
+    "learningMaterial": null,
+    "possibleAttainmentLanguages": [
+        "urn:code:language:en",
+        "urn:code:language:fi"
+    ],
+    "metadata": {
+        "createdBy": "as99553@tuni.fi",
+        "lastModifiedBy": "kolari3@tuni.fi",
+        "modificationOrdinal": 169277334,
+        "createdOn": "2020-12-07T09:21:48.765524",
+        "revision": 68,
+        "lastModifiedOn": "2022-01-17T09:39:08.037745"
+    },
+    "code": "MATH.MA.210",
+    "subject": null,
+    "cefrLevel": null,
+    "groupId": "otm-1e8f1023-1977-4f98-9386-110ef623327b",
+    "additional": null,
+    "searchTags": [],
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "studyLevel": "urn:code:study-level:basic-studies",
+    "content": {
+        "fi": "<p>Lyhyesti: logiikkaa, joukot, funktiot, relaatiot, induktio ja rekursio, kombinatoriikkaa, modulaariaritmetiikkaa, permutaatio- ja symmetriaryhmät </p><p>Tarkemmin:  </p><p>1. Joukko-oppi, logiikka ja looginen päättely: Joukko-opin ja logiikan peruskäsitteet ja operaatiot, indeksöidyt yhdisteet ja leikkaukset, todistamista sekä looginen päättelyjärjestelmä.   </p><p>2. Relaatiot ja funktiot, ekvivalenssirelaatio, bijektio, joukkojen mahtavuus.  </p><p>3. Kombinatoriikka: peruskäsitteet, summa-, tulo- ja kyyhkyslakkaperiaate.   </p><p>4. Modulaariaritmetiikka: kongruessin käsite ja modulaariyhtälön ratkaiseminen.  </p><p>5. Ryhmät ja permutaatiot: permutaatiot transpositioiden tulona ja permutaation etumerkki, permutaatio- ja symmetriaryhmät, permutaatioryhmien manipulointi. </p>",
+        "en": "<p>Briefly: logic, set theory, functions, relations, induction and recursion, combinatorics, modular artihmetics, permutation groups and symmetric groups </p><p>  </p><p>In more detail:  </p><ol><li><p>Set theory and logic: basic concepts and operations in set theory and logic, proof techniques and logical inference, induction and recursion</p></li><li><p>Relations and functions, equivalence relation, bijection, cardinality</p></li><li><p>Combinatorics: basic concepts, multiplication principle, inclusion-exclusion principle and pigeonhole principle</p></li><li><p>Number theory: congruences, modular arithmetics</p></li><li><p>Permutations and group theory: permutation as combination of transpositions, sign of a permutation, permutation groups and symmetry groups. <br /></p></li></ol>"
+    },
+    "validityPeriod": {
+        "startDate": "2021-08-01"
+    },
+    "prerequisites": {
+        "fi": "<p>Pakollinen esitieto: lukion pitkän matematiikan sisältö. Opintojaksoa ei suositella ensimmäiseksi matematiikan opintojaksoksi yliopistotasolla. Suositeltavaa on opiskella ainakin joko Johdatus yliopistomatematiikkaan tai Analyysin peruskurssi ennen tätä opintojaksoa. </p>",
+        "en": "<p>Mandatory prerequisities: high school mathematics, long course. This course is not recommended to be taken as the first mathematics course at university level. The students are advised to study at least Introductory Calculus first. </p>"
+    },
+    "categoryTags": [],
+    "literature": [
+        {
+            "name": "Kenneth Rosen: Discrete mathematics and applications",
+            "type": "LiteratureName",
+            "localId": "7d540376-2445-4808-a37a-3fd3ee12db33"
+        },
+        {
+            "name": "Richard Hammack: Book of Proof",
+            "type": "LiteratureName",
+            "localId": "6f13ba43-172e-4573-af2b-6ed5b8d8b10c"
+        },
+        {
+            "name": "Oscar Levin: Discrete Mathematics",
+            "type": "LiteratureName",
+            "localId": "674f7c8b-a66a-41e3-942e-85813f3eb17d"
+        },
+        {
+            "name": "James Hein: Discrete Mathematics.",
+            "type": "LiteratureName",
+            "localId": "fedfdaea-5c46-4d76-9341-942fb045bd2b"
+        }
+    ],
+    "compulsoryFormalPrerequisites": [],
+    "substitutions": [
+        [
+            {
+                "courseUnitGroupId": "tut-cu-g-47513",
+                "credits": null
+            }
+        ],
+        [
+            {
+                "courseUnitGroupId": "uta-ykoodi-38882",
+                "credits": null
+            }
+        ]
+    ],
+    "organisations": [
+        {
+            "validityPeriod": {},
+            "organisationId": "tuni-org-1010000001",
+            "roleUrn": "urn:code:organisation-role:responsible-organisation",
+            "share": 1,
+            "educationalInstitutionUrn": null
+        }
+    ],
+    "equivalentCoursesInfo": null,
+    "credits": {
+        "min": 5,
+        "max": 5
+    },
+    "outcomes": {
+        "fi": "<p>Kurssin suoritettuaan opiskelija  <br />- ymmärtää matemaattisen todistamisen idean ja tarpeellisuuden ja osaa hyödyntää päättelyjärjestelmää päättelyssä.  <br />- tuntee joukko-opin alkeet sekä funktioiden ja relaatioiden perusominaisuudet  <br />- on omaksunut keskeiset matemaattiset merkinnät  <br />- hallitsee kombinatoriikan perusteet, kokonaislukujen perusominaisuudet ja modulaariaritmetiikan  <br />- osaa manipuloida permutaatioryhmiä  </p>"
+    },
+    "assessmentItemOrder": [
+        "otm-b01a10d1-954b-499c-8704-90aae2a4a0e1",
+        "otm-0ffc28c2-d3d2-478a-affe-02ebfe8c8a93",
+        "otm-7d5eea7f-a27d-4ac1-9d14-23843bbd2fb0"
+    ],
+    "tweetText": {
+        "fi": "Opintojaksolla perehdytään diskreetin matematiikan peruskäsitteisiin ja -tuloksiin."
+    },
+    "courseUnitType": "urn:code:course-unit-type:regular",
+    "id": "otm-1e8f1023-1977-4f98-9386-110ef623327b",
+    "studyFields": [
+        "urn:code:study-field:okm-6",
+        "urn:code:study-field:okm-8"
+    ],
+    "cooperationNetworkStatus": null,
+    "recommendedFormalPrerequisites": [
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-35897",
+                    "type": "CourseUnit"
+                }
+            ]
+        },
+        {
+            "prerequisites": [
+                {
+                    "courseUnitGroupId": "tut-cu-g-45326",
+                    "type": "CourseUnit"
+                }
+            ]
+        }
+    ],
+    "inclusionApplicationInstruction": null,
+    "approvalState": "urn:code:approval-state-type:approved",
+    "completionMethods": [
+        {
+            "assessmentItemIds": [
+                "otm-b01a10d1-954b-499c-8704-90aae2a4a0e1",
+                "otm-0ffc28c2-d3d2-478a-affe-02ebfe8c8a93"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/0/2"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosana 5: Opiskelija pystyy ratkaisemaan vaativiakin diskreetin matematiikan tehtäviä ja laatimaan todistuksia, jotka edellyttävät opintojaksolla käsiteltyjen asioiden yhdistämistä.   Arvosana 3: Opiskelija pystyy ratkaisemaan opintojaksolla käsiteltyihin diskreetin matematiikan eri osa-alueisiin liittyviä tehtäviä ja ymmärtää käsiteltyjen tulosten todistuksia.   Arvosana 1: Opiskelija on perillä opintojakson keskeisimmistä määritelmistä, tuloksista ja menetelmistä ja pystyy ratkaisemaan niiden avulla yksinkertaisia diskreetin matematiikan tehtäviä."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "57c9327a-3621-498e-bdaf-07b02a549838",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-7d5eea7f-a27d-4ac1-9d14-23843bbd2fb0",
+                "otm-0ffc28c2-d3d2-478a-affe-02ebfe8c8a93"
+            ],
+            "prerequisites": null,
+            "repeats": [
+                {
+                    "studyYearRange": {
+                        "start": 2021,
+                        "end": 2022
+                    },
+                    "repeatPossibility": [
+                        "tuni-university-root-id/2006/1/1"
+                    ],
+                    "yearInterval": null
+                }
+            ],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Grade 5: The student can solve even difficult problems in discrete mathematics and prove results that require combining knowledge from different topics on the course.   Grade 3: The student can solve problems in different areas of discrete mathematics and understands the proofs of the results presented on the course.    Grade 1: The student is familiar with the main definitions, results and methods of the course and is able to solve simple discrete mathematics problems with them.",
+                "en": "Grade 5: The student can solve even difficult problems in discrete mathematics and prove results that require combining knowledge from different topics on the course.   Grade 3: The student can solve problems in different areas of discrete mathematics and understands the proofs of the results presented on the course.    Grade 1: The student is familiar with the main definitions, results and methods of the course and is able to solve simple discrete mathematics problems with them."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "26cd0dd8-dde9-46b9-80e6-46bee0705a51",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        },
+        {
+            "assessmentItemIds": [
+                "otm-0ffc28c2-d3d2-478a-affe-02ebfe8c8a93"
+            ],
+            "prerequisites": null,
+            "repeats": [],
+            "automaticEvaluation": true,
+            "studyType": "DEGREE_STUDIES",
+            "evaluationCriteria": {
+                "fi": "Arvosana 5: Opiskelija pystyy ratkaisemaan vaativiakin diskreetin matematiikan tehtäviä ja laatimaan todistuksia, jotka edellyttävät opintojaksolla käsiteltyjen asioiden yhdistämistä. Arvosana 3: Opiskelija pystyy ratkaisemaan opintojaksolla käsiteltyihin diskreetin matematiikan eri osa-alueisiin liittyviä tehtäviä ja ymmärtää käsiteltyjen tulosten todistuksia. Arvosana 1: Opiskelija on perillä opintojakson keskeisimmistä määritelmistä, tuloksista ja menetelmistä ja pystyy ratkaisemaan niiden avulla yksinkertaisia diskreetin matematiikan tehtäviä.",
+                "en": "Grade 5: The student can solve even difficult problems in discrete mathematics and prove results that require combining knowledge from different topics on the course. Grade 3: The student can solve problems in different areas of discrete mathematics and understands the proofs of the results presented on the course. Grade 1: The student is familiar with the main definitions, results and methods of the course and is able to solve simple discrete mathematics problems with them."
+            },
+            "description": null,
+            "assessmentItemOptionalityDescription": null,
+            "require": null,
+            "localId": "a1c6662a-0ab9-44e4-8b53-c74efa0b89cc",
+            "typeOfRequire": "ALL_SELECTED_REQUIRED"
+        }
+    ],
+    "abbreviation": null,
+    "documentState": "ACTIVE",
+    "customCodeUrns": {
+        "urn:code:custom:tuni-university-root-id:offering-location": [
+            "urn:code:custom:tuni-university-root-id:offering-location:hervanta",
+            "urn:code:custom:tuni-university-root-id:offering-location:keskusta"
+        ],
+        "urn:code:custom:tuni-university-root-id:strategic-themes": [],
+        "urn:code:custom:tuni-university-root-id:degree-programmes": [
+            "urn:code:custom:tuni-university-root-id:degree-programmes:mtta",
+            "urn:code:custom:tuni-university-root-id:degree-programmes:tty-1110"
+        ],
+        "urn:code:custom:tuni-university-root-id:tentit": [
+            "urn:code:custom:tuni-university-root-id:tentit:k_massa",
+            "urn:code:custom:tuni-university-root-id:tentit:e_massa"
+        ],
+        "urn:code:custom:tuni-university-root-id:offering-information": [
+            "urn:code:custom:tuni-university-root-id:offering-information:degree-students",
+            "urn:code:custom:tuni-university-root-id:offering-information:open-university-students"
+        ]
+    },
+    "responsibilityInfos": [
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kaarakka",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-kangasla",
+            "roleUrn": "urn:code:module-responsibility-info-type:responsible-teacher",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-as99553",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-lehtelah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {
+                "endDate": "2022-02-01"
+            },
+            "personId": "tuni-person-a627302",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        },
+        {
+            "validityPeriod": {},
+            "personId": "tuni-person-annah",
+            "roleUrn": "urn:code:module-responsibility-info-type:administrative-person",
+            "text": null
+        }
+    ],
+    "name": {
+        "fi": "Diskreetti matematiikka",
+        "en": "Discrete Mathematics"
+    },
+    "gradeScaleId": "sis-0-5",
+    "cooperationNetworkIds": null,
+    "curriculumPeriodIds": [
+        "uta-lvv-2021",
+        "uta-lvv-2022",
+        "uta-lvv-2023"
+    ]
+}

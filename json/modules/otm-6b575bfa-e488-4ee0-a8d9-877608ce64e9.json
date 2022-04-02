@@ -1,0 +1,49 @@
+{
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "mkeipa@tuni.fi",
+        "modificationOrdinal": 167226855,
+        "createdOn": "2021-01-25T09:49:14.894954",
+        "revision": 22,
+        "lastModifiedOn": "2021-12-08T14:29:49.165601"
+    },
+    "code": null,
+    "groupId": "otm-6b575bfa-e488-4ee0-a8d9-877608ce64e9",
+    "name": {
+        "fi": "Pakolliset opintojaksot",
+        "en": "Compulsory Courses"
+    },
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": true,
+        "description": null,
+        "rules": [
+            {
+                "courseUnitGroupId": "tut-cu-g-36938",
+                "type": "CourseUnitRule",
+                "localId": "otm-b140a68b-a931-4edb-8e0d-b4596841c584"
+            },
+            {
+                "courseUnitGroupId": "tut-cu-g-35898",
+                "type": "CourseUnitRule",
+                "localId": "otm-1d24a444-4094-4a58-8bee-9fb287146cc8"
+            },
+            {
+                "courseUnitGroupId": "tut-cu-g-35899",
+                "type": "CourseUnitRule",
+                "localId": "otm-cef05d7a-f54a-4441-af2e-3e8aaaa4de2c"
+            }
+        ],
+        "require": null,
+        "type": "CompositeRule",
+        "localId": "439eee71-efad-459f-aea4-589a68f2131d"
+    },
+    "id": "otm-6b575bfa-e488-4ee0-a8d9-877608ce64e9",
+    "type": "GroupingModule",
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "moduleContentApprovalRequired": false,
+    "curriculumPeriodIds": []
+}

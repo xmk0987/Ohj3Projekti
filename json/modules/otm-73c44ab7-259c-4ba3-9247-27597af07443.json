@@ -1,0 +1,181 @@
+{
+    "metadata": {
+        "createdBy": "korpelai@tuni.fi",
+        "lastModifiedBy": "rgsapo@tuni.fi",
+        "modificationOrdinal": 169166492,
+        "createdOn": "2021-01-23T13:48:41.496216",
+        "revision": 40,
+        "lastModifiedOn": "2022-01-14T12:17:52.840125"
+    },
+    "code": null,
+    "groupId": "otm-73c44ab7-259c-4ba3-9247-27597af07443",
+    "name": {
+        "fi": "Valitse syventävät opinnot",
+        "en": "Choose your Advanced Studies"
+    },
+    "universityOrgIds": [
+        "tuni-university-root-id"
+    ],
+    "rule": {
+        "allMandatory": false,
+        "description": {
+            "fi": "<p>Valitse ensimmäisestä joukosta, jos luet pääaineesi 30op laajuisena. Toisessa joukossa on 50op laajuiset pääaineet.</p>"
+        },
+        "rules": [
+            {
+                "allMandatory": true,
+                "description": null,
+                "rules": [
+                    {
+                        "allMandatory": false,
+                        "description": null,
+                        "rules": [
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-082f6a58-80e5-46cf-a948-0d18d3d761f9",
+                                "localId": "otm-680be88f-588c-4df3-b09d-5a4dfe3314ca"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-49f2573a-719e-4c27-b36e-ee40374f3ad7",
+                                "localId": "otm-c25a5750-2d57-46d8-b407-6a8b5f08fedc"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-82edb577-7cf7-4126-b439-6d9895ca9630",
+                                "localId": "otm-3352bcda-ec98-4231-910d-c5d2b8b815d5"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-d2f442aa-46d3-4910-bbf8-3c1f173f2d50",
+                                "localId": "otm-d9d59a57-45ad-4095-bb48-a8c60bd0861a"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-73dff885-6c51-4bf5-b6c8-015bac233102",
+                                "localId": "otm-cc8d2d09-ad89-47da-8017-cfe240c748bd"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-22f607c2-9bf8-4878-8dad-093f462b47d6",
+                                "localId": "otm-28a40c29-a61d-4dd3-b398-defb4c6b7cc0"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-8b4c31f6-08e0-4e15-80e2-bcc0180fa80d",
+                                "localId": "otm-41c5bd45-62d9-464a-afc7-ce6f232147f7"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "tut-sm-g-4079",
+                                "localId": "otm-f04eeb96-6b49-47d1-9049-2bd36d21fbd0"
+                            }
+                        ],
+                        "require": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "type": "CompositeRule",
+                        "localId": "otm-6f802a4b-2221-4edc-a580-7e8869203944"
+                    },
+                    {
+                        "type": "ModuleRule",
+                        "moduleGroupId": "otm-dfcd98b1-4f28-4095-874f-178413c11869",
+                        "localId": "otm-f0cab0c3-9dbf-4ccb-9603-123f4fb989b5"
+                    }
+                ],
+                "require": null,
+                "type": "CompositeRule",
+                "localId": "otm-0572b1e2-d945-4ff2-bcd9-49be2094c4b5"
+            },
+            {
+                "allMandatory": true,
+                "description": null,
+                "rules": [
+                    {
+                        "allMandatory": false,
+                        "description": null,
+                        "rules": [
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-de02b4bd-7098-45d2-b428-376128903526",
+                                "localId": "otm-f12ea29b-6e9c-4e89-8931-2c2e17f270d7"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-8950a7ba-5b20-405b-a61e-a7c0ac9185fc",
+                                "localId": "otm-dffd9f2a-af07-4b3a-8b25-060cae82c2e4"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-31975feb-1d19-4168-aec5-183ea80a56e2",
+                                "localId": "otm-989d232f-dea1-461a-bb9b-638820d1a662"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "tut-sm-g-5964",
+                                "localId": "otm-10c75acd-bddf-4769-811e-56554c045b8b"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-ca7456f3-ecaa-4373-88bf-09661c36d7b8",
+                                "localId": "otm-45d8af0c-2901-4c49-af9a-282d943a5d4c"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-2909db1b-6097-457b-bf16-1aa2f36e3804",
+                                "localId": "otm-5db42443-ffe8-4b93-bbe4-8a9d5f6723d3"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-76671fe5-cc75-4260-8f63-0e9cb203dbad",
+                                "localId": "otm-4c529541-dc98-4ef5-b314-754387a50d1e"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "tut-sm-g-4098",
+                                "localId": "otm-925ff468-f042-466e-976f-6ce7fb614e0c"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "otm-286a3611-bc04-42f2-b553-1bd1f4674b21",
+                                "localId": "otm-570c5a8b-c187-4921-9c6f-4786f803c266"
+                            },
+                            {
+                                "type": "ModuleRule",
+                                "moduleGroupId": "uta-ok-ykoodi-48536",
+                                "localId": "otm-39140902-bf97-4724-9d7c-0737119e8b12"
+                            }
+                        ],
+                        "require": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "type": "CompositeRule",
+                        "localId": "otm-d712a56b-01fb-4b30-bb1d-913282f34e98"
+                    },
+                    {
+                        "type": "ModuleRule",
+                        "moduleGroupId": "otm-2428ce57-d066-482b-84b0-70dc9cc3dad7",
+                        "localId": "otm-ad93683a-5135-4904-b7df-ee03be989aee"
+                    }
+                ],
+                "require": null,
+                "type": "CompositeRule",
+                "localId": "otm-dae010c3-92c9-42ff-b04a-66c1a9016b8b"
+            }
+        ],
+        "require": {
+            "min": 0,
+            "max": null
+        },
+        "type": "CompositeRule",
+        "localId": "otm-1b178500-0b3c-44d6-8529-62200dc30cac"
+    },
+    "id": "otm-73c44ab7-259c-4ba3-9247-27597af07443",
+    "type": "GroupingModule",
+    "documentState": "ACTIVE",
+    "contentFilter": null,
+    "moduleContentApprovalRequired": false,
+    "curriculumPeriodIds": []
+}
