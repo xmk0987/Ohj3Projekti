@@ -30,5 +30,12 @@ sonarqube-check:
   dependencies:
     - coverage
   script:
+<<<<<<< Updated upstream
     - sonar-scanner -Dsonar.projectKey=$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME -Dsonar.java.binaries=target/classes -Dsonar.java.test.binaries=target/test-classes -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.tests=src/test -Dsonar.sources=src/main
 
+=======
+    - sonar-scanner -Dsonar.projectKey=$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME -Dsonar.java.binaries=target/classes -Dsonar.java.test.binaries=target/test-classes -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.tests=src/test -Dsonar.sources=src/main/main/java/fi/tuni/prog3/sisu
+  only:
+    refs:
+      - master
+>>>>>>> Stashed changes
