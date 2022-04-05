@@ -4,6 +4,8 @@ stages:
 
 coverage:
   stage: coverage
+  tags:
+    - compcs140
   image:
     name: "maven:3.6.3-openjdk-11"
   script:
@@ -21,6 +23,8 @@ coverage:
 
 sonarqube-check:
   stage: sonarqube-check
+  tags:
+    - compcs140
   image:
     name: "sonarsource/sonar-scanner-cli:4.3"
     entrypoint: [""]
