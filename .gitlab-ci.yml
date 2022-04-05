@@ -9,6 +9,7 @@ coverage:
   image:
     name: "maven:3.6.3-openjdk-11"
   script:
+    - cd Sisu
     - mvn compile
     - mvn test
   artifacts:
