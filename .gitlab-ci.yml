@@ -17,9 +17,7 @@ coverage:
     - target/test-classes
     - target/site/jacoco/jacoco.xml
     expire_in: 30 mins
-  only:
-    refs:
-      - master
+
 
 sonarqube-check:
   stage: sonarqube-check
@@ -32,6 +30,4 @@ sonarqube-check:
     - coverage
   script:
     - sonar-scanner -Dsonar.projectKey=$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME -Dsonar.java.binaries=target/classes -Dsonar.java.test.binaries=target/test-classes -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.tests=src/test -Dsonar.sources=src/main
-  only:
-    refs:
-      - master
+
