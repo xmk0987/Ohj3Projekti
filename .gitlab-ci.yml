@@ -14,8 +14,9 @@ coverage:
     - mvn test
   artifacts:
     paths:
-    - Sisu/target/classes
-    - Sisu/target/test-classes
+    - target/classes
+    - target/test-classes
+    - target/site/jacoco/jacoco.xml
     expire_in: 30 mins
 
 
@@ -32,5 +33,5 @@ sonarqube-check:
     - sonar-scanner -Dsonar.projectKey=$CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME -Dsonar.java.binaries=target/classes -Dsonar.java.test.binaries=target/test-classes -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.tests=src/test -Dsonar.sources=src/main/main/java/fi/tuni/prog3/sisu
   only:
     refs:
-      - main
+      - master
 
