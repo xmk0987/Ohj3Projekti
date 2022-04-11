@@ -15,6 +15,7 @@ coverage:
   artifacts:
     paths:
     - Sisu/target/classes
+    - Sisu/target/test-classes
     expire_in: 30 mins
 
 
