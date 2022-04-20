@@ -11,6 +11,10 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.paint.*;
 
+import javax.swing.*;
+import java.awt.event.ActionListener;
+import java.util.Objects;
+
 /*
 Authors:
 Paavo Jyrkiäinen H291934
@@ -41,19 +45,43 @@ public class Sisu extends Application {
         root.addRow(2, okbutton);
         root.setAlignment(Pos.CENTER);
 
+
+
         Scene scene=new Scene(root,400,130);
         stage.setScene(scene);
         stage.setTitle("Sus Sisu");
         stage.show();
 
-        // Dialog -ikkuna
-        Dialog<String> dialog = new Dialog<String>();
-        dialog.setTitle(":):):):):):)");
-        TextInputDialog name = new TextInputDialog();
+        // Väärä salasana/nimi Dialog -ikkuna
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Couldn't log in!");
+        alert.setContentText("Wrong email or password!");
 
-        okbutton.setOnAction(e -> {dialog.showAndWait();});
-        ButtonType type = new ButtonType("Continue", ButtonBar.ButtonData.OK_DONE);
-        dialog.getDialogPane().getButtonTypes().add(type);
+
+        // Oikea salasana/nimi Dialog -ikkuna
+        Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);
+        confirmation.setTitle("Confirmation");
+        confirmation.setHeaderText("Log in Succesfull");
+        okbutton.setOnAction(e -> {confirmation.showAndWait();});
+
+
+        // Tarkistaa onko salasana tyhjä vai ei. Avaa dialog-ikkunan sen mukaan.
+        okbutton.setOnAction(e -> {
+            String name_value = namef.getText();
+            String password_value = passf.getText();
+            if(Objects.equals(name_value.trim(), "") ||Objects.equals(password_value.trim(), "")){
+                alert.show();
+            }
+            else{
+                confirmation.show();
+            }
+            namef.clear();
+            passf.clear();
+        });
+
+
+
     }
 
     public static void main(String[] args) {
