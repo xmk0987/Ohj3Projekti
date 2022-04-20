@@ -1,5 +1,6 @@
 package fi.tuni.prog3.sisu;
 
+import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -8,8 +9,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.scene.paint.*;
+import javafx.util.Duration;
+import javafx.util.Pair;
 
 import javax.swing.*;
 import java.awt.event.ActionListener;
@@ -45,8 +49,6 @@ public class Sisu extends Application {
         root.addRow(2, okbutton);
         root.setAlignment(Pos.CENTER);
 
-
-
         Scene scene=new Scene(root,400,130);
         stage.setScene(scene);
         stage.setTitle("Sus Sisu");
@@ -58,13 +60,25 @@ public class Sisu extends Application {
         alert.setHeaderText("Couldn't log in!");
         alert.setContentText("Wrong email or password!");
 
-
         // Oikea salasana/nimi Dialog -ikkuna
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);
         confirmation.setTitle("Confirmation");
         confirmation.setHeaderText("Log in Succesfull");
         okbutton.setOnAction(e -> {confirmation.showAndWait();});
 
+        // Loading dialog
+        Dialog<Pair<String, String>> dialog = new Dialog<>();
+        dialog.setTitle("LOADING DIALOG");
+        dialog.setHeaderText("LOADING INFORMATION FROM SISU");
+
+        ProgressBar progressBar = new ProgressBar();
+        VBox vBox = new VBox(progressBar);
+        GridPane grid = new GridPane();
+        grid.add(vBox, 1, 0);
+        grid.setHgap(10);
+        grid.setVgap(10);
+        dialog.getDialogPane().getButtonTypes().addAll(ButtonType.CANCEL);
+        dialog.getDialogPane().setContent(grid);
 
         // Tarkistaa onko salasana tyhjä vai ei. Avaa dialog-ikkunan sen mukaan.
         okbutton.setOnAction(e -> {
@@ -74,11 +88,15 @@ public class Sisu extends Application {
                 alert.show();
             }
             else{
-                confirmation.show();
+                dialog.show();
+                PauseTransition delay = new PauseTransition(Duration.seconds(5));
+                delay.setOnFinished( event -> dialog.close() );
+                delay.play();
             }
             namef.clear();
             passf.clear();
         });
+
 
 
 
