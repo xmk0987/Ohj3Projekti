@@ -54,6 +54,10 @@ public class Sisu extends Application {
         stage.setTitle("Sus Sisu");
         stage.show();
 
+        // Sisun pääikkuna
+        GridPane maingrid = new GridPane();
+        Scene mainscene=new Scene(maingrid,500,500);
+
         // Väärä salasana/nimi Dialog -ikkuna
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
@@ -92,10 +96,21 @@ public class Sisu extends Application {
                 PauseTransition delay = new PauseTransition(Duration.seconds(5));
                 delay.setOnFinished( event -> dialog.close() );
                 delay.play();
+
+                // Pääikkuna aukeaa latauksen jälkeen
+                PauseTransition delay2 = new PauseTransition(Duration.seconds(5));
+                delay2.setOnFinished( event -> stage.setScene(mainscene) );
+                delay2.play();
+
+
+
+
             }
             namef.clear();
             passf.clear();
         });
+
+
 
 
 
