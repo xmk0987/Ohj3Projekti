@@ -1,23 +1,24 @@
 package fi.tuni.prog3.sisu;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 import javafx.scene.paint.*;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.util.Pair;
 
-import javax.swing.*;
-import java.awt.event.ActionListener;
-import java.util.Objects;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URL;
+import java.util.*;
 
 /*
 Authors:
@@ -29,6 +30,59 @@ Otto Ukkonen H291887
 
 public class Sisu extends Application {
 
+
+
+    public HashMap<String, Map<String, ArrayList<String>>> readFromJsons() throws IOException {
+        HashMap<String, Map<String, ArrayList<String>>> degree_grouping_study = new HashMap<>();
+
+        /*
+        File[] module_files = new File("$PROJECT_DIR$/json/modules").listFiles();
+        File[] course_files = new File("$PROJECT_DIR$/json/courseunits").listFiles();
+        List<String> all_module_files = new ArrayList<String>();
+        List<String> all_courseunits_files = new ArrayList<String>();
+
+        assert module_files != null;
+        for (File file : module_files) {
+            if (file.isFile()) {
+                all_module_files.add(file.getName());
+            }
+        }
+
+        assert course_files != null;
+        for (File file : course_files) {
+            if (file.isFile()) {
+                all_courseunits_files.add(file.getName());
+            }
+        }
+*/
+        Gson gson = new Gson();
+        // ../json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json
+        // C:/Users/onniv/git_test/Projekti-Ohj3/json/modules/
+        //"C:/Users/onniv/git_test/Projekti-Ohj3/json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json"
+
+        File file = new File("./json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json");
+        var jsonfile = gson.fromJson(new FileReader(file), JsonObject.class);
+        String module_type = jsonfile.get("type").getAsString();
+        if(module_type.equals("DegreeProgramme")){
+            degree_grouping_study.put(module_type, Collections.emptyMap());
+        }
+
+        /*
+        for (var module_file : all_module_files){
+            var jsonfile = gson.fromJson(new FileReader(module_file), JsonObject.class);
+            String module_type = jsonfile.get("type").getAsJsonObject().getAsString();
+            if(module_type.equals("DegreeProgramme")){
+                degree_grouping_study.put(module_type, Collections.emptyMap());
+            }
+
+
+        }
+        */
+
+    return degree_grouping_study;
+
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
 
@@ -39,7 +93,7 @@ public class Sisu extends Application {
         Label student_number = new Label("Opiskelijanumero");
         welcome.setTextFill(Color.PURPLE);
         TextField namef=new TextField();
-        PasswordField student_numberf=new PasswordField();
+        TextField student_numberf=new TextField();
         namef.setPromptText("Syötä nimesi");
         student_numberf.setPromptText("Syötä opiskelijanumero");
         Button okbutton = new Button("OK");
@@ -56,10 +110,14 @@ public class Sisu extends Application {
         stage.setTitle("Sus Sisu");
         stage.show();
 
+        var degreeees = readFromJsons();
+        Map.Entry<String, Map<String, ArrayList<String>>> entry = degreeees.entrySet().iterator().next();
 
         // Sisun pääikkuna
         GridPane maingrid = new GridPane();
         Scene mainscene=new Scene(maingrid,500,500);
+        Label degree_type = new Label(entry.getKey());
+        maingrid.addRow(0,degree_type);
 
 
         // Väärä salasana/nimi Dialog -ikkuna
@@ -114,6 +172,8 @@ public class Sisu extends Application {
             namef.clear();
             student_numberf.clear();
         });
+
+
 
     }
 
