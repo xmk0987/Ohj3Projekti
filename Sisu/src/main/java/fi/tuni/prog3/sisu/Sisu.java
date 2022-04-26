@@ -1,6 +1,7 @@
 package fi.tuni.prog3.sisu;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
@@ -17,7 +18,6 @@ import javafx.util.Pair;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 import java.util.*;
 
 /*
@@ -30,58 +30,6 @@ Otto Ukkonen H291887
 
 public class Sisu extends Application {
 
-
-
-    public HashMap<String, Map<String, ArrayList<String>>> readFromJsons() throws IOException {
-        HashMap<String, Map<String, ArrayList<String>>> degree_grouping_study = new HashMap<>();
-
-        /*
-        File[] module_files = new File("$PROJECT_DIR$/json/modules").listFiles();
-        File[] course_files = new File("$PROJECT_DIR$/json/courseunits").listFiles();
-        List<String> all_module_files = new ArrayList<String>();
-        List<String> all_courseunits_files = new ArrayList<String>();
-
-        assert module_files != null;
-        for (File file : module_files) {
-            if (file.isFile()) {
-                all_module_files.add(file.getName());
-            }
-        }
-
-        assert course_files != null;
-        for (File file : course_files) {
-            if (file.isFile()) {
-                all_courseunits_files.add(file.getName());
-            }
-        }
-*/
-        Gson gson = new Gson();
-        // ../json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json
-        // C:/Users/onniv/git_test/Projekti-Ohj3/json/modules/
-        //"C:/Users/onniv/git_test/Projekti-Ohj3/json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json"
-
-        File file = new File("./json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json");
-        var jsonfile = gson.fromJson(new FileReader(file), JsonObject.class);
-        String module_type = jsonfile.get("type").getAsString();
-        if(module_type.equals("DegreeProgramme")){
-            degree_grouping_study.put(module_type, Collections.emptyMap());
-        }
-
-        /*
-        for (var module_file : all_module_files){
-            var jsonfile = gson.fromJson(new FileReader(module_file), JsonObject.class);
-            String module_type = jsonfile.get("type").getAsJsonObject().getAsString();
-            if(module_type.equals("DegreeProgramme")){
-                degree_grouping_study.put(module_type, Collections.emptyMap());
-            }
-
-
-        }
-        */
-
-    return degree_grouping_study;
-
-    }
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -110,14 +58,54 @@ public class Sisu extends Application {
         stage.setTitle("Sus Sisu");
         stage.show();
 
-        var degreeees = readFromJsons();
-        Map.Entry<String, Map<String, ArrayList<String>>> entry = degreeees.entrySet().iterator().next();
 
         // Sisun pääikkuna
         GridPane maingrid = new GridPane();
         Scene mainscene=new Scene(maingrid,500,500);
-        Label degree_type = new Label(entry.getKey());
-        maingrid.addRow(0,degree_type);
+
+
+
+        Gson gson = new Gson();
+
+
+        File moduleDir = new File("./json/modules");
+        File[] dirList = moduleDir.listFiles();
+
+        //Getting all child modules
+        ArrayList<String> module_group_ids = new ArrayList<>();
+        String id = "";
+
+        for(File child : dirList) {
+            var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
+            // Getting roots
+            if(jsonfile.get("type").getAsString().equals("DegreeProgramme")){
+                String module_type = jsonfile.get("name").getAsJsonObject()
+                        .get("fi").getAsString();
+                String min_credits  = jsonfile.get("targetCredits")
+                        .getAsJsonObject().get("min").getAsString();
+                Label degree_name_label = new Label(module_type);
+                Label min_credit_label = new Label(min_credits);
+                maingrid.addRow(0,degree_name_label);
+                maingrid.addRow(0,min_credit_label);
+                maingrid.setHgap(100);
+                id = "otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca";
+
+
+
+            }
+        }
+
+        File child_file = new File("./json/modules/otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca.json");
+        var child_json_file = gson.fromJson(new FileReader(child_file),
+                JsonObject.class);
+
+        String child_name = child_json_file.get("name").getAsJsonObject()
+                .get("fi").getAsString();
+
+        Label child_degree_label = new Label(child_name);
+
+        maingrid.addRow(1,child_degree_label);
+
 
 
         // Väärä salasana/nimi Dialog -ikkuna
