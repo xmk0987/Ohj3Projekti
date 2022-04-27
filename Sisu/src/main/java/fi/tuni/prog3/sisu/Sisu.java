@@ -17,7 +17,6 @@ import javafx.util.Pair;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.*;
 
 /*
@@ -75,6 +74,9 @@ public class Sisu extends Application {
         ArrayList<String> module_group_ids = new ArrayList<>();
         String id = "";
 
+
+
+        /*
         for(File child : dirList) {
             var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
             // Getting roots
@@ -94,7 +96,45 @@ public class Sisu extends Application {
 
             }
         }
+        */
 
+
+        ArrayList<moduleclass> all_modules = new ArrayList<>();
+        for(File child : dirList)
+        {
+            var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
+            String moduleid = jsonfile.get("id").getAsString();
+            String name1 = jsonfile.get("name").getAsJsonObject().get("fi").getAsString();
+            moduleclass module = new moduleclass(moduleid, name1);
+            all_modules.add(module);
+
+
+            Set<String> keys = jsonfile.keySet();
+            for(String key : keys){
+                var a = jsonfile.get(key);
+                getvalues(a, all_modules, moduleid);
+            }
+        }
+
+
+
+        for (moduleclass module : all_modules)
+        {
+            System.out.println(module.get_id());
+
+            System.out.println(module.get_name());
+
+            System.out.println(module.get_ids());
+
+        }
+
+
+
+
+
+
+
+        /*
         File child_file = new File("./json/modules/otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca.json");
         var child_json_file = gson.fromJson(new FileReader(child_file),
                 JsonObject.class);
@@ -105,7 +145,7 @@ public class Sisu extends Application {
         Label child_degree_label = new Label(child_name);
 
         maingrid.addRow(1,child_degree_label);
-
+        */
 
 
         // Väärä salasana/nimi Dialog -ikkuna
@@ -163,7 +203,89 @@ public class Sisu extends Application {
 
 
 
+
+
+
     }
+    public void getvalues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
+        String modulei = moduleid;
+
+        try {
+            if (a.isJsonObject()) {
+                if (a.getAsJsonObject().has("moduleGroupId"))
+                {
+
+                    for (moduleclass module : all_modules){
+                        if (module.get_id().equals(modulei)){
+                            if(module.get_ids().contains(a.getAsJsonObject().get("moduleGroupId").getAsString())) {
+
+                            }
+                            else {
+                                module.add_id(a.getAsJsonObject().get("moduleGroupId").getAsString());
+                            }
+
+                        }
+                    }
+
+                }
+
+
+                for (int i = 0; i < a.getAsJsonObject().size(); i++) {
+                    Set<String> keys = a.getAsJsonObject().keySet();
+                    for(String key : keys){
+                        var b = a.getAsJsonObject().get(key);
+                        getvalues(b, all_modules, moduleid);
+                    }
+
+
+
+                }
+            }
+            else if (a.isJsonArray()) {
+
+                var jsonData = a.getAsJsonArray();
+
+                for (int i = 0; i < jsonData.size(); i++) {
+                    var next_element = jsonData.get(Integer.parseInt(String.valueOf(i))); // Here's your key
+                    getvalues(next_element, all_modules, modulei);
+                }
+            }
+            else if (a.isJsonPrimitive()) {
+
+
+            }
+            else {
+
+
+            }
+        }
+        catch (Exception E){
+
+        }
+
+    }
+    class moduleclass {
+        String id;
+        String name;
+        ArrayList<String> ids = new ArrayList<String>();
+
+        public moduleclass(String new_id, String new_name){
+            id = new_id;
+            name = new_name;
+        }
+        public void add_id(String the_new){
+            ids.add(the_new);
+        }
+        public String get_id(){
+            return this.id;
+        }
+        public String get_name() {return this.name;}
+        public ArrayList<String> get_ids() {return this.ids;}
+    }
+
+
+
+
 
     public static void main(String[] args) {
         launch();
