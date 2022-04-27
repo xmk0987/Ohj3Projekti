@@ -62,44 +62,12 @@ public class Sisu extends Application {
         GridPane maingrid = new GridPane();
         Scene mainscene=new Scene(maingrid,500,500);
 
-
-
+        // Module filejen läpikäynti
         Gson gson = new Gson();
-
-
         File moduleDir = new File("./json/modules");
         File[] dirList = moduleDir.listFiles();
-
-        //Getting all child modules
-        ArrayList<String> module_group_ids = new ArrayList<>();
-        String id = "";
-
-
-
-        /*
-        for(File child : dirList) {
-            var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
-            // Getting roots
-            if(jsonfile.get("type").getAsString().equals("DegreeProgramme")){
-                String module_type = jsonfile.get("name").getAsJsonObject()
-                        .get("fi").getAsString();
-                String min_credits  = jsonfile.get("targetCredits")
-                        .getAsJsonObject().get("min").getAsString();
-                Label degree_name_label = new Label(module_type);
-                Label min_credit_label = new Label(min_credits);
-                maingrid.addRow(0,degree_name_label);
-                maingrid.addRow(0,min_credit_label);
-                maingrid.setHgap(100);
-                id = "otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca";
-
-
-
-            }
-        }
-        */
-
-
         ArrayList<moduleclass> all_modules = new ArrayList<>();
+        assert dirList != null;
         for(File child : dirList)
         {
             var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
@@ -108,7 +76,6 @@ public class Sisu extends Application {
             moduleclass module = new moduleclass(moduleid, name1);
             all_modules.add(module);
 
-
             Set<String> keys = jsonfile.keySet();
             for(String key : keys){
                 var a = jsonfile.get(key);
@@ -116,37 +83,13 @@ public class Sisu extends Application {
             }
         }
 
-
-
+        //TESTS
         for (moduleclass module : all_modules)
         {
             System.out.println(module.get_id());
-
             System.out.println(module.get_name());
-
             System.out.println(module.get_ids());
-
         }
-
-
-
-
-
-
-
-        /*
-        File child_file = new File("./json/modules/otm-010acb27-0e5a-47d1-89dc-0f19a43a5dca.json");
-        var child_json_file = gson.fromJson(new FileReader(child_file),
-                JsonObject.class);
-
-        String child_name = child_json_file.get("name").getAsJsonObject()
-                .get("fi").getAsString();
-
-        Label child_degree_label = new Label(child_name);
-
-        maingrid.addRow(1,child_degree_label);
-        */
-
 
         // Väärä salasana/nimi Dialog -ikkuna
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -154,13 +97,11 @@ public class Sisu extends Application {
         alert.setHeaderText("Couldn't log in!");
         alert.setContentText("Wrong email or password!");
 
-
         // Oikea salasana/nimi Dialog -ikkuna
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);
         confirmation.setTitle("Confirmation");
         confirmation.setHeaderText("Log in Succesfull");
         okbutton.setOnAction(e -> {confirmation.showAndWait();});
-
 
         // Loading dialog
         Dialog<Pair<String, String>> dialog = new Dialog<>();
@@ -176,7 +117,6 @@ public class Sisu extends Application {
 
         dialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK);
         dialog.getDialogPane().setContent(grid);
-
 
         // Tarkistaa onko salasana tyhjä vai ei. Avaa dialog-ikkunan sen mukaan.
         okbutton.setOnAction(e -> {
@@ -200,35 +140,20 @@ public class Sisu extends Application {
             namef.clear();
             student_numberf.clear();
         });
-
-
-
-
-
-
     }
-    public void getvalues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
-        String modulei = moduleid;
 
+    public void getvalues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
         try {
             if (a.isJsonObject()) {
-                if (a.getAsJsonObject().has("moduleGroupId"))
-                {
-
+                if (a.getAsJsonObject().has("moduleGroupId")) {
                     for (moduleclass module : all_modules){
-                        if (module.get_id().equals(modulei)){
-                            if(module.get_ids().contains(a.getAsJsonObject().get("moduleGroupId").getAsString())) {
-
-                            }
-                            else {
+                        if (module.get_id().equals(moduleid)){
+                            if(!(module.get_ids().contains(a.getAsJsonObject().get("moduleGroupId").getAsString()))) {
                                 module.add_id(a.getAsJsonObject().get("moduleGroupId").getAsString());
                             }
-
                         }
                     }
-
                 }
-
 
                 for (int i = 0; i < a.getAsJsonObject().size(); i++) {
                     Set<String> keys = a.getAsJsonObject().keySet();
@@ -236,55 +161,41 @@ public class Sisu extends Application {
                         var b = a.getAsJsonObject().get(key);
                         getvalues(b, all_modules, moduleid);
                     }
-
-
-
                 }
-            }
-            else if (a.isJsonArray()) {
+            } else if (a.isJsonArray()) {
 
                 var jsonData = a.getAsJsonArray();
 
                 for (int i = 0; i < jsonData.size(); i++) {
                     var next_element = jsonData.get(Integer.parseInt(String.valueOf(i))); // Here's your key
-                    getvalues(next_element, all_modules, modulei);
+                    getvalues(next_element, all_modules, moduleid);
                 }
             }
-            else if (a.isJsonPrimitive()) {
-
-
-            }
-            else {
-
-
-            }
         }
-        catch (Exception E){
-
-        }
-
+        catch (Exception E){}
     }
-    class moduleclass {
+    static class moduleclass {
         String id;
         String name;
         ArrayList<String> ids = new ArrayList<String>();
 
-        public moduleclass(String new_id, String new_name){
+        public moduleclass(String new_id, String new_name) {
             id = new_id;
             name = new_name;
         }
-        public void add_id(String the_new){
+        public void add_id(String the_new) {
             ids.add(the_new);
         }
-        public String get_id(){
+        public String get_id() {
             return this.id;
         }
-        public String get_name() {return this.name;}
-        public ArrayList<String> get_ids() {return this.ids;}
+        public String get_name() {
+            return this.name;
+        }
+        public ArrayList<String> get_ids() {
+            return this.ids;
+        }
     }
-
-
-
 
 
     public static void main(String[] args) {
