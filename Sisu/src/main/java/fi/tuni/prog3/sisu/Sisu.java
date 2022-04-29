@@ -3,6 +3,7 @@ package fi.tuni.prog3.sisu;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonPrimitive;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -83,6 +84,33 @@ public class Sisu extends Application {
                 var a = jsonfile.get(key);
                 getvalues(a, all_modules, moduleid);
             }
+        }
+
+        ArrayList<courseclass> all_courses = new ArrayList<>();
+        File courseDir1 = new File("./json/courseunits");
+        File[] dirList1 = courseDir1.listFiles();
+        assert dirList1 != null;
+        for(File child1 : dirList1)
+        {
+            try {
+                JsonObject jsonfile1 = gson.fromJson(new FileReader(child1), JsonObject.class);
+                String courseid = jsonfile1.get("id").getAsString();
+                String coursename = jsonfile1.get("name").getAsJsonObject().get("fi").getAsString();
+                String coursecredits = jsonfile1.get("credits").getAsJsonObject().get("max").getAsString();
+                String groupid = jsonfile1.get("groupId").getAsString();
+
+                courseclass course = new courseclass(courseid, coursename, coursecredits, groupid);
+                all_courses.add(course);
+
+            }
+            catch (Exception ignored){
+
+            }
+
+
+        }
+        for (moduleclass a : all_modules){
+            System.out.println(a.get_courseids());
         }
 
 
@@ -172,6 +200,16 @@ public class Sisu extends Application {
                         }
                     }
                 }
+                if (a.getAsJsonObject().has("courseUnitGroupId")) {
+                    for (moduleclass module : all_modules){
+                        if (module.get_id().equals(moduleid)){
+                            if(!(module.get_courseids().contains(a.getAsJsonObject().get("courseUnitGroupId").getAsString()))) {
+                                module.add_courseids(a.getAsJsonObject().get("courseUnitGroupId").getAsString());
+                            }
+                        }
+                    }
+                }
+
 
                 for (int i = 0; i < a.getAsJsonObject().size(); i++) {
                     Set<String> keys = a.getAsJsonObject().keySet();
@@ -196,17 +234,23 @@ public class Sisu extends Application {
         String id;
         String name;
         String module_type;
-       // Integer study_points;
+
+
+        ArrayList<String> courseids = new ArrayList<String>();
         ArrayList<String> ids = new ArrayList<String>();
 
         public moduleclass(String new_id, String new_name, String moduletype) {
             id = new_id;
             name = new_name;
             module_type = moduletype;
-          //  study_points = studypoints;
+
         }
         public void add_id(String the_new) {
             ids.add(the_new);
+        }
+
+        public void add_courseids(String the_new) {
+            courseids.add(the_new);
         }
 
         public String get_type(){
@@ -228,6 +272,40 @@ public class Sisu extends Application {
         public ArrayList<String> get_ids() {
             return this.ids;
         }
+
+        public ArrayList<String> get_courseids() {
+            return this.courseids;
+        }
+    }
+    static class courseclass {
+        String id;
+        String name;
+        String cr;
+        String groupid;
+
+        public courseclass(String new_id, String new_name, String new_cr, String new_groupid) {
+            id = new_id;
+            name = new_name;
+            cr = new_cr;
+            groupid = new_groupid;
+
+        }
+        public String get_cr(){
+            return this.cr;
+        }
+
+        public String get_id() {
+            return this.id;
+        }
+
+        public String get_name() {
+            return this.name;
+        }
+
+        public String get_groupid() {
+            return this.groupid;
+        }
+
     }
 
 
