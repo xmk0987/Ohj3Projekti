@@ -109,16 +109,25 @@ public class Sisu extends Application {
 
 
         }
-        for (moduleclass a : all_modules){
-            System.out.println(a.get_courseids());
+       /* for (courseclass course : all_courses){
+            System.out.println(course.get_groupid());
+            System.out.println(course.get_name());
         }
 
+        for(moduleclass module : all_modules){
+            System.out.println(module.get_courseids());
+        }*/
 
-
-
-        for ( moduleclass module: all_modules){
+       /*for ( moduleclass module: all_modules){
             if( module.get_type().equals("DegreeProgramme")){
-                link_module_ids(module, all_modules, 0);
+                link_module_ids(module, all_modules, 0, all_courses);
+            }
+
+        }*/
+
+       for ( moduleclass module: all_modules){
+            if( !(module.get_type().equals("DegreeProgramme"))){
+                link_module_ids(module, all_modules, 0, all_courses);
             }
 
         }
@@ -174,19 +183,35 @@ public class Sisu extends Application {
         });
     }
 
-    public void link_module_ids(moduleclass module_class, ArrayList<moduleclass> all_modules, Integer count){
+    public void link_module_ids(moduleclass module_class, ArrayList<moduleclass> all_modules, Integer count, ArrayList<courseclass> all_courses){
         ArrayList<String> module_ids = module_class.ids;
+        ArrayList<String> module_course_ids = module_class.courseids;
         System.out.println(count + " " +module_class.get_name());
+
+        for(courseclass course : all_courses){
+            for(String course_id : module_course_ids){
+                if (course_id.equals(course.get_groupid())) {
+                    System.out.println(course.get_name());
+                }
+            }
+        }
+
         for (String id : module_ids){
+
             for (moduleclass module : all_modules){
                 if (module.get_id().equals(id)){
                     count += 1;
-                    link_module_ids(module, all_modules, count);
+
+
+                    link_module_ids(module, all_modules, count,all_courses);
+
                     count -= 1;
                 }
             }
         }
     }
+
+
 
     public void getvalues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
         try {
@@ -209,6 +234,7 @@ public class Sisu extends Application {
                         }
                     }
                 }
+
 
 
                 for (int i = 0; i < a.getAsJsonObject().size(); i++) {
