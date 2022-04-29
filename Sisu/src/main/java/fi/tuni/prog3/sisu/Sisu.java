@@ -73,7 +73,9 @@ public class Sisu extends Application {
             var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
             String moduleid = jsonfile.get("id").getAsString();
             String name1 = jsonfile.get("name").getAsJsonObject().get("fi").getAsString();
-            moduleclass module = new moduleclass(moduleid, name1);
+            String moduletype = jsonfile.get("type").getAsString();
+
+            moduleclass module = new moduleclass(moduleid, name1, moduletype);
             all_modules.add(module);
 
             Set<String> keys = jsonfile.keySet();
@@ -83,12 +85,14 @@ public class Sisu extends Application {
             }
         }
 
-        //TESTS
-        for (moduleclass module : all_modules)
-        {
-            System.out.println(module.get_id());
-            System.out.println(module.get_name());
-            System.out.println(module.get_ids());
+
+
+
+        for ( moduleclass module: all_modules){
+            if( module.get_type().equals("DegreeProgramme")){
+                link_module_ids(module, all_modules, 0);
+            }
+
         }
 
         // Väärä salasana/nimi Dialog -ikkuna
@@ -142,6 +146,20 @@ public class Sisu extends Application {
         });
     }
 
+    public void link_module_ids(moduleclass module_class, ArrayList<moduleclass> all_modules, Integer count){
+        ArrayList<String> module_ids = module_class.ids;
+        System.out.println(count + " " +module_class.get_name());
+        for (String id : module_ids){
+            for (moduleclass module : all_modules){
+                if (module.get_id().equals(id)){
+                    count += 1;
+                    link_module_ids(module, all_modules, count);
+                    count -= 1;
+                }
+            }
+        }
+    }
+
     public void getvalues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
         try {
             if (a.isJsonObject()) {
@@ -177,21 +195,36 @@ public class Sisu extends Application {
     static class moduleclass {
         String id;
         String name;
+        String module_type;
+       // Integer study_points;
         ArrayList<String> ids = new ArrayList<String>();
 
-        public moduleclass(String new_id, String new_name) {
+        public moduleclass(String new_id, String new_name, String moduletype) {
             id = new_id;
             name = new_name;
+            module_type = moduletype;
+          //  study_points = studypoints;
         }
         public void add_id(String the_new) {
             ids.add(the_new);
         }
+
+        public String get_type(){
+            return this.module_type;
+        }
+
         public String get_id() {
             return this.id;
         }
+
         public String get_name() {
             return this.name;
         }
+
+       /*public Integer getStudy_points(){
+            return this.study_points;
+        }*/
+
         public ArrayList<String> get_ids() {
             return this.ids;
         }
