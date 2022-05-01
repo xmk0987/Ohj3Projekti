@@ -60,8 +60,29 @@ public class Sisu extends Application {
 
 
         // Sisun pääikkuna
+        TabPane tabPane = new TabPane();
+        Tab tab1 = new Tab();
+        Tab tab2 = new Tab();
+        tabPane.getTabs().add(tab1);
+        tabPane.getTabs().add(tab2);
+        tabPane.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
+
+        tab1.setText("Opiskelijan tiedot");
+        tab2.setText("Opinnot");
+        Scene mainscene=new Scene(tabPane,500,500);
+
         GridPane maingrid = new GridPane();
-        Scene mainscene=new Scene(maingrid,500,500);
+        GridPane studentinfo = new GridPane();
+
+        tab1.setContent(studentinfo);
+        tab2.setContent(maingrid);
+
+        // Opiskelijan tiedot (tab1)
+        Label s_name1 = new Label("Nimi: ");
+        Label s_studentnumber1 = new Label("Opiskelijanumero: ");
+        studentinfo.setHgap(30);
+        studentinfo.addRow(0, s_name1);
+        studentinfo.addRow(1, s_studentnumber1);
 
         // Module filejen läpikäynti
         Gson gson = new Gson();
@@ -136,12 +157,12 @@ public class Sisu extends Application {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText("Couldn't log in!");
-        alert.setContentText("Wrong email or password!");
+        alert.setContentText("Wrong name or student number!");
 
         // Oikea salasana/nimi Dialog -ikkuna
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);
         confirmation.setTitle("Confirmation");
-        confirmation.setHeaderText("Log in Succesfull");
+        confirmation.setHeaderText("Log in Successful!");
         okbutton.setOnAction(e -> {confirmation.showAndWait();});
 
         // Loading dialog
@@ -177,6 +198,11 @@ public class Sisu extends Application {
                 delay2.setOnFinished( event -> stage.setScene(mainscene) );
                 delay2.play();
 
+                // Opiskelijan tietojen päivitys
+                Label s_name2 = new Label(name_value);
+                Label s_studentnumber2 = new Label(student_number_value);
+                studentinfo.addRow(0, s_name2);
+                studentinfo.addRow(1, s_studentnumber2);
             }
             namef.clear();
             student_numberf.clear();
@@ -254,7 +280,7 @@ public class Sisu extends Application {
                 }
             }
         }
-        catch (Exception E){}
+        catch (Exception ignored){}
     }
     static class moduleclass {
         String id;
