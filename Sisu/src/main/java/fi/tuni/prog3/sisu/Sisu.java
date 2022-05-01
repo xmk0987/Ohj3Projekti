@@ -6,6 +6,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -84,7 +86,11 @@ public class Sisu extends Application {
         studentinfo.addRow(0, s_name1);
         studentinfo.addRow(1, s_studentnumber1);
 
+
+
         // Module filejen läpikäynti
+        //ArrayList<String> all_module_names = new ArrayList<>();
+
         Gson gson = new Gson();
         File moduleDir = new File("./json/modules");
         File[] dirList = moduleDir.listFiles();
@@ -94,16 +100,16 @@ public class Sisu extends Application {
         {
             var jsonfile = gson.fromJson(new FileReader(child), JsonObject.class);
             String moduleid = jsonfile.get("id").getAsString();
-            String name1 = jsonfile.get("name").getAsJsonObject().get("fi").getAsString();
+            String modulename = jsonfile.get("name").getAsJsonObject().get("fi").getAsString();
             String moduletype = jsonfile.get("type").getAsString();
 
-            moduleclass module = new moduleclass(moduleid, name1, moduletype);
+            moduleclass module = new moduleclass(moduleid, modulename, moduletype);
             all_modules.add(module);
 
             Set<String> keys = jsonfile.keySet();
             for(String key : keys){
                 var a = jsonfile.get(key);
-                getvalues(a, all_modules, moduleid);
+                getValues(a, all_modules, moduleid);
             }
         }
 
@@ -122,36 +128,47 @@ public class Sisu extends Application {
 
                 courseclass course = new courseclass(courseid, coursename, coursecredits, groupid);
                 all_courses.add(course);
-
             }
-            catch (Exception ignored){
-
-            }
-
-
+            catch (Exception ignored){}
         }
-       /* for (courseclass course : all_courses){
+
+        // ListView pääikkunaan
+
+        ListView<String> listView = new ListView<>();
+        for(moduleclass module : all_modules) {
+            listView.getItems().add(module.get_name());
+        }
+        maingrid.addRow(1, listView);
+        maingrid.setPadding(new Insets(10));
+        maingrid.setPrefSize(100,200);
+
+
+
+        /* for (courseclass course : all_courses){
             System.out.println(course.get_groupid());
             System.out.println(course.get_name());
         }
 
         for(moduleclass module : all_modules){
             System.out.println(module.get_courseids());
-        }*/
+        }
+        */
 
-       /*for ( moduleclass module: all_modules){
+        /*
+        for ( moduleclass module: all_modules){
             if( module.get_type().equals("DegreeProgramme")){
                 link_module_ids(module, all_modules, 0, all_courses);
             }
+        }
+        */
 
-        }*/
-
-       for ( moduleclass module: all_modules){
+        for ( moduleclass module: all_modules){
             if( !(module.get_type().equals("DegreeProgramme"))){
                 link_module_ids(module, all_modules, 0, all_courses);
             }
-
         }
+
+
 
         // Väärä salasana/nimi Dialog -ikkuna
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -239,7 +256,7 @@ public class Sisu extends Application {
 
 
 
-    public void getvalues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
+    public void getValues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
         try {
             if (a.isJsonObject()) {
                 if (a.getAsJsonObject().has("moduleGroupId")) {
@@ -261,13 +278,11 @@ public class Sisu extends Application {
                     }
                 }
 
-
-
                 for (int i = 0; i < a.getAsJsonObject().size(); i++) {
                     Set<String> keys = a.getAsJsonObject().keySet();
                     for(String key : keys){
                         var b = a.getAsJsonObject().get(key);
-                        getvalues(b, all_modules, moduleid);
+                        getValues(b, all_modules, moduleid);
                     }
                 }
             } else if (a.isJsonArray()) {
@@ -276,7 +291,7 @@ public class Sisu extends Application {
 
                 for (int i = 0; i < jsonData.size(); i++) {
                     var next_element = jsonData.get(Integer.parseInt(String.valueOf(i))); // Here's your key
-                    getvalues(next_element, all_modules, moduleid);
+                    getValues(next_element, all_modules, moduleid);
                 }
             }
         }
