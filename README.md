@@ -1,9 +1,16 @@
-# Programming 3 project template
+# Ohjelmointi 3 projektin loppudokumentti
 
-Make sure you have setup ssh-key for your GitLab account.
+####- Ryhmän työnjako:
 
-Some example JSON files are under the `json` subdirectory. The file `json/modules/otm-3990be25-c9fd-4dae-904c-547ac11e8302.json` is a root level `DegreeProgramme` module.
+Paavo Jyrkiäinen H291934:  
+JavaFX gui:n suunnittelu ja toteutus, koodin siivous ja formatointi, JSON apu 
 
-Note! The .gitlab-ci.yml is offline at the moment.
+Onni Vitikainen H292259:  
+Tutkintojen rakennentietojen yhteyksien muodostaminen JSON-tiedostoista, JavaFX apu
 
-# You are allowed (and probably should) make changes to this file after you have started your project. :)
+Otto Ukkonen H291887:  
+Tutkintojen rakennentietojen haku JSON-tiedostoista, JavaFX apu
+
+####- Luokkien vastuujako:
+
+
