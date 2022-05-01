@@ -37,7 +37,6 @@ public class Sisu extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-
         // Alkumenu
         Label welcome=new Label("Tervetuloa Sus Sisuun");
         Label name =new Label("Nimi");
@@ -61,8 +60,7 @@ public class Sisu extends Application {
         stage.setTitle("Sus Sisu");
         stage.show();
 
-
-        // Sisun pääikkuna
+        // Tabien luominen
         TabPane tabPane = new TabPane();
         Tab tab1 = new Tab();
         Tab tab2 = new Tab();
@@ -81,21 +79,17 @@ public class Sisu extends Application {
         tab2.setContent(maingrid);
 
         // Opiskelijan tiedot (tab1)
-        Label s_name1 = new Label("Nimi: ");
-        Label s_studentnumber1 = new Label("Opiskelijanumero: ");
+        Label studentname = new Label("Nimi: ");
+        Label studentnumber = new Label("Opiskelijanumero: ");
         studentinfo.setHgap(30);
-        studentinfo.addRow(0, s_name1);
-        studentinfo.addRow(1, s_studentnumber1);
-
-
+        studentinfo.addRow(0, studentname);
+        studentinfo.addRow(1, studentnumber);
 
         // Module filejen läpikäynti
-        //ArrayList<String> all_module_names = new ArrayList<>();
-
         Gson gson = new Gson();
         File moduleDir = new File("./json/modules");
         File[] dirList = moduleDir.listFiles();
-        ArrayList<moduleclass> all_modules = new ArrayList<>();
+        ArrayList<Module> all_modules = new ArrayList<>();
         assert dirList != null;
         for(File child : dirList)
         {
@@ -104,7 +98,7 @@ public class Sisu extends Application {
             String modulename = jsonfile.get("name").getAsJsonObject().get("fi").getAsString();
             String moduletype = jsonfile.get("type").getAsString();
 
-            moduleclass module = new moduleclass(moduleid, modulename, moduletype);
+            Module module = new Module(moduleid, modulename, moduletype);
             all_modules.add(module);
 
             Set<String> keys = jsonfile.keySet();
@@ -114,7 +108,7 @@ public class Sisu extends Application {
             }
         }
 
-        ArrayList<courseclass> all_courses = new ArrayList<>();
+        ArrayList<Course> all_courses = new ArrayList<>();
         File courseDir1 = new File("./json/courseunits");
         File[] dirList1 = courseDir1.listFiles();
         assert dirList1 != null;
@@ -127,45 +121,14 @@ public class Sisu extends Application {
                 String coursecredits = jsonfile1.get("credits").getAsJsonObject().get("max").getAsString();
                 String groupid = jsonfile1.get("groupId").getAsString();
 
-                courseclass course = new courseclass(courseid, coursename, coursecredits, groupid);
+                Course course = new Course(courseid, coursename, coursecredits, groupid);
                 all_courses.add(course);
             }
             catch (Exception ignored){}
         }
 
-        // TreeTablen luominen
-
-        ArrayList<moduleclass> root_modules = new ArrayList<>();
-
-        for(moduleclass module : all_modules) {
-            if(module.get_type().equals("DegreeProgramme")){
-                root_modules.add(module);
-            }
-        }
-        TreeItem<String> root_module_item = new TreeItem<>(root_modules.get(0).get_name());
-        root_module_item.setExpanded(true);
-        TreeTableColumn<String, String> treeTableColumn = new TreeTableColumn<>("Valitse opinnot");
-        treeTableColumn.setPrefWidth(400);
-        final TreeTableView<String> treeTableView = new TreeTableView<>(root_module_item);
-        treeTableView.getColumns().add(treeTableColumn);
-
-        final TreeItem<String> childNode1 = new TreeItem<>("Child Node 1");
-        final TreeItem<String> childNode2 = new TreeItem<>("Child Node 2");
-        final TreeItem<String> childNode3 = new TreeItem<>("Child Node 3");
-        root_module_item.getChildren().setAll(childNode1, childNode2, childNode3);
-
-        //Defining cell content
-        treeTableColumn.setCellValueFactory((TreeTableColumn.CellDataFeatures<String, String> p) ->
-                new ReadOnlyStringWrapper(p.getValue().getValue()));
-
-        // Treetablen lisäys pääikkunaan
-        maingrid.addRow(1, treeTableView);
-        maingrid.setPadding(new Insets(10));
-        maingrid.setPrefSize(200,200);
-
-
-
-        /* for (courseclass course : all_courses){
+        /* Jotain onnin testejä
+        for (courseclass course : all_courses){
             System.out.println(course.get_groupid());
             System.out.println(course.get_name());
         }
@@ -173,9 +136,7 @@ public class Sisu extends Application {
         for(moduleclass module : all_modules){
             System.out.println(module.get_courseids());
         }
-        */
 
-        /*
         for ( moduleclass module: all_modules){
             if( module.get_type().equals("DegreeProgramme")){
                 link_module_ids(module, all_modules, 0, all_courses);
@@ -183,13 +144,42 @@ public class Sisu extends Application {
         }
         */
 
-        for ( moduleclass module: all_modules){
+        for (Module module: all_modules){
             if( !(module.get_type().equals("DegreeProgramme"))){
                 link_module_ids(module, all_modules, 0, all_courses);
             }
         }
 
+        // TreeTablen luominen
+        ArrayList<Module> root_modules = new ArrayList<>();
 
+        for(Module module : all_modules) {
+            if(module.get_type().equals("DegreeProgramme")){
+                root_modules.add(module);
+            }
+        }
+        TreeItem<String> root_module_item = new TreeItem<>(root_modules.get(0).get_name());
+        root_module_item.setExpanded(true);
+
+        TreeTableColumn<String, String> treeTableColumn = new TreeTableColumn<>("Valitse opinnot");
+        treeTableColumn.setPrefWidth(400);
+
+        final TreeTableView<String> treeTableView = new TreeTableView<>(root_module_item);
+        treeTableView.getColumns().add(treeTableColumn);
+
+        treeTableColumn.setCellValueFactory((TreeTableColumn.CellDataFeatures<String, String> p) ->
+                new ReadOnlyStringWrapper(p.getValue().getValue()));
+
+        // Testi child nodet
+        final TreeItem<String> childNode1 = new TreeItem<>("Child Node 1");
+        final TreeItem<String> childNode2 = new TreeItem<>("Child Node 2");
+        final TreeItem<String> childNode3 = new TreeItem<>("Child Node 3");
+        root_module_item.getChildren().setAll(childNode1, childNode2, childNode3);
+
+        // Treetablen lisäys pääikkunaan
+        maingrid.addRow(1, treeTableView);
+        maingrid.setPadding(new Insets(10));
+        maingrid.setPrefSize(200,200);
 
         // Väärä salasana/nimi Dialog -ikkuna
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -236,7 +226,7 @@ public class Sisu extends Application {
                 delay2.setOnFinished( event -> stage.setScene(mainscene) );
                 delay2.play();
 
-                // Opiskelijan tietojen päivitys
+                // Opiskelijan tietojen päivitys 1. tabiin
                 Label s_name2 = new Label(name_value);
                 Label s_studentnumber2 = new Label(student_number_value);
                 studentinfo.addRow(0, s_name2);
@@ -247,12 +237,12 @@ public class Sisu extends Application {
         });
     }
 
-    public void link_module_ids(moduleclass module_class, ArrayList<moduleclass> all_modules, Integer count, ArrayList<courseclass> all_courses){
+    public void link_module_ids(Module module_class, ArrayList<Module> all_modules, Integer count, ArrayList<Course> all_courses){
         ArrayList<String> module_ids = module_class.ids;
-        ArrayList<String> module_course_ids = module_class.courseids;
+        ArrayList<String> module_course_ids = module_class.course_ids;
         System.out.println(count + " " +module_class.get_name());
 
-        for(courseclass course : all_courses){
+        for(Course course : all_courses){
             for(String course_id : module_course_ids){
                 if (course_id.equals(course.get_groupid())) {
                     System.out.println(course.get_name());
@@ -262,26 +252,21 @@ public class Sisu extends Application {
 
         for (String id : module_ids){
 
-            for (moduleclass module : all_modules){
+            for (Module module : all_modules){
                 if (module.get_id().equals(id)){
                     count += 1;
-
-
                     link_module_ids(module, all_modules, count,all_courses);
-
                     count -= 1;
                 }
             }
         }
     }
 
-
-
-    public void getValues(JsonElement a, ArrayList<moduleclass> all_modules, String moduleid)  {
+    public void getValues(JsonElement a, ArrayList<Module> all_modules, String moduleid)  {
         try {
             if (a.isJsonObject()) {
                 if (a.getAsJsonObject().has("moduleGroupId")) {
-                    for (moduleclass module : all_modules){
+                    for (Module module : all_modules){
                         if (module.get_id().equals(moduleid)){
                             if(!(module.get_ids().contains(a.getAsJsonObject().get("moduleGroupId").getAsString()))) {
                                 module.add_id(a.getAsJsonObject().get("moduleGroupId").getAsString());
@@ -290,10 +275,10 @@ public class Sisu extends Application {
                     }
                 }
                 if (a.getAsJsonObject().has("courseUnitGroupId")) {
-                    for (moduleclass module : all_modules){
+                    for (Module module : all_modules){
                         if (module.get_id().equals(moduleid)){
-                            if(!(module.get_courseids().contains(a.getAsJsonObject().get("courseUnitGroupId").getAsString()))) {
-                                module.add_courseids(a.getAsJsonObject().get("courseUnitGroupId").getAsString());
+                            if(!(module.get_course_ids().contains(a.getAsJsonObject().get("courseUnitGroupId").getAsString()))) {
+                                module.add_course_ids(a.getAsJsonObject().get("courseUnitGroupId").getAsString());
                             }
                         }
                     }
@@ -318,16 +303,16 @@ public class Sisu extends Application {
         }
         catch (Exception ignored){}
     }
-    static class moduleclass {
+    static class Module {
         String id;
         String name;
         String module_type;
 
 
-        ArrayList<String> courseids = new ArrayList<String>();
+        ArrayList<String> course_ids = new ArrayList<String>();
         ArrayList<String> ids = new ArrayList<String>();
 
-        public moduleclass(String new_id, String new_name, String moduletype) {
+        public Module(String new_id, String new_name, String moduletype) {
             id = new_id;
             name = new_name;
             module_type = moduletype;
@@ -337,8 +322,8 @@ public class Sisu extends Application {
             ids.add(the_new);
         }
 
-        public void add_courseids(String the_new) {
-            courseids.add(the_new);
+        public void add_course_ids(String the_new) {
+            course_ids.add(the_new);
         }
 
         public String get_type(){
@@ -353,7 +338,8 @@ public class Sisu extends Application {
             return this.name;
         }
 
-       /*public Integer getStudy_points(){
+        /*
+        public Integer getStudy_points(){
             return this.study_points;
         }*/
 
@@ -361,17 +347,17 @@ public class Sisu extends Application {
             return this.ids;
         }
 
-        public ArrayList<String> get_courseids() {
-            return this.courseids;
+        public ArrayList<String> get_course_ids() {
+            return this.course_ids;
         }
     }
-    static class courseclass {
+    static class Course {
         String id;
         String name;
         String cr;
         String groupid;
 
-        public courseclass(String new_id, String new_name, String new_cr, String new_groupid) {
+        public Course(String new_id, String new_name, String new_cr, String new_groupid) {
             id = new_id;
             name = new_name;
             cr = new_cr;
@@ -396,9 +382,7 @@ public class Sisu extends Application {
 
     }
 
-
     public static void main(String[] args) {
         launch();
     }
-
 }
