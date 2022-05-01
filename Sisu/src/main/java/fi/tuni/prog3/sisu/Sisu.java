@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
+import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -132,15 +133,35 @@ public class Sisu extends Application {
             catch (Exception ignored){}
         }
 
-        // ListView pääikkunaan
+        // TreeTablen luominen
 
-        ListView<String> listView = new ListView<>();
+        ArrayList<moduleclass> root_modules = new ArrayList<>();
+
         for(moduleclass module : all_modules) {
-            listView.getItems().add(module.get_name());
+            if(module.get_type().equals("DegreeProgramme")){
+                root_modules.add(module);
+            }
         }
-        maingrid.addRow(1, listView);
+        TreeItem<String> root_module_item = new TreeItem<>(root_modules.get(0).get_name());
+        root_module_item.setExpanded(true);
+        TreeTableColumn<String, String> treeTableColumn = new TreeTableColumn<>("Valitse opinnot");
+        treeTableColumn.setPrefWidth(400);
+        final TreeTableView<String> treeTableView = new TreeTableView<>(root_module_item);
+        treeTableView.getColumns().add(treeTableColumn);
+
+        final TreeItem<String> childNode1 = new TreeItem<>("Child Node 1");
+        final TreeItem<String> childNode2 = new TreeItem<>("Child Node 2");
+        final TreeItem<String> childNode3 = new TreeItem<>("Child Node 3");
+        root_module_item.getChildren().setAll(childNode1, childNode2, childNode3);
+
+        //Defining cell content
+        treeTableColumn.setCellValueFactory((TreeTableColumn.CellDataFeatures<String, String> p) ->
+                new ReadOnlyStringWrapper(p.getValue().getValue()));
+
+        // Treetablen lisäys pääikkunaan
+        maingrid.addRow(1, treeTableView);
         maingrid.setPadding(new Insets(10));
-        maingrid.setPrefSize(100,200);
+        maingrid.setPrefSize(200,200);
 
 
 
