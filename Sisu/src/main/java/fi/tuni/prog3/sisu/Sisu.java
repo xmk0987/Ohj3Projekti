@@ -126,19 +126,7 @@ public class Sisu extends Application {
             }
             catch (Exception ignored){}
         }
-
-        for ( Module module: all_modules){
-            if( module.get_type().equals("DegreeProgramme")){
-                link_module_ids(module, all_modules, 0, all_courses);
-            }
-        }
-
-
-       /* for (Module module: all_modules){
-            if( !(module.get_type().equals("DegreeProgramme"))){
-                link_module_ids(module, all_modules, 0, all_courses);
-            }
-        }*/
+        
 
         // TreeTablen luominen
         ArrayList<Module> root_modules = new ArrayList<>();
@@ -162,11 +150,12 @@ public class Sisu extends Application {
         treeTableColumn.setCellValueFactory((TreeTableColumn.CellDataFeatures<String, String> p) ->
                 new ReadOnlyStringWrapper(p.getValue().getValue()));
 
-        // Testi child nodet
-        final TreeItem<String> childNode1 = new TreeItem<>("Child Node 1");
-        final TreeItem<String> childNode2 = new TreeItem<>("Child Node 2");
-        final TreeItem<String> childNode3 = new TreeItem<>("Child Node 3");
-        root_module_item.getChildren().setAll(childNode1, childNode2, childNode3);
+        for ( Module module: all_modules){
+            if( module.get_type().equals("DegreeProgramme")){
+                link_module_course_ids(module, all_modules, all_courses, root_module_item);
+            }
+        }
+
 
         // Treetablen lisäys pääikkunaan
         maingrid.addRow(1, treeTableView);
@@ -229,49 +218,60 @@ public class Sisu extends Application {
         });
     }
 
-    public void link_module_ids(Module module_class, ArrayList<Module> all_modules, Integer count, ArrayList<Course> all_courses){
+    // Yhdistää kaikki modulit ja kurssit keskenään ja luo niistä TreeItemin.
+    public void link_module_course_ids(Module module_class, ArrayList<Module> all_modules, ArrayList<Course> all_courses, TreeItem<String> root){
         ArrayList<String> module_ids = module_class.ids;
         ArrayList<String> module_course_ids = module_class.course_ids;
-        String space = " ";
-        System.out.println(count + " " +module_class.get_name());
 
+        TreeItem<String> childNode1 = new TreeItem<>(module_class.get_name());
 
-        for(Course course : all_courses){
-            for(String course_id : module_course_ids){
-                if (course_id.equals(course.get_groupid())) {
-                    System.out.print(space.repeat(count+1));
-                    System.out.println(course.get_name() + " " + course.get_cr() + "op");
-                }
-            }
+        // Alustaa oikein
+        if (!(module_class.module_type.equals("DegreeProgramme"))){
+            root.getChildren().addAll(childNode1);
         }
 
-        if(module_class.Anymodule_value == 1){
-            for(Module module: all_modules){
-
-                if(module.module_type.equals("StudyModule") && module.Anycourse_value == 0){
-
-                    link_module_ids(module,all_modules,3,all_courses);
-                }
-
-            }
-        }
-
-        if(module_class.Anycourse_value == 1){
-            for (Course course : all_courses){
-                System.out.print(space.repeat(count+1));
-                System.out.println(course.get_name() + " " + course.get_cr() + "op");
-            }
-        }
-
+        // Yhdistää kaikki modulet toisiinsa
         for (String id : module_ids){
             for (Module module : all_modules){
                 if (module.get_id().equals(id)){
-                    count += 1;
-                    link_module_ids(module, all_modules, count,all_courses);
-                    count -= 1;
+                    if (!Objects.equals(module_class.module_type, "DegreeProgramme")){
+
+                        link_module_course_ids(module, all_modules, all_courses,childNode1);
+                    }
+                    else{
+                        link_module_course_ids(module, all_modules, all_courses,root);
+                    }
                 }
             }
         }
+
+        // Lisää kaikki modulit modulin alle jos sillä on anymodule value
+        if(module_class.Anymodule_value == 1){
+            for(Module module: all_modules){
+                if(module.module_type.equals("StudyModule") && module.Anycourse_value == 0){
+                    link_module_course_ids(module,all_modules,all_courses, childNode1);
+                }
+            }
+        }
+
+        // Lisää kaikki kurssit modulen alle jos sillä on anycourse value
+        if(module_class.Anycourse_value == 1){
+            for (Course course : all_courses){
+                TreeItem<String> childNode2 = new TreeItem<>(course.get_name() + " " + course.get_cr() + "op");
+                childNode1.getChildren().addAll(childNode2);
+            }
+        }
+
+        // Lisää kaikki kurssit modulin alle jos siihen kuuluu kursseja
+        for(Course course : all_courses){
+            for(String course_id : module_course_ids){
+                if (course_id.equals(course.get_groupid())) {
+                    TreeItem<String> childNode2 = new TreeItem<>(course.get_name() + " " + course.get_cr() + "op");
+                    childNode1.getChildren().addAll(childNode2);
+                }
+            }
+        }
+
     }
 
     public void getValues(JsonElement a, ArrayList<Module> all_modules, String moduleid)  {
