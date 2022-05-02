@@ -158,6 +158,15 @@ public class Sisu extends Application {
                 root_modules.add(module);
             }
         }
+
+        //tests
+        for (Module module : all_modules){
+            System.out.println(module.get_id());
+            System.out.println(module.get_name());
+            System.out.println(module.get_Anycourse_value());
+            System.out.println(module.get_Anymodule_value());
+        }
+
         TreeItem<String> root_module_item = new TreeItem<>(root_modules.get(0).get_name());
         root_module_item.setExpanded(true);
 
@@ -283,6 +292,24 @@ public class Sisu extends Application {
                         }
                     }
                 }
+                if (a.getAsJsonObject().has("type")) {
+                    if (Objects.equals(a.getAsJsonObject().get("type").getAsString(), "AnyCourseUnitRule")) {
+                        for (Module module : all_modules) {
+                            if (module.get_id().equals(moduleid)) {
+                                module.add_Anycourse_value(1);
+                            }
+                        }
+                    }
+                }
+                if (a.getAsJsonObject().has("type")) {
+                    if (Objects.equals(a.getAsJsonObject().get("type").getAsString(), "AnyModuleRule")) {
+                        for (Module module : all_modules) {
+                            if (module.get_id().equals(moduleid)) {
+                                module.add_Anymodule_value(1);
+                            }
+                        }
+                    }
+                }
 
                 for (int i = 0; i < a.getAsJsonObject().size(); i++) {
                     Set<String> keys = a.getAsJsonObject().keySet();
@@ -307,6 +334,8 @@ public class Sisu extends Application {
         String id;
         String name;
         String module_type;
+        int Anycourse_value = 0;
+        int Anymodule_value = 0;
 
 
         ArrayList<String> course_ids = new ArrayList<String>();
@@ -317,9 +346,22 @@ public class Sisu extends Application {
             name = new_name;
             module_type = moduletype;
 
+
         }
         public void add_id(String the_new) {
             ids.add(the_new);
+        }
+        public void add_Anycourse_value(int the_new) {
+            this.Anycourse_value = the_new;
+        }
+        public int get_Anycourse_value() {
+            return this.Anycourse_value;
+        }
+        public void add_Anymodule_value(int the_new) {
+            this.Anymodule_value = the_new;
+        }
+        public int get_Anymodule_value() {
+            return this.Anymodule_value;
         }
 
         public void add_course_ids(String the_new) {
