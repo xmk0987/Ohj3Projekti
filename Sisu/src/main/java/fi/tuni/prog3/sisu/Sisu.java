@@ -127,28 +127,18 @@ public class Sisu extends Application {
             catch (Exception ignored){}
         }
 
-        /* Jotain onnin testejä
-        for (courseclass course : all_courses){
-            System.out.println(course.get_groupid());
-            System.out.println(course.get_name());
-        }
-
-        for(moduleclass module : all_modules){
-            System.out.println(module.get_courseids());
-        }
-
-        for ( moduleclass module: all_modules){
+        for ( Module module: all_modules){
             if( module.get_type().equals("DegreeProgramme")){
                 link_module_ids(module, all_modules, 0, all_courses);
             }
         }
-        */
 
-        for (Module module: all_modules){
+
+       /* for (Module module: all_modules){
             if( !(module.get_type().equals("DegreeProgramme"))){
                 link_module_ids(module, all_modules, 0, all_courses);
             }
-        }
+        }*/
 
         // TreeTablen luominen
         ArrayList<Module> root_modules = new ArrayList<>();
@@ -159,13 +149,6 @@ public class Sisu extends Application {
             }
         }
 
-        //tests
-        for (Module module : all_modules){
-            System.out.println(module.get_id());
-            System.out.println(module.get_name());
-            System.out.println(module.get_Anycourse_value());
-            System.out.println(module.get_Anymodule_value());
-        }
 
         TreeItem<String> root_module_item = new TreeItem<>(root_modules.get(0).get_name());
         root_module_item.setExpanded(true);
@@ -249,18 +232,38 @@ public class Sisu extends Application {
     public void link_module_ids(Module module_class, ArrayList<Module> all_modules, Integer count, ArrayList<Course> all_courses){
         ArrayList<String> module_ids = module_class.ids;
         ArrayList<String> module_course_ids = module_class.course_ids;
+        String space = " ";
         System.out.println(count + " " +module_class.get_name());
+
 
         for(Course course : all_courses){
             for(String course_id : module_course_ids){
                 if (course_id.equals(course.get_groupid())) {
-                    System.out.println(course.get_name());
+                    System.out.print(space.repeat(count+1));
+                    System.out.println(course.get_name() + " " + course.get_cr() + "op");
                 }
             }
         }
 
-        for (String id : module_ids){
+        if(module_class.Anymodule_value == 1){
+            for(Module module: all_modules){
 
+                if(module.module_type.equals("StudyModule") && module.Anycourse_value == 0){
+
+                    link_module_ids(module,all_modules,3,all_courses);
+                }
+
+            }
+        }
+
+        if(module_class.Anycourse_value == 1){
+            for (Course course : all_courses){
+                System.out.print(space.repeat(count+1));
+                System.out.println(course.get_name() + " " + course.get_cr() + "op");
+            }
+        }
+
+        for (String id : module_ids){
             for (Module module : all_modules){
                 if (module.get_id().equals(id)){
                     count += 1;
