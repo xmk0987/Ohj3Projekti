@@ -30,9 +30,7 @@ Onni Vitikainen H292259
 Otto Ukkonen H291887
  */
 
-
 public class Sisu extends Application {
-
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -126,7 +124,6 @@ public class Sisu extends Application {
             }
             catch (Exception ignored){}
         }
-        
 
         // TreeTablen luominen
         ArrayList<Module> root_modules = new ArrayList<>();
@@ -136,7 +133,6 @@ public class Sisu extends Application {
                 root_modules.add(module);
             }
         }
-
 
         TreeItem<String> root_module_item = new TreeItem<>(root_modules.get(0).get_name());
         root_module_item.setExpanded(true);
@@ -220,8 +216,8 @@ public class Sisu extends Application {
 
     // Yhdistää kaikki modulit ja kurssit keskenään ja luo niistä TreeItemin.
     public void link_module_course_ids(Module module_class, ArrayList<Module> all_modules, ArrayList<Course> all_courses, TreeItem<String> root){
-        ArrayList<String> module_ids = module_class.ids;
-        ArrayList<String> module_course_ids = module_class.course_ids;
+        ArrayList<String> module_ids = module_class.child_module_ids;
+        ArrayList<String> module_course_ids = module_class.child_course_ids;
 
         TreeItem<String> childNode1 = new TreeItem<>(module_class.get_name());
 
@@ -235,7 +231,6 @@ public class Sisu extends Application {
             for (Module module : all_modules){
                 if (module.get_id().equals(id)){
                     if (!Objects.equals(module_class.module_type, "DegreeProgramme")){
-
                         link_module_course_ids(module, all_modules, all_courses,childNode1);
                     }
                     else{
@@ -246,16 +241,16 @@ public class Sisu extends Application {
         }
 
         // Lisää kaikki modulit modulin alle jos sillä on anymodule value
-        if(module_class.Anymodule_value == 1){
+        if(module_class.anymodulerule){
             for(Module module: all_modules){
-                if(module.module_type.equals("StudyModule") && module.Anycourse_value == 0){
+                if(module.module_type.equals("StudyModule") && !module.anycourseunitrule){
                     link_module_course_ids(module,all_modules,all_courses, childNode1);
                 }
             }
         }
 
         // Lisää kaikki kurssit modulen alle jos sillä on anycourse value
-        if(module_class.Anycourse_value == 1){
+        if(module_class.anycourseunitrule){
             for (Course course : all_courses){
                 TreeItem<String> childNode2 = new TreeItem<>(course.get_name() + " " + course.get_cr() + "op");
                 childNode1.getChildren().addAll(childNode2);
@@ -271,10 +266,11 @@ public class Sisu extends Application {
                 }
             }
         }
-
     }
 
-    public void getValues(JsonElement a, ArrayList<Module> all_modules, String moduleid)  {
+    // Iteroi module tiedoston jokaisen objektin lävitse. Hakee moduleGroupId:n, CourseUnitGroupId:n,
+    // AnyCourseUnitRule arvon ja AnyModuleRule arvon
+    public void getValues(JsonElement a, ArrayList<Module> all_modules, String moduleid){
         try {
             if (a.isJsonObject()) {
                 if (a.getAsJsonObject().has("moduleGroupId")) {
@@ -299,7 +295,7 @@ public class Sisu extends Application {
                     if (Objects.equals(a.getAsJsonObject().get("type").getAsString(), "AnyCourseUnitRule")) {
                         for (Module module : all_modules) {
                             if (module.get_id().equals(moduleid)) {
-                                module.add_Anycourse_value(1);
+                                module.add_anycourseunitrule();
                             }
                         }
                     }
@@ -308,12 +304,11 @@ public class Sisu extends Application {
                     if (Objects.equals(a.getAsJsonObject().get("type").getAsString(), "AnyModuleRule")) {
                         for (Module module : all_modules) {
                             if (module.get_id().equals(moduleid)) {
-                                module.add_Anymodule_value(1);
+                                module.add_anymodulerule();
                             }
                         }
                     }
                 }
-
                 for (int i = 0; i < a.getAsJsonObject().size(); i++) {
                     Set<String> keys = a.getAsJsonObject().keySet();
                     for(String key : keys){
@@ -322,53 +317,45 @@ public class Sisu extends Application {
                     }
                 }
             } else if (a.isJsonArray()) {
-
                 var jsonData = a.getAsJsonArray();
-
                 for (int i = 0; i < jsonData.size(); i++) {
-                    var next_element = jsonData.get(Integer.parseInt(String.valueOf(i))); // Here's your key
+                    var next_element = jsonData.get(Integer.parseInt(String.valueOf(i)));
                     getValues(next_element, all_modules, moduleid);
                 }
             }
         }
         catch (Exception ignored){}
     }
+
     static class Module {
         String id;
         String name;
         String module_type;
-        int Anycourse_value = 0;
-        int Anymodule_value = 0;
-
-
-        ArrayList<String> course_ids = new ArrayList<String>();
-        ArrayList<String> ids = new ArrayList<String>();
+        boolean anycourseunitrule = false;
+        boolean anymodulerule = false;
+        ArrayList<String> child_course_ids = new ArrayList<String>();
+        ArrayList<String> child_module_ids = new ArrayList<String>();
 
         public Module(String new_id, String new_name, String moduletype) {
             id = new_id;
             name = new_name;
             module_type = moduletype;
-
-
         }
+
         public void add_id(String the_new) {
-            ids.add(the_new);
-        }
-        public void add_Anycourse_value(int the_new) {
-            this.Anycourse_value = the_new;
-        }
-        public int get_Anycourse_value() {
-            return this.Anycourse_value;
-        }
-        public void add_Anymodule_value(int the_new) {
-            this.Anymodule_value = the_new;
-        }
-        public int get_Anymodule_value() {
-            return this.Anymodule_value;
+            child_module_ids.add(the_new);
         }
 
-        public void add_course_ids(String the_new) {
-            course_ids.add(the_new);
+        public void add_anycourseunitrule() {
+            this.anycourseunitrule = true;
+        }
+
+        public void add_anymodulerule() {
+            this.anymodulerule = true;
+        }
+
+        public void add_course_ids(String new_child_id) {
+            child_course_ids.add(new_child_id);
         }
 
         public String get_type(){
@@ -383,17 +370,12 @@ public class Sisu extends Application {
             return this.name;
         }
 
-        /*
-        public Integer getStudy_points(){
-            return this.study_points;
-        }*/
-
         public ArrayList<String> get_ids() {
-            return this.ids;
+            return this.child_module_ids;
         }
 
         public ArrayList<String> get_course_ids() {
-            return this.course_ids;
+            return this.child_course_ids;
         }
     }
     static class Course {
@@ -407,14 +389,10 @@ public class Sisu extends Application {
             name = new_name;
             cr = new_cr;
             groupid = new_groupid;
-
         }
+
         public String get_cr(){
             return this.cr;
-        }
-
-        public String get_id() {
-            return this.id;
         }
 
         public String get_name() {
@@ -424,7 +402,6 @@ public class Sisu extends Application {
         public String get_groupid() {
             return this.groupid;
         }
-
     }
 
     public static void main(String[] args) {
