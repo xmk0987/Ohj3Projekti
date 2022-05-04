@@ -3,11 +3,9 @@ package fi.tuni.prog3.sisu;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonPrimitive;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -20,6 +18,7 @@ import javafx.util.Duration;
 import javafx.util.Pair;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 
@@ -30,10 +29,18 @@ Onni Vitikainen H292259
 Otto Ukkonen H291887
  */
 
+/**
+ * Class for Sisu study programme planner.
+ */
 public class Sisu extends Application {
 
+    /**
+     * Function starts the GUI for the program.
+     * @param stage the top level JavaFX container.
+     * @throws FileNotFoundException if specified file doesn't exist.
+     */
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) throws FileNotFoundException {
 
         // Alkumenu
         Label welcome=new Label("Tervetuloa Sus Sisuun");
@@ -214,7 +221,13 @@ public class Sisu extends Application {
         });
     }
 
-    // Yhdistää kaikki modulit ja kurssit keskenään ja luo niistä TreeItemin.
+    /**
+     * Saves module names into root. Root is used for JavaFX TreeTable
+     * @param module_class Current module
+     * @param all_modules ArrayList of all modules
+     * @param all_courses Arraylist of all courses
+     * @param root The current root TreeItem.
+     */
     public void link_module_course_ids(Module module_class, ArrayList<Module> all_modules, ArrayList<Course> all_courses, TreeItem<String> root){
         ArrayList<String> module_ids = module_class.child_module_ids;
         ArrayList<String> module_course_ids = module_class.child_course_ids;
@@ -268,8 +281,13 @@ public class Sisu extends Application {
         }
     }
 
-    // Iteroi module tiedoston jokaisen objektin lävitse. Hakee moduleGroupId:n, CourseUnitGroupId:n,
-    // AnyCourseUnitRule arvon ja AnyModuleRule arvon
+    /**
+     * Iterates trough every JsonObject in module files and saves values of moduleGroupId, CourseUnitGroupId
+     * AnyCourseUnitRule and AnyModuleRule.
+     * @param a Current JsonElement
+     * @param all_modules ArrayList of all modules
+     * @param moduleid The current Module's id
+     */
     public void getValues(JsonElement a, ArrayList<Module> all_modules, String moduleid){
         try {
             if (a.isJsonObject()) {
@@ -327,6 +345,9 @@ public class Sisu extends Application {
         catch (Exception ignored){}
     }
 
+    /**
+     * A class for single modules.
+     */
     static class Module {
         String id;
         String name;
@@ -336,54 +357,105 @@ public class Sisu extends Application {
         ArrayList<String> child_course_ids = new ArrayList<String>();
         ArrayList<String> child_module_ids = new ArrayList<String>();
 
+        /**
+         * Constructs a Module object for storing id, name and type of the module.
+         * @param new_id the id of the module.
+         * @param new_name the name of the module.
+         * @param moduletype the type of the module.
+         */
         public Module(String new_id, String new_name, String moduletype) {
             id = new_id;
             name = new_name;
             module_type = moduletype;
         }
 
-        public void add_id(String the_new) {
-            child_module_ids.add(the_new);
+        /**
+         * Adds child modules for the current module.
+         * @param new_ids id of the node being added.
+         */
+        public void add_id(String new_ids) {
+            child_module_ids.add(new_ids);
         }
 
+        /**
+         * Adds anyCourseUnitRule for this module. Which means all courses will be child nodes for this module.
+         */
         public void add_anycourseunitrule() {
             this.anycourseunitrule = true;
         }
 
+        /**
+         * Adds anyModuleRule for this module. Which means all StudyModule-type modules will be child nodes for this module
+         */
         public void add_anymodulerule() {
             this.anymodulerule = true;
         }
 
+        /**
+         * Adds child courses for the current module.
+         * @param new_child_id id of the node being added.
+         */
         public void add_course_ids(String new_child_id) {
             child_course_ids.add(new_child_id);
         }
 
+        /**
+         * Returns the type of the module.
+         * @return the type of the module.
+         */
         public String get_type(){
             return this.module_type;
         }
 
+        /**
+         * Returns the id of the module.
+         * @return the id of the module.
+         */
         public String get_id() {
             return this.id;
         }
 
+        /**
+         * Returns the name of the module.
+         * @return the name of the module.
+         */
         public String get_name() {
             return this.name;
         }
 
+        /**
+         * Returns list of ids for the child module nodes of this module.
+         * @return list of ids for the child module nodes of this module.
+         */
         public ArrayList<String> get_ids() {
             return this.child_module_ids;
         }
 
+        /**
+         * Returns list of the ids for the child course nodes of this module.
+         * @return list of the ids for the child course nodes of this module.
+         */
         public ArrayList<String> get_course_ids() {
             return this.child_course_ids;
         }
     }
+
+    /**
+     * A class for single course units.
+     */
     static class Course {
         String id;
         String name;
         String cr;
         String groupid;
 
+        /**
+         * Constructs a Course object for storing id, name, credits and group id of the course.
+         * @param new_id id of the course.
+         * @param new_name name of the course.
+         * @param new_cr credits of the course.
+         * @param new_groupid group id of the course.
+         */
         public Course(String new_id, String new_name, String new_cr, String new_groupid) {
             id = new_id;
             name = new_name;
@@ -391,19 +463,35 @@ public class Sisu extends Application {
             groupid = new_groupid;
         }
 
+        /**
+         * Returns the credits for the course.
+         * @return the credits for the course.
+         */
         public String get_cr(){
             return this.cr;
         }
 
+        /**
+         * Returns the name of the course.
+         * @return the name of the course.
+         */
         public String get_name() {
             return this.name;
         }
 
+        /**
+         * Returns the group id of the course.
+         * @return the group id of the course.
+         */
         public String get_groupid() {
             return this.groupid;
         }
     }
 
+    /**
+     * Main method. Launches the program.
+     * @param args The command line arguments.
+     **/
     public static void main(String[] args) {
         launch();
     }
