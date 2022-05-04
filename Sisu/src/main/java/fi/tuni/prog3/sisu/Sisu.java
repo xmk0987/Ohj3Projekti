@@ -348,7 +348,7 @@ public class Sisu extends Application {
     /**
      * A class for single modules.
      */
-    static class Module {
+    public static class Module {
         String id;
         String name;
         String module_type;
@@ -443,7 +443,7 @@ public class Sisu extends Application {
     /**
      * A class for single course units.
      */
-    static class Course {
+    public static class Course {
         String id;
         String name;
         String cr;

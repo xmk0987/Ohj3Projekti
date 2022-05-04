@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"fi.tuni.prog3.sisu","l":"Sisu.Course"},{"p":"fi.tuni.prog3.sisu","l":"Sisu.Module"},{"p":"fi.tuni.prog3.sisu","l":"Sisu"}];updateSearchResults();
